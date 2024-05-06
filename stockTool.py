@@ -5,11 +5,12 @@ import datetime
 import pandas as pd
 
 today = str(datetime.date.today()) + " 00:00:00-04:00"
+#print("today is"+today)
 onlydate =  str(datetime.date.today())
 yesterday = str(datetime.date.today()-datetime.timedelta(days=1))+" 00:00:00-04:00"
 currentTime = str(datetime.datetime.now()).split(" ")[1].split(".")[0]
 weekday = datetime.date.weekday(datetime.date.today())
-print(currentTime)
+#print(currentTime)
 root = tk.Tk()
 root.geometry("800x600")
 root.config(bg="white")
@@ -19,7 +20,7 @@ homeFrame.config(bg="white")
 root.grid_rowconfigure(0, weight=1)
 root.grid_columnconfigure(0, weight=1)
 title = tk.Label(homeFrame, text="Stock Analysis Tool")
-title.grid(row=2, column=2, columnspan=4, sticky="nsew")
+title.grid(row=1, column=2, columnspan=4, sticky="nsew")
 title.config(font=("Arial", 30), bg="white")
 
 
@@ -32,7 +33,7 @@ def buildLeftTickers():
     tickerFrame.grid(row=1, column=0, columnspan=2, sticky="n")
     tickerFrame.config(bg="white")
     if(currentTime>"08:30:00" and weekday<5):
-        leftHeader = tk.Label(homeFrame, text=f"Today's changes {onlydate}")
+        leftHeader = tk.Label(homeFrame, text=f"Market changes {onlydate}")
         leftHeader.grid(row=0, column=0, columnspan=2)
         leftHeader.config(font=("Arial",12), bg="white")
         for i in tickers:
@@ -46,7 +47,7 @@ def buildLeftTickers():
             buildTickerHelper(position=position, label=label, valChange=valChange, stockDayChange=stockDayChange)
             position+=1
     elif(not (weekday==0 or weekday==6)):
-        leftHeader = tk.Label(homeFrame, text=f"Yesterdays's changes {str(datetime.date.today()-datetime.timedelta(days=1))}")
+        leftHeader = tk.Label(homeFrame, text=f"Market changes {str(datetime.date.today()-datetime.timedelta(days=1))}")
         leftHeader.config(bg="white")
         leftHeader.grid(row=0,column=0, sticky="n")
         leftHeader.config(font=("Arial",11))
@@ -66,10 +67,10 @@ def buildLeftTickers():
             position+=1
     else:
         if(weekday==0):
-            leftHeader = tk.Label(homeFrame, text=f"Friday's changes {str(datetime.date.today()-datetime.timedelta(days=3))}")
+            leftHeader = tk.Label(homeFrame, text=f"Market changes {str(datetime.date.today()-datetime.timedelta(days=3))}")
             friday = str(datetime.date.today()-datetime.timedelta(days=3))+" 00:00:00-04:00"
         else:  
-            leftHeader = tk.Label(homeFrame, text=f"Friday's changes {str(datetime.date.today()-datetime.timedelta(days=2))}")
+            leftHeader = tk.Label(homeFrame, text=f"Market changes {str(datetime.date.today()-datetime.timedelta(days=2))}")
             friday = str(datetime.date.today()-datetime.timedelta(days=2))+" 00:00:00-04:00"
         leftHeader.config(bg="white")
         leftHeader.grid(row=0,column=0, sticky="n", columnspan=2)
@@ -121,12 +122,15 @@ def buildTopwatchlist():
     file = open("watchlist.txt")
     tickers = file.readlines()
     watchlistLabel = tk.Label(homeFrame, text="From your watchlist")
-    watchlistLabel.grid(row=0, column=7, sticky="nsew")
+    watchlistLabel.grid(row=0, column=7, sticky="e")
     watchlistLabel.config(font=("Arial", 15), bg="white")
     for i, tckr in enumerate(tickers):
         tickers[i] = tckr.strip()
-    print(currentTime>"8:30:00")
-    if(currentTime>"8:30:00" and weekday<5):
+    # print(currentTime)
+    # print(currentTime>"8:30:00")
+    s = today.split("-")
+    marketOpen = datetime.datetime(year=int(s[0]), month = int(s[1]), day=int(s[2].split(" ")[0]), hour=8, minute=30, second=0)
+    if(datetime.datetime.now() > marketOpen and weekday<5):
         buildWatchListHelper(tickers=tickers, day=today)
     elif(weekday==6 or weekday==0):
         if(weekday==6):
@@ -138,13 +142,14 @@ def buildTopwatchlist():
         buildWatchListHelper(tickers=tickers, day=yesterday)
 
 def buildWatchListHelper(tickers, day):
-    print(day)
+    #print(day)
     biggestGainers = [["",0], ["",0], ["",0]]
     biggestLosers = [["",0], ["",0], ["",0]]
     for i in tickers:
         stock = yf.Ticker(i)
         name = stock.info.get("shortName")
         stockData = stock.history("1d")
+        #print(stockData)
         stockDayChange = round(((float(stockData["Close"][day])/float(stockData["Open"][day]))-1)*100, 2)
         for i in range(0, 3):
             if(stockDayChange>biggestGainers[i][1]):
@@ -152,28 +157,40 @@ def buildWatchListHelper(tickers, day):
                 biggestGainers[i]=[name, stockDayChange]
                 if(i<2):
                     biggestGainers[i+1]=temp
+                break
             elif(stockDayChange<biggestLosers[i][1]):
                 temp = biggestLosers[i]
                 biggestLosers[i]=[name, stockDayChange]
                 if(i<2):
                     biggestLosers[i+1]=temp
+                break
     winnersFrame = tk.Frame(homeFrame, bg="white")
     for i, x in enumerate(biggestGainers):
         if(x[1]>0):
-            templabel = tk.Label(winnersFrame, bg="white", text=f"{x[0]} - {x[1]}%")
-            templabel.grid(row=i, sticky="nsew")
-    winnersLabel = tk.Label(homeFrame, text="Biggest gains", font=("Arial", 14))
-    winnersLabel.grid(row=1, column=7, sticky="nsew")
-    winnersFrame.grid(row=2, column=7, sticky="nsew")
+            if(len(x[0])>20):
+                templabel = tk.Label(winnersFrame, bg="white", text=f"{x[0][:20]}.")
+            else:
+                templabel = tk.Label(winnersFrame, bg="white", text=f"{x[0]}")
+            templabel.grid(row=i+1, column = 0, sticky="nsew")
+            vallabel = tk.Label(winnersFrame, bg="white", fg="green", text=f"{x[1]}%")
+            vallabel.grid(row=i+1, column=1, sticky="w")
+    winnersLabel = tk.Label(winnersFrame, text="Biggest gains", font=("Arial", 12), bg="white")
+    winnersLabel.grid(row=0, sticky="nsew")
+    winnersFrame.grid(row=1, column=7, sticky="e")
 
     losersFrame = tk.Frame(homeFrame, bg="white")
     for i, x in enumerate(biggestLosers):
         if(x[1]<0):
-            templabel = tk.Label(losersFrame, bg="white", text=f"{x[0]} - {x[1]}%")
-            templabel.grid(row=i, sticky="nsew")
-    losersLabel = tk.Label(homeFrame, text="Biggest losses", font=("Arial", 14))
-    losersLabel.grid(row=3, column=7, sticky="nsew")
-    losersFrame.grid(row=4, column=7, sticky="nsew")
+            if(len(x[0])>20):
+                templabel = tk.Label(losersFrame, bg="white", text=f"{x[0][:20]}.")
+            else:
+                templabel = tk.Label(losersFrame, bg="white", text=f"{x[0]}")
+            templabel.grid(row=i+1, column=0, sticky="nsew")
+            vallabel = tk.Label(losersFrame, bg="white", fg="red", text=f"{x[1]}%")
+            vallabel.grid(row=i+1, column=1, sticky="w")
+    losersLabel = tk.Label(losersFrame, text="Biggest losses", font=("Arial", 12), bg="white")
+    losersLabel.grid(row=0, sticky="nsew")
+    losersFrame.grid(row=2, column=7, sticky="e")
 
 
 def findStock():
@@ -198,7 +215,7 @@ def start():
     #     label.config(bg="white")
     #     label.grid(row=0, column=i)
 
-    weightsConfigure([1, 1, 3, 3, 3, 3], [2, 2, 2, 4, 4, 2, 2, 11])
+    weightsConfigure([1, 1, 3, 3, 3, 3], [2, 2, 2, 4, 4, 2, 2, 6])
 
     root.mainloop()
 
