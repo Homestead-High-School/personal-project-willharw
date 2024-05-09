@@ -3,6 +3,10 @@ import tkinter as tk
 import time
 import datetime
 import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use("TkAgg")
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 root = tk.Tk()
 root.geometry("800x600")
@@ -21,8 +25,10 @@ foundTickers = dict()
 lastMarketDay = datetime.date.today()
 def setLastMarketDay() -> datetime.date:
     date=datetime.date.today()
-    ticker=yf.Ticker("AAPL").history(start=date-datetime.timedelta(days=10))
-    while(not (str(date)+" 00:00:00-04:00" in ticker["Close"].keys())):
+    ticker=yf.Ticker("^DJI").history(start=date-datetime.timedelta(days=10), end = date+datetime.timedelta(days=1),)
+    #print(ticker)
+    #print(ticker["Open"].keys())
+    while(not (str(date)+" 00:00:00-04:00" in ticker["Open"].keys())):
         date=date-datetime.timedelta(days=1)
     global lastMarketDay
     lastMarketDay=str(date)+" 00:00:00-04:00"
@@ -157,17 +163,27 @@ def findStock():
     homeFrame.grid_forget()
     stockFrame = tk.Frame(root, bg="white")
     stockFrame.grid(row=0,column=0, sticky="nsew")
+    for i in range(6):
+        stockFrame.grid_rowconfigure(i, weight=1)
+    for i in range(8):
+        stockFrame.grid_columnconfigure(i, weight=1)
     stock = ""
     enterStock = tk.Entry(stockFrame, textvariable=stock, border=5)
     enterStock.grid(row=0, column=0, sticky="nsew")
     homeButton = tk.Button(stockFrame, text="Home", command=lambda : backToHome(stockFrame))
     homeButton.grid(row=0, column=7, sticky="nsew")
-    submitButton = tk.Button(stockFrame, text="Submit", command=lambda : parseStock(enterStock))
+    submitButton = tk.Button(stockFrame, text="Submit", command=lambda : parseStock(stock=enterStock, stockFrame=stockFrame))
     submitButton.grid(row=0, column=1, sticky="nsew")
 
-def parseStock(stock):
+
+def parseStock(stock : tk.Entry, stockFrame : tk.Frame):
     val = stock.get().upper().strip()
-    ticker = yf.Ticker(val)
+    ticker = 0
+    try:
+        if(foundTickers[val]!=None):
+            ticker = foundTickers[val]
+    except:
+        ticker = yf.Ticker(val)
     if (len(ticker.history(period="1m"))==0): 
         warning = tk.Toplevel(root)
         warning.geometry("200x100")
@@ -178,6 +194,35 @@ def parseStock(stock):
         print(f"{stock} NOT FOUND ERROR")
     else:
         print(f"{stock} found")
+        buildFindStockViewer(ticker=ticker, frame=stockFrame)
+        
+
+def buildFindStockViewer(ticker : yf.Ticker, frame):
+    print("building stock frame")
+    splitted = lastMarketDay.split("-")
+    yr=int(splitted[0])
+    mnth=int(splitted[1])
+    day=int(splitted[2].split(" ")[0])
+    del splitted
+    lastMarketDatetime = datetime.date(year=yr, month=mnth, day=day)
+    history = ticker.history(end=lastMarketDatetime, start=lastMarketDatetime-datetime.timedelta(weeks=4))
+    prices=history["Close"]
+    dates=prices.keys()
+    print(prices,dates)
+    newDates = list()
+    for date in dates:
+        brokenDate = str(date).split(" ")[0].split("-")
+        newDates.append(brokenDate[1]+"-"+brokenDate[2])
+    stockFigure = plt.Figure(figsize=(4,3), dpi=100)
+    stockGraph = FigureCanvasTkAgg(stockFigure, frame)
+    stockGraph.get_tk_widget().grid(row=1, column=2, columnspan=5, rowspan=4, sticky="nsew")
+    mainGraph = stockFigure.add_subplot(111)
+    mainGraph.plot(newDates, prices, color="red")
+    mainGraph.set_xlabel("Date")
+    mainGraph.set_ylabel("Price $")
+    stockFigure.autofmt_xdate()
+
+
 
 
 def weightsConfigure(rowNums, columnNums):
@@ -193,15 +238,7 @@ def backToHome(frame):
 
 def start():
     homeFrame.grid(row=0,column=0, sticky="nsew")
-    # for i in range(1, 6):
-    #     label = tk.Label(homeFrame, text=f"{i}")
-    #     label.config(bg="white")
-    #     label.grid(row=i, column=0)
-    # for i in range(1, 8):
-    #     label = tk.Label(homeFrame, text=f"{i}")
-    #     label.config(bg="white")
-    #     label.grid(row=0, column=i)
 
     weightsConfigure([1, 1, 3, 3, 3, 3], [2, 2, 2, 4, 4, 2, 2, 6])
-    #print(foundTickers)
+    
     root.mainloop()
