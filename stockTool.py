@@ -1,8 +1,7 @@
 import yfinance as yf
 import tkinter as tk
-import time
+from tkinter import ttk
 import datetime
-import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use("TkAgg")
@@ -163,17 +162,21 @@ def findStock():
     homeFrame.grid_forget()
     stockFrame = tk.Frame(root, bg="white")
     stockFrame.grid(row=0,column=0, sticky="nsew")
+    rowweights = [1,1,1,1,1,1]
+    colweights=[1,1,3,3,3,3,1,1]
     for i in range(6):
-        stockFrame.grid_rowconfigure(i, weight=1)
+        stockFrame.grid_rowconfigure(i, weight=rowweights[i])
+        tk.Label(stockFrame, text=f"{i}", bg="white", fg="white").grid(row=i, column=0, sticky="nsew")
     for i in range(8):
-        stockFrame.grid_columnconfigure(i, weight=1)
+        stockFrame.grid_columnconfigure(i, weight=colweights[i])
+        tk.Label(stockFrame, text=f"{i}", bg="white", fg="white").grid(row=0, column=i, sticky="nsew")
     stock = ""
     enterStock = tk.Entry(stockFrame, textvariable=stock, border=5)
-    enterStock.grid(row=0, column=0, sticky="nsew")
+    enterStock.grid(row=0, column=0, sticky="n")
     homeButton = tk.Button(stockFrame, text="Home", command=lambda : backToHome(stockFrame))
-    homeButton.grid(row=0, column=7, sticky="nsew")
+    homeButton.grid(row=0, column=7, sticky="n")
     submitButton = tk.Button(stockFrame, text="Submit", command=lambda : parseStock(stock=enterStock, stockFrame=stockFrame))
-    submitButton.grid(row=0, column=1, sticky="nsew")
+    submitButton.grid(row=0, column=1, sticky="nw")
 
 
 def parseStock(stock : tk.Entry, stockFrame : tk.Frame):
@@ -197,7 +200,7 @@ def parseStock(stock : tk.Entry, stockFrame : tk.Frame):
         buildFindStockViewer(ticker=ticker, frame=stockFrame)
         
 
-def buildFindStockViewer(ticker : yf.Ticker, frame):
+def buildFindStockViewer(ticker : yf.Ticker, frame : tk.Frame):
     print("building stock frame")
     splitted = lastMarketDay.split("-")
     yr=int(splitted[0])
@@ -205,7 +208,22 @@ def buildFindStockViewer(ticker : yf.Ticker, frame):
     day=int(splitted[2].split(" ")[0])
     del splitted
     lastMarketDatetime = datetime.date(year=yr, month=mnth, day=day)
-    history = ticker.history(end=lastMarketDatetime, start=lastMarketDatetime-datetime.timedelta(weeks=4))
+    NUMBEROFWEEKS = "4w"
+    figure = graphBuilder(frame = frame, ticker = ticker, period = NUMBEROFWEEKS)
+    stockLabel = tk.Label(frame, text=f"{ticker.info.get("shortName")}", bg="white", font=("Arial", 20)).grid(row=0,column=2,columnspan=4,sticky="n")
+    stockTimePeriod = tk.Label(frame, text=f"Showing data for past {NUMBEROFWEEKS} weeks", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
+    periodOptions = ["1w", "4w", "1y", "max"]
+    periodChooser = ttk.Combobox(frame, values=periodOptions)
+    periodChooser.grid(row=1, column=7, sticky="n")
+    updateTime = tk.Button(frame, text="Update Time Period", bg="white", command=getTimePeriod).grid(row=1,column=7,sticky="s")
+
+    def getTimePeriod():
+        time = periodChooser.get()
+        graphBuilder(frame=frame, ticker=ticker, period=time)
+
+
+def graphBuilder(frame : tk.Frame, ticker : yf.Ticker, period : str) -> FigureCanvasTkAgg:
+    history = ticker.history(period=period, interval="1d")
     prices=history["Close"]
     dates=prices.keys()
     print(prices,dates)
@@ -221,8 +239,7 @@ def buildFindStockViewer(ticker : yf.Ticker, frame):
     mainGraph.set_xlabel("Date")
     mainGraph.set_ylabel("Price $")
     stockFigure.autofmt_xdate()
-
-
+    return stockGraph
 
 
 def weightsConfigure(rowNums, columnNums):
@@ -231,7 +248,7 @@ def weightsConfigure(rowNums, columnNums):
     for i in range(8):
         homeFrame.grid_columnconfigure(i, weight=columnNums[i])
 
-def backToHome(frame):
+def backToHome(frame : tk.Frame):
     print("CHANGING FRAME TO HOME")
     frame.grid_forget()
     homeFrame.grid(row=0,column=0,sticky="nsew")
