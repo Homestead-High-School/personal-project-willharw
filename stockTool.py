@@ -64,6 +64,7 @@ def buildLeftTickers():
     if(str(datetime.date.today())!=lastMarketDay.split(" ")[0]):
             marketClosed = tk.Label(homeFrame, text="Market still closed", font=("Arial", 9), fg="red", bg="white")
             marketClosed.grid(row=0,column=0, sticky="s", columnspan=2)
+            leftHeader.grid(sticky="n")
 
     
 def buildButtons():
@@ -188,19 +189,14 @@ def parseStock(stock : tk.Entry, stockFrame : tk.Frame):
     except:
         ticker = yf.Ticker(val)
     if (len(ticker.history(period="1m"))==0): 
-        warning = tk.Toplevel(root)
-        warning.geometry("200x100")
-        label = tk.Label(warning, text="Stock not found")
-        button = tk.Button(warning, text="Ok", command=warning.destroy)
-        label.grid(row=0, column=0, sticky="nsew")
-        button.grid(row=1, column=0, sticky="nsew")
-        print(f"{stock} NOT FOUND ERROR")
+        errorMessage(frame=stockFrame, text="STOCK NOT FOUND")
     else:
         print(f"{stock} found")
-        buildFindStockViewer(ticker=ticker, frame=stockFrame)
+        buildFindStockViewer(ticker=val, frame=stockFrame)
         
 
-def buildFindStockViewer(ticker : yf.Ticker, frame : tk.Frame):
+def buildFindStockViewer(ticker : str, frame : tk.Frame):
+    global periodChooser
     print("building stock frame")
     splitted = lastMarketDay.split("-")
     yr=int(splitted[0])
@@ -208,29 +204,46 @@ def buildFindStockViewer(ticker : yf.Ticker, frame : tk.Frame):
     day=int(splitted[2].split(" ")[0])
     del splitted
     lastMarketDatetime = datetime.date(year=yr, month=mnth, day=day)
-    NUMBEROFWEEKS = "4w"
-    figure = graphBuilder(frame = frame, ticker = ticker, period = NUMBEROFWEEKS)
-    stockLabel = tk.Label(frame, text=f"{ticker.info.get("shortName")}", bg="white", font=("Arial", 20)).grid(row=0,column=2,columnspan=4,sticky="n")
-    stockTimePeriod = tk.Label(frame, text=f"Showing data for past {NUMBEROFWEEKS} weeks", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
-    periodOptions = ["1w", "4w", "1y", "max"]
+    startingPeriod = 1
+    tickerYF = yf.Ticker(ticker)
+    figure = graphBuilder(frame = frame, ticker = ticker, start=lastMarketDatetime-datetime.timedelta(weeks=1), end=lastMarketDatetime)
+    stockLabel = tk.Label(frame, text=f"{tickerYF.info.get("shortName")}", bg="white", font=("Arial", 20)).grid(row=0,column=2,columnspan=4,sticky="n")
+    stockTimePeriod = tk.Label(frame, text=f"Showing data for past {startingPeriod} weeks", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
+    periodOptions = ["1 week", "4 weeks", "1 year", "5 years"]
     periodChooser = ttk.Combobox(frame, values=periodOptions)
     periodChooser.grid(row=1, column=7, sticky="n")
-    updateTime = tk.Button(frame, text="Update Time Period", bg="white", command=getTimePeriod).grid(row=1,column=7,sticky="s")
+    updateTime = tk.Button(frame, text="Update Time Period", bg="white", command=lambda : getTimePeriod(frame=frame, ticker = ticker, periodChooser=periodChooser)).grid(row=1,column=7,sticky="s")
 
-    def getTimePeriod():
-        time = periodChooser.get()
-        graphBuilder(frame=frame, ticker=ticker, period=time)
+def getTimePeriod(frame : tk.Frame, periodChooser : ttk.Combobox, ticker : str, marketDate : datetime.date):
+    time = periodChooser.get()
+    start = 0
+    match time:
+        case "1 week":
+            start = marketDate-datetime.timedelta(weeks=1)
+        case "4 weeks":
+            start = marketDate-datetime.timedelta(weeks=4)
+        case "1 year":
+            start = marketDate-datetime.timedelta(weeks=52)
+        case "5 years":
+            start = marketDate-datetime.timedelta(weeks=52*5)
+        case _:
+            errorMessage(frame=frame, text="INVALID TIME, USE DROPDOWN")
 
 
-def graphBuilder(frame : tk.Frame, ticker : yf.Ticker, period : str) -> FigureCanvasTkAgg:
-    history = ticker.history(period=period, interval="1d")
+    graphBuilder(frame=frame, ticker=ticker, end=marketDate, start = start)
+
+def graphBuilder(frame : tk.Frame, ticker : str, start : datetime.date, end : datetime.date) -> FigureCanvasTkAgg:
+    tickerYF = yf.Ticker(ticker)
+    history = tickerYF.history(start=start, end=end, interval = "1d")
+    print(history)
     prices=history["Close"]
     dates=prices.keys()
     print(prices,dates)
     newDates = list()
     for date in dates:
-        brokenDate = str(date).split(" ")[0].split("-")
-        newDates.append(brokenDate[1]+"-"+brokenDate[2])
+        # brokenDate = str(date).split(" ")[0].split("-")
+        # newDates.append(brokenDate[1]+"-"+brokenDate[2])
+        newDates.append(date)
     stockFigure = plt.Figure(figsize=(4,3), dpi=100)
     stockGraph = FigureCanvasTkAgg(stockFigure, frame)
     stockGraph.get_tk_widget().grid(row=1, column=2, columnspan=5, rowspan=4, sticky="nsew")
@@ -241,6 +254,14 @@ def graphBuilder(frame : tk.Frame, ticker : yf.Ticker, period : str) -> FigureCa
     stockFigure.autofmt_xdate()
     return stockGraph
 
+def errorMessage(frame : tk.Frame, text : str):
+    warning = tk.Toplevel(frame)
+    warning.geometry("200x100")
+    label = tk.Label(warning, text=f"{str}")
+    button = tk.Button(warning, text="Ok", command=warning.destroy)
+    label.grid(row=0, column=0, sticky="nsew", columnspan=2)
+    button.grid(row=1, column=0, sticky="nsew", columnspan=2)
+    print(f"{str} ERROR")
 
 def weightsConfigure(rowNums, columnNums):
     for i in range(6):
