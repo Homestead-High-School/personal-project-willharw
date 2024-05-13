@@ -208,28 +208,33 @@ def buildFindStockViewer(ticker : str, frame : tk.Frame):
     tickerYF = yf.Ticker(ticker)
     figure = graphBuilder(frame = frame, ticker = ticker, start=lastMarketDatetime-datetime.timedelta(weeks=1), end=lastMarketDatetime)
     stockLabel = tk.Label(frame, text=f"{tickerYF.info.get("shortName")}", bg="white", font=("Arial", 20)).grid(row=0,column=2,columnspan=4,sticky="n")
-    stockTimePeriod = tk.Label(frame, text=f"Showing data for past {startingPeriod} weeks", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
+    stockTimeFrame = tk.Frame(frame, bg="white").grid(row=0,column=2,columnspan=4,sticky="nsew")
+    stockTimePeriod = tk.Label(stockTimeFrame, text=f"Showing data for past {startingPeriod} weeks", bg="white", font=("Arial", 15)).grid(row=0,column=0,sticky="nsew")
     periodOptions = ["1 week", "4 weeks", "1 year", "5 years"]
-    periodChooser = ttk.Combobox(frame, values=periodOptions)
+    periodChooser = ttk.Combobox(frame, values=periodOptions, state="readonly")
     periodChooser.grid(row=1, column=7, sticky="n")
-    updateTime = tk.Button(frame, text="Update Time Period", bg="white", command=lambda : getTimePeriod(frame=frame, ticker = ticker, periodChooser=periodChooser)).grid(row=1,column=7,sticky="s")
+    updateTime = tk.Button(frame, text="Update Time Period", bg="white", command=lambda : getTimePeriod(frame=frame, ticker = ticker, periodChooser=periodChooser, marketDate=lastMarketDatetime, labelFrame=stockTimeFrame)).grid(row=1,column=7,sticky="s")
 
-def getTimePeriod(frame : tk.Frame, periodChooser : ttk.Combobox, ticker : str, marketDate : datetime.date):
+def getTimePeriod(frame : tk.Frame, periodChooser : ttk.Combobox, ticker : str, marketDate : datetime.date, labelFrame : tk.Frame):
     time = periodChooser.get()
     start = 0
+    labelFrame.grid_forget()
+    timeLabel.grid(labelFrame,)
     match time:
         case "1 week":
             start = marketDate-datetime.timedelta(weeks=1)
+            timeLabel = tk.Label(frame, text="Showing data for past week", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
         case "4 weeks":
             start = marketDate-datetime.timedelta(weeks=4)
+            timeLabel = tk.Label(frame, text="Showing data for past 4 weeks", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
         case "1 year":
             start = marketDate-datetime.timedelta(weeks=52)
+            timeLabel = tk.Label(frame, text="Showing data for past year", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
         case "5 years":
             start = marketDate-datetime.timedelta(weeks=52*5)
+            timeLabel = tk.Label(frame, text="Showing data for past week", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
         case _:
             errorMessage(frame=frame, text="INVALID TIME, USE DROPDOWN")
-
-
     graphBuilder(frame=frame, ticker=ticker, end=marketDate, start = start)
 
 def graphBuilder(frame : tk.Frame, ticker : str, start : datetime.date, end : datetime.date) -> FigureCanvasTkAgg:
@@ -257,7 +262,7 @@ def graphBuilder(frame : tk.Frame, ticker : str, start : datetime.date, end : da
 def errorMessage(frame : tk.Frame, text : str):
     warning = tk.Toplevel(frame)
     warning.geometry("200x100")
-    label = tk.Label(warning, text=f"{str}")
+    label = tk.Label(warning, text=f"{text}")
     button = tk.Button(warning, text="Ok", command=warning.destroy)
     label.grid(row=0, column=0, sticky="nsew", columnspan=2)
     button.grid(row=1, column=0, sticky="nsew", columnspan=2)
