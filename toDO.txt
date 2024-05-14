@@ -1,0 +1,25 @@
+to do list
+
+-add live updates mode
+-bid/ask
+-left info on find stock
+-short percent of float
+-insider holding
+-institution holding
+
+XLK
+XMMO
+VTI
+QQQM
+GOOG
+AMZN
+GM
+SPYV
+VCR
+VHT
+CRWD
+CRMD
+USFR
+IBRX
+MDY
+AMD

@@ -2,6 +2,7 @@ import yfinance as yf
 import tkinter as tk
 from tkinter import ttk
 import datetime
+import time
 import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use("TkAgg")
@@ -19,6 +20,7 @@ title = tk.Label(homeFrame, text="Stock Analysis Tool")
 title.grid(row=1, column=2, columnspan=5, sticky="nsew")
 title.config(font=("Arial", 30), bg="white")
 foundTickers = dict()
+
 
 #building logic
 lastMarketDay = datetime.date.today()
@@ -160,8 +162,8 @@ def buildWatchListHelper(tickers, day):
 
 
 def findStock():
-    homeFrame.grid_forget()
     stockFrame = tk.Frame(root, bg="white")
+    homeFrame.grid_forget()
     stockFrame.grid(row=0,column=0, sticky="nsew")
     rowweights = [1,1,1,1,1,1]
     colweights=[1,1,3,3,3,3,1,1]
@@ -173,15 +175,18 @@ def findStock():
         tk.Label(stockFrame, text=f"{i}", bg="white", fg="white").grid(row=0, column=i, sticky="nsew")
     stock = ""
     enterStock = tk.Entry(stockFrame, textvariable=stock, border=5)
-    enterStock.grid(row=0, column=0, sticky="n")
+    enterStock.grid(row=0, column=0, sticky="nw")
     homeButton = tk.Button(stockFrame, text="Home", command=lambda : backToHome(stockFrame))
-    homeButton.grid(row=0, column=7, sticky="n")
+    homeButton.grid(row=0, column=7, sticky="ne")
     submitButton = tk.Button(stockFrame, text="Submit", command=lambda : parseStock(stock=enterStock, stockFrame=stockFrame))
     submitButton.grid(row=0, column=1, sticky="nw")
 
 
 def parseStock(stock : tk.Entry, stockFrame : tk.Frame):
     val = stock.get().upper().strip()
+    for widget in stockFrame.winfo_children():
+        if(type(widget)==tk.Label or type(widget)==tk.Frame):
+            widget.grid_remove()
     ticker = 0
     try:
         if(foundTickers[val]!=None):
@@ -208,52 +213,90 @@ def buildFindStockViewer(ticker : str, frame : tk.Frame):
     tickerYF = yf.Ticker(ticker)
     figure = graphBuilder(frame = frame, ticker = ticker, start=lastMarketDatetime-datetime.timedelta(weeks=1), end=lastMarketDatetime)
     stockLabel = tk.Label(frame, text=f"{tickerYF.info.get("shortName")}", bg="white", font=("Arial", 20)).grid(row=0,column=2,columnspan=4,sticky="n")
-    stockTimeFrame = tk.Frame(frame, bg="white").grid(row=0,column=2,columnspan=4,sticky="nsew")
-    stockTimePeriod = tk.Label(stockTimeFrame, text=f"Showing data for past {startingPeriod} weeks", bg="white", font=("Arial", 15)).grid(row=0,column=0,sticky="nsew")
-    periodOptions = ["1 week", "4 weeks", "1 year", "5 years"]
-    periodChooser = ttk.Combobox(frame, values=periodOptions, state="readonly")
-    periodChooser.grid(row=1, column=7, sticky="n")
-    updateTime = tk.Button(frame, text="Update Time Period", bg="white", command=lambda : getTimePeriod(frame=frame, ticker = ticker, periodChooser=periodChooser, marketDate=lastMarketDatetime, labelFrame=stockTimeFrame)).grid(row=1,column=7,sticky="s")
+    stockInfo = tickerYF.info
+    #print(stockInfo)
+    isStock = False
+    try:
+        stockBio = tk.Label(frame, text=f"Country: {stockInfo["country"]}\nIndustry: {stockInfo["industry"]}\nFirst Trading Date: {time.strftime("%Y-%m-%d", time.localtime(stockInfo["firstTradeDateEpochUtc"]))}", bg="white", font=("Arial",10)).grid(row=0, column=2, columnspan=4, sticky="s")
+        isStock = True
+    except:
+        stockBio = tk.Label(frame, text=f"Fund (collection of stocks)\nFirst Trading Date: {time.strftime("%Y-%m-%d", time.localtime(stockInfo["firstTradeDateEpochUtc"]))}", bg="white", font=("Arial",10)).grid(row=0, column=2, columnspan=4, sticky="s")
+    buildLeftStockInfo(frame=frame, info=stockInfo, isStock=isStock)
+    if(lastMarketDatetime==datetime.date.today()):
+        periodOptions = ["Today","1 week", "4 weeks", "1 year", "5 years"]
+    else:
+        periodOptions = ["1 week", "4 weeks", "1 year", "5 years"]
+    startingChoice = "1 week"
+    periodChooser = ttk.Combobox(frame, values=periodOptions, textvariable=startingChoice, state="readonly")
+    periodChooser.grid(row=0, column=7, sticky="s")
+    updateTime = tk.Button(frame, text="Update Time Period", bg="white", command=lambda : getTimePeriod(frame=frame, ticker = ticker, button=periodChooser, marketDate=lastMarketDatetime)).grid(row=1,column=7,sticky="n")
 
-def getTimePeriod(frame : tk.Frame, periodChooser : ttk.Combobox, ticker : str, marketDate : datetime.date, labelFrame : tk.Frame):
-    time = periodChooser.get()
+def buildLeftStockInfo(frame : tk.Frame, info : dict, isStock : bool):
+    ticker = info["symbol"]
+    leftInfoFrame = tk.Frame(frame, bg="white").grid(row=1, column=0, rowspan=6)
+    for key, value in info.items():
+        print(key, value)
+    if(isStock):
+        tck = yf.Ticker(ticker)
+        print(tck.major_holders)
+        print(tck.insider_transactions) #over the past yr maybe calculate how many shares bought and how many sold
+        rec = tk.Label(leftInfoFrame, text=f"Recommendation : {info["recommendationKey"]}", bg="white").grid(row=1, column=0,sticky="w")
+        #dividend yield
+        #forward PE
+        #average volume
+        #market cap
+        #52 week high low
+        #targetHighPrice, targetLowPrice, targetMedianPrice
+        #recommendationKey
+    else:
+        typeOfFund = tk.Label(leftInfoFrame, text=f"Security type : {info["legalType"]}", bg="white").grid(row=1, column=0,sticky="w")
+        categoryOfFund = tk.Label(leftInfoFrame, text=f"Category : {info["category"]}", bg="white").grid(row=2,column=0,sticky="w")
+        avgVolume = tk.Label(leftInfoFrame, text=f"Average volume : {info["averageVolume"]}", bg="white").grid(row=3,column=0,sticky="w")
+        totalAssets = tk.Label(leftInfoFrame, text=f"Total assets : ${info["totalAssets"]}", bg="white").grid(row=4,column=0, sticky="w")
+        peRatio = tk.Label(leftInfoFrame, text=f"Trailing PE Ratio : {info["trailingPE"]}", bg="white").grid(row=5, column=0,sticky="w")
+        lowHigh = tk.Label(leftInfoFrame, text=f"Year High/Low : {info["fiftyTwoWeekHigh"]} / {info["fiftyTwoWeekLow"]}", bg="white").grid(row=6, column=0,sticky="w")
+        ytdReturn = tk.Label(leftInfoFrame, text=f"YTD Return : {round(info["ytdReturn"], 4)*100}%", bg="white").grid(row=7, column=0,sticky="w")
+        
+
+
+def getTimePeriod(frame : tk.Frame, button : ttk.Combobox, ticker : str, marketDate : datetime.date):
+    time = button.get()
     start = 0
-    labelFrame.grid_forget()
-    timeLabel.grid(labelFrame,)
+    timeLabel = tk.Label(frame, text="", bg="white", font=("Arial", 15))
+    timeLabel.grid(row=1,column=2,sticky="nsew")
     match time:
+        case "Today":
+            start = marketDate
+            timeLabel.config(text="Showing data for today")
         case "1 week":
             start = marketDate-datetime.timedelta(weeks=1)
-            timeLabel = tk.Label(frame, text="Showing data for past week", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
+            timeLabel.config(text="Showing data for past week")
         case "4 weeks":
             start = marketDate-datetime.timedelta(weeks=4)
-            timeLabel = tk.Label(frame, text="Showing data for past 4 weeks", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
+            timeLabel.config(text="Showing data for past 4 weeks")
         case "1 year":
             start = marketDate-datetime.timedelta(weeks=52)
-            timeLabel = tk.Label(frame, text="Showing data for past year", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
+            timeLabel.config(text="Showing data for past year")
         case "5 years":
             start = marketDate-datetime.timedelta(weeks=52*5)
-            timeLabel = tk.Label(frame, text="Showing data for past week", bg="white", font=("Arial", 15)).grid(row=0,column=2,columnspan=4,sticky="s")
+            timeLabel.config(text="Showing data for past 5 years")
         case _:
             errorMessage(frame=frame, text="INVALID TIME, USE DROPDOWN")
     graphBuilder(frame=frame, ticker=ticker, end=marketDate, start = start)
 
 def graphBuilder(frame : tk.Frame, ticker : str, start : datetime.date, end : datetime.date) -> FigureCanvasTkAgg:
     tickerYF = yf.Ticker(ticker)
-    history = tickerYF.history(start=start, end=end, interval = "1d")
-    print(history)
+    if(start==end):
+        history = tickerYF.history(period="1d", interval = "1m")
+    else:
+        history = tickerYF.history(start=start, end=end, interval = "1d")
     prices=history["Close"]
     dates=prices.keys()
-    print(prices,dates)
-    newDates = list()
-    for date in dates:
-        # brokenDate = str(date).split(" ")[0].split("-")
-        # newDates.append(brokenDate[1]+"-"+brokenDate[2])
-        newDates.append(date)
     stockFigure = plt.Figure(figsize=(4,3), dpi=100)
     stockGraph = FigureCanvasTkAgg(stockFigure, frame)
     stockGraph.get_tk_widget().grid(row=1, column=2, columnspan=5, rowspan=4, sticky="nsew")
     mainGraph = stockFigure.add_subplot(111)
-    mainGraph.plot(newDates, prices, color="red")
+    mainGraph.plot(dates, prices, color="red")
     mainGraph.set_xlabel("Date")
     mainGraph.set_ylabel("Price $")
     stockFigure.autofmt_xdate()
