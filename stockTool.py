@@ -21,6 +21,7 @@ title.grid(row=1, column=2, columnspan=5, sticky="nsew")
 title.config(font=("Arial", 30), bg="white")
 foundTickers = dict()
 
+leftStockInfoFrame = tk.Frame(root, bg="red")
 
 #building logic
 lastMarketDay = datetime.date.today()
@@ -178,16 +179,21 @@ def findStock():
     enterStock.grid(row=0, column=0, sticky="nw")
     homeButton = tk.Button(stockFrame, text="Home", command=lambda : backToHome(stockFrame))
     homeButton.grid(row=0, column=7, sticky="ne")
-    submitButton = tk.Button(stockFrame, text="Submit", command=lambda : parseStock(stock=enterStock, stockFrame=stockFrame))
+    submitButton = tk.Button(stockFrame, text="Find Stock Ticker", command=lambda : parseStock(stock=enterStock, stockFrame=stockFrame))
     submitButton.grid(row=0, column=1, sticky="nw")
 
 
 def parseStock(stock : tk.Entry, stockFrame : tk.Frame):
     val = stock.get().upper().strip()
+
     for widget in stockFrame.winfo_children():
         if(type(widget)==tk.Label or type(widget)==tk.Frame):
+
+            for subwidget in widget.winfo_children():
+                subwidget.grid_remove()
             widget.grid_remove()
-    ticker = 0
+
+    ticker = None
     try:
         if(foundTickers[val]!=None):
             ticker = foundTickers[val]
@@ -233,30 +239,43 @@ def buildFindStockViewer(ticker : str, frame : tk.Frame):
 
 def buildLeftStockInfo(frame : tk.Frame, info : dict, isStock : bool):
     ticker = info["symbol"]
-    leftInfoFrame = tk.Frame(frame, bg="white").grid(row=1, column=0, rowspan=6)
-    for key, value in info.items():
-        print(key, value)
+    global leftStockInfoFrame
+    print(" 1 STOCK INFO FRAME IS A",type(leftStockInfoFrame))
+    leftStockInfoFrame.children.clear()
+    print(" 2 STOCK INFO FRAME IS A",type(leftStockInfoFrame))
+    leftStockInfoFrame = tk.Frame(frame, bg="white", highlightcolor="yellow")
+    leftStockInfoFrame.grid(row=1, column=0, rowspan=6)
+    print(" 3 STOCK INFO FRAME IS A",type(leftStockInfoFrame))
+    
     if(isStock):
         tck = yf.Ticker(ticker)
-        print(tck.major_holders)
-        print(tck.insider_transactions) #over the past yr maybe calculate how many shares bought and how many sold
-        rec = tk.Label(leftInfoFrame, text=f"Recommendation : {info["recommendationKey"]}", bg="white").grid(row=1, column=0,sticky="w")
-        #dividend yield
-        #forward PE
-        #average volume
-        #market cap
-        #52 week high low
-        #targetHighPrice, targetLowPrice, targetMedianPrice
-        #recommendationKey
-    else:
-        typeOfFund = tk.Label(leftInfoFrame, text=f"Security type : {info["legalType"]}", bg="white").grid(row=1, column=0,sticky="w")
-        categoryOfFund = tk.Label(leftInfoFrame, text=f"Category : {info["category"]}", bg="white").grid(row=2,column=0,sticky="w")
-        avgVolume = tk.Label(leftInfoFrame, text=f"Average volume : {info["averageVolume"]}", bg="white").grid(row=3,column=0,sticky="w")
-        totalAssets = tk.Label(leftInfoFrame, text=f"Total assets : ${info["totalAssets"]}", bg="white").grid(row=4,column=0, sticky="w")
-        peRatio = tk.Label(leftInfoFrame, text=f"Trailing PE Ratio : {info["trailingPE"]}", bg="white").grid(row=5, column=0,sticky="w")
-        lowHigh = tk.Label(leftInfoFrame, text=f"Year High/Low : {info["fiftyTwoWeekHigh"]} / {info["fiftyTwoWeekLow"]}", bg="white").grid(row=6, column=0,sticky="w")
-        ytdReturn = tk.Label(leftInfoFrame, text=f"YTD Return : {round(info["ytdReturn"], 4)*100}%", bg="white").grid(row=7, column=0,sticky="w")
+        #print(tck.major_holders)
+        #print(tck.insider_transactions) #over the past yr maybe calculate how many shares bought and how many sold
+        try:
+            print(tck.insider_transactions["Shares"])
+            print(tck.insider_transactions["Text"])
+            print(tck.insider_transactions["Start Date"])
+            for text in tck.insider_transactions["Text"]:
+                if str(text).find("Sale")>-1:
+
+                elif str(text).find("Purchase")
+        except:
+            print("No insider transactions found")
         
+        infoList = ["recommendationKey", "dividendYield", "forwardPE", "averageVolume", "marketCap", "fiftyTwoWeekHigh", "fiftyTwoWeekLow", "targetMedianPrice"]
+
+        for i, value in enumerate(infoList):
+            try:
+                tk.Label(leftStockInfoFrame, text=f"{value} : {info[value]}", bg="white", border=3, relief="ridge").grid(row=i+1, column=0, sticky="ew")
+            except:
+                tk.Label(leftStockInfoFrame, text=f"{value} : UNAVAILABLE", bg="white", border=3, relief="ridge").grid(row=i+1, column=0, sticky="ew")
+    else:
+        infoList = ["legalType", "category", "averageVolume", "totalAssets", "trailingPE", "fiftyTwoWeekHigh", "fiftyTwoWeekLow", "ytdReturn"]
+        for i, value in enumerate(infoList):
+            try:
+                tk.Label(leftStockInfoFrame, text=f"{value} : {info[value]}", bg="white", border=3, relief="ridge").grid(row=i+1, column=0, sticky="we")
+            except:
+                tk.Label(leftStockInfoFrame, text=f"{value} : UNAVAILABLE", bg="white", border=3, relief="ridge").grid(row=i+1, column=0, sticky="we")
 
 
 def getTimePeriod(frame : tk.Frame, button : ttk.Combobox, ticker : str, marketDate : datetime.date):
