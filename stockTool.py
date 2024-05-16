@@ -22,6 +22,7 @@ title.config(font=("Arial", 30), bg="white")
 foundTickers = dict()
 
 leftStockInfoFrame = tk.Frame(root, bg="red")
+leftWatchListInfoFrame = tk.Frame(root, bg="blue")
 
 #building logic
 lastMarketDay = datetime.date.today()
@@ -231,12 +232,9 @@ def findStockBuilder(ticker : str, frame : tk.Frame):
 def findStockLeftInfoBuilder(frame : tk.Frame, info : dict, isStock : bool):
     ticker = info["symbol"]
     global leftStockInfoFrame
-    print(" 1 STOCK INFO FRAME IS A",type(leftStockInfoFrame))
     leftStockInfoFrame.children.clear()
-    print(" 2 STOCK INFO FRAME IS A",type(leftStockInfoFrame))
     leftStockInfoFrame = tk.Frame(frame, bg="white", highlightcolor="yellow")
     leftStockInfoFrame.grid(row=1, column=0, rowspan=6)
-    print(" 3 STOCK INFO FRAME IS A",type(leftStockInfoFrame))
     
     if(isStock):
         tck = yf.Ticker(ticker)
@@ -335,13 +333,16 @@ def watchList():
     homeButton = tk.Button(watchListFrame, text="Home", command=lambda : backToHome(watchListFrame), border=5, relief="raised")
     homeButton.grid(row=0, column=7, sticky="ne")
     watchListLeftBuilder(watchListFrame)
+    tk.Label(watchListFrame, text="Your watchlist", bg="white", font=("Arial", 20)).grid(row=0, column=3, columnspan=2)
 
 
 def watchListLeftBuilder(frame : tk.Frame):
     file = open("watchlist.txt")
     tickers = file.readlines()
+    plaintexttickers = []
     for i, tckr in enumerate(tickers):
         tckr = tckr.strip()
+        plaintexttickers.append(tckr)
         try:
             tickers[i]=foundTickers[tckr]
         except:
@@ -351,9 +352,12 @@ def watchListLeftBuilder(frame : tk.Frame):
             except:
                 errorMessage(frame=frame, text="INVALID TICKER IN WATCHLIST")
     tickersFrame = tk.Frame(frame, bg="white")
-    tickersFrame.grid(row=0, column=0, rowspan=6, columnspan=2, sticky="news")
+    tickersFrame.grid(row=0, column=0, rowspan=6, columnspan=1, sticky="news")
+    tickersFrame.grid_columnconfigure(0, weight=1)
     for i, ticker in enumerate(tickers):
-        tk.Label(bg="white", text=f"{ticker.info["shortName"]}").grid(row=i, column=0, sticky="ew")
+        tickersFrame.grid_rowconfigure(i, weight=1)
+        print("being gridded:", ticker, "at", i)
+        tk.Label(master=tickersFrame, bg="white", text=f"{plaintexttickers[i]}-{ticker.info["shortName"]}").grid(row=i, column=0, sticky="nw")
 
 def errorMessage(frame : tk.Frame, text : str):
     warning = tk.Toplevel(frame)
@@ -372,6 +376,10 @@ def homeWeightsConfigure(rowNums, columnNums):
 
 def backToHome(frame : tk.Frame):
     print("CHANGING FRAME TO HOME")
+    for widget in frame.winfo_children():
+        for subwidget in widget.winfo_children():
+            subwidget.grid_forget()
+        widget.grid_forget()
     frame.grid_forget()
     homeFrame.grid(row=0,column=0,sticky="nsew")
 
