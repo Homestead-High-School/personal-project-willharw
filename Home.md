@@ -14,6 +14,7 @@
 |4|Worked on the find stock button and frame. Learning to use matplotlib to graph stock data. Only displays last week at the moment.|
 |5|Added functionality to view multiple weeks work of data. Added user select button to view different periods of time.|
 |6|Worked on adding more context details to stock info displayed in findStock|
+|7|Finished findStock menu, started to work on watchlist. Learning file i/o in python|
 
 
 <hr>

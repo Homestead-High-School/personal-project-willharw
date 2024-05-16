@@ -1,7 +1,7 @@
 import stockTool
 
 stockTool.setLastMarketDay()
-stockTool.buildLeftTickers()
-stockTool.buildButtons()
-stockTool.buildTopwatchlist()
+stockTool.homeIndexBuilder()
+stockTool.homeButtonBuilder()
+stockTool.homeBuildWatchList()
 stockTool.start()
