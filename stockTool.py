@@ -264,7 +264,7 @@ def findStockLeftInfoBuilder(frame : tk.Frame, info : dict, isStock : bool):
         except:
             print("No insider transactions found")
         
-        infoList = ["recommendationKey", "dividendYield", "forwardPE", "averageVolume", "marketCap", "fiftyTwoWeekHigh", "fiftyTwoWeekLow", "targetMedianPrice"]
+        infoList = ["recommendationKey", "dividendYield", "forwardPE", "shortPercentOfFloat","averageVolume", "marketCap", "fiftyTwoWeekHigh", "fiftyTwoWeekLow", "targetMedianPrice"]
 
         for i, value in enumerate(infoList):
             try:
@@ -324,7 +324,7 @@ def watchList():
     watchListFrame = tk.Frame(root, bg="white")
     homeFrame.grid_forget()
     watchListFrame.grid(row=0, column=0, sticky="nsew")
-    colweights = [1,1,1,1,1,1,1,1]
+    colweights = [1,5,2,2,2,2,2,2]
     rowweights = [1,1,1,1,1,1]
     for i in range(6):
         watchListFrame.grid_rowconfigure(i, weight=rowweights[i])
@@ -332,12 +332,17 @@ def watchList():
         watchListFrame.grid_columnconfigure(i, weight=colweights[i])
     homeButton = tk.Button(watchListFrame, text="Home", command=lambda : backToHome(watchListFrame), border=5, relief="raised")
     homeButton.grid(row=0, column=7, sticky="ne")
+    addButton = tk.Button(watchListFrame, text="Add stock to watchlist", command = lambda : watchListAdd(frame=watchListFrame), border=5, relief="raised")
+    addButton.grid(row=3, column=3)
     watchListLeftBuilder(watchListFrame)
-    tk.Label(watchListFrame, text="Your watchlist", bg="white", font=("Arial", 20)).grid(row=0, column=3, columnspan=2)
-
+    tk.Label(watchListFrame, text="Your watchlist", bg="white", font=("Arial", 20)).grid(row=0, column=2, columnspan=2)
+    tk.Button(watchListFrame, text="Refresh", command = lambda : watchListLeftBuilder(watchListFrame), border=5, relief="raised").grid(row=1,column=7, sticky="ne")
 
 def watchListLeftBuilder(frame : tk.Frame):
     file = open("watchlist.txt")
+    for widget in frame.winfo_children():
+        if(widget == tk.Label):
+            widget.destroy()
     tickers = file.readlines()
     plaintexttickers = []
     for i, tckr in enumerate(tickers):
@@ -356,8 +361,44 @@ def watchListLeftBuilder(frame : tk.Frame):
     tickersFrame.grid_columnconfigure(0, weight=1)
     for i, ticker in enumerate(tickers):
         tickersFrame.grid_rowconfigure(i, weight=1)
-        print("being gridded:", ticker, "at", i)
-        tk.Label(master=tickersFrame, bg="white", text=f"{plaintexttickers[i]}-{ticker.info["shortName"]}").grid(row=i, column=0, sticky="nw")
+        #print(ticker.info)
+        tk.Label(master=tickersFrame, bg="white", text=f"{plaintexttickers[i]}-{ticker.info["shortName"]}").grid(row=i, column=1, sticky="nw")
+        stockData = ticker.history("1d")
+        try:
+            percentchange = round(((float(stockData["Close"][lastMarketDay])/float(stockData["Open"][lastMarketDay]))-1)*100, 2)
+        except:
+            percentchange = 34402
+        percentLabel = tk.Label(master=tickersFrame, bg="white", text=f"{percentchange}%")
+        percentLabel.grid(row=i, column=0, sticky="n")
+        if(percentchange<0):
+            percentLabel.config(fg="red")
+        elif(percentchange>0):
+            percentLabel.config(fg="green")
+def watchListAdd(frame : tk.Frame):
+    addWindow = tk.Toplevel(frame)
+    addWindow.geometry("200x100")
+    tk.Label(addWindow, text="Input Ticker: ", bg="white").grid(row=0,column=0, sticky="nsew")
+    var = ""
+    entry = tk.Entry(addWindow, textvariable=var, border=5)
+    entry.grid(row=1,column=0,sticky="nsew")
+    submitButton = tk.Button(addWindow, text="Submit", command=lambda:watchListSubmitter(frame=frame, entry=entry, toplevel=addWindow))
+    submitButton.grid(row=2,column=0,sticky="nsew")
+def watchListSubmitter(frame : tk.Frame, entry : tk.Entry, toplevel = tk.Toplevel):
+    stock = entry.get().upper().strip()
+    try:
+        foundTickers[stock]
+        errorMessage(frame=frame, text="ALREADY IN HERE SILLY")
+    except:
+        try:
+            something = yf.Ticker(ticker=stock)
+            test=something.info["bid"]
+            toplevel.destroy()
+            file = open("watchlist.txt", "a")
+            file.write("\n"+stock)
+            file.close()
+        except:
+            errorMessage(frame=frame, text="INVALID STOCK")
+    watchListLeftBuilder(frame=frame)
 
 def errorMessage(frame : tk.Frame, text : str):
     warning = tk.Toplevel(frame)

@@ -1,11 +1,8 @@
 to do list
 
--add live updates mode
--bid/ask
--left info on find stock
 -short percent of float
--insider holding
--institution holding
+-watchlist
+-compare
 
 XLK
 XMMO
