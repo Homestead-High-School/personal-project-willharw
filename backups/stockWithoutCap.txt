@@ -1,0 +1,6368 @@
+A|Healthcare
+AA|Basic Materials
+AACG|Consumer Defensive
+AACI|Financial Services
+AACIW|Financial Services
+AACT|Financial Services
+AADI|Healthcare
+AAGR|Consumer Defensive
+AAGRW|Consumer Defensive
+AAL|Industrials
+AAMC|Financial Services
+AAME|Financial Services
+AAN|Industrials
+AAOI|Technology
+AAON|Industrials
+AAP|Consumer Cyclical
+AAPL|Technology
+AAT|Real Estate
+AB|Financial Services
+ABAT|Basic Materials
+ABBV|Healthcare
+ABCB|Financial Services
+ABCL|Healthcare
+ABEO|Healthcare
+ABEV|Consumer Defensive
+ABG|Consumer Cyclical
+ABIO|Healthcare
+ABL|Financial Services
+ABLV|Communication Services
+ABM|Industrials
+ABNB|Consumer Cyclical
+ABOS|Healthcare
+ABR|Real Estate
+ABSI|Healthcare
+ABT|Healthcare
+ABTS|Financial Services
+ABUS|Healthcare
+ABVC|Healthcare
+ABVX|Healthcare
+AC|Financial Services
+ACA|Industrials
+ACAB|Financial Services
+ACABU|Financial Services
+ACABW|Financial Services
+ACAC|Financial Services
+ACAD|Healthcare
+ACB|Healthcare
+ACBAW|Financial Services
+ACCD|Healthcare
+ACCO|Industrials
+ACDC|Energy
+ACEL|Consumer Cyclical
+ACET|Healthcare
+ACGL|Financial Services
+ACGLN|Financial Services
+ACGLO|Financial Services
+ACHC|Healthcare
+ACHL|Healthcare
+ACHR|Industrials
+ACHV|Healthcare
+ACI|Consumer Defensive
+ACIC|Financial Services
+ACIU|Healthcare
+ACIW|Technology
+ACLS|Technology
+ACLX|Healthcare
+ACM|Industrials
+ACMR|Technology
+ACN|Technology
+ACNB|Financial Services
+ACNT|Basic Materials
+ACON|Healthcare
+ACONW|Healthcare
+ACP|Financial Services
+ACR|Real Estate
+ACRE|Real Estate
+ACRS|Healthcare
+ACRV|Healthcare
+ACST|Healthcare
+ACT|Financial Services
+ACTG|Industrials
+ACU|Consumer Defensive
+ACV|Financial Services
+ACVA|Consumer Cyclical
+ACXP|Healthcare
+ADAG|Healthcare
+ADAP|Healthcare
+ADBE|Technology
+ADC|Real Estate
+ADCT|Healthcare
+ADD|Communication Services
+ADEA|Technology
+ADI|Technology
+ADIL|Healthcare
+ADM|Consumer Defensive
+ADMA|Healthcare
+ADN|Utilities
+ADNT|Consumer Cyclical
+ADNWW|Utilities
+ADP|Industrials
+ADPT|Healthcare
+ADRT|Financial Services
+ADSE|Industrials
+ADSEW|Industrials
+ADSK|Technology
+ADT|Industrials
+ADTH|Communication Services
+ADTHW|Communication Services
+ADTN|Technology
+ADTX|Healthcare
+ADUS|Healthcare
+ADV|Communication Services
+ADVM|Healthcare
+ADX|Financial Services
+ADXN|Healthcare
+AE|Energy
+AEAE|Financial Services
+AEE|Utilities
+AEF|Financial Services
+AEG|Financial Services
+AEHL|Industrials
+AEHR|Technology
+AEI|Real Estate
+AEIS|Industrials
+AEM|Basic Materials
+AEMD|Healthcare
+AENT|Communication Services
+AENTW|Communication Services
+AEO|Consumer Cyclical
+AEON|Healthcare
+AEP|Utilities
+AER|Industrials
+AERT|Industrials
+AERTW|Industrials
+AES|Utilities
+AESI|Energy
+AEVA|Technology
+AEYE|Technology
+AEZS|Healthcare
+AFAR|Financial Services
+AFB|Financial Services
+AFBI|Financial Services
+AFCG|Real Estate
+AFG|Financial Services
+AFJK|Financial Services
+AFJKU|Financial Services
+AFL|Financial Services
+AFMD|Healthcare
+AFRI|Consumer Defensive
+AFRIW|Consumer Defensive
+AFRM|Technology
+AFT|Financial Services
+AFYA|Consumer Defensive
+AG|Basic Materials
+AGAE|Communication Services
+AGBA|Financial Services
+AGBAW|Financial Services
+AGCO|Industrials
+AGEN|Healthcare
+AGFY|Industrials
+AGI|Basic Materials
+AGIO|Healthcare
+AGL|Healthcare
+AGM|Financial Services
+AGMH|Technology
+AGNC|Real Estate
+AGNCL|Real Estate
+AGNCM|Real Estate
+AGNCN|Real Estate
+AGNCO|Real Estate
+AGNCP|Real Estate
+AGO|Financial Services
+AGR|Utilities
+AGRI|Consumer Defensive
+AGRIW|Consumer Defensive
+AGRO|Consumer Defensive
+AGS|Consumer Cyclical
+AGX|Industrials
+AGYS|Technology
+AHCO|Healthcare
+AHG|Healthcare
+AHH|Real Estate
+AHR|Real Estate
+AHT|Real Estate
+AI|Technology
+AIF|Financial Services
+AIG|Financial Services
+AIH|Healthcare
+AIHS|Financial Services
+AILE|Technology
+AILEW|Technology
+AIM|Healthcare
+AIMAU|Financial Services
+AIMAW|Financial Services
+AIMD|Healthcare
+AIMDW|Healthcare
+AIN|Consumer Cyclical
+AINC|Financial Services
+AIP|Technology
+AIR|Industrials
+AIRC|Real Estate
+AIRE|Real Estate
+AIRG|Technology
+AIRI|Industrials
+AIRJ|Industrials
+AIRJW|Industrials
+AIRS|Healthcare
+AIRT|Industrials
+AIRTP|Industrials
+AISP|Technology
+AISPW|Technology
+AIT|Industrials
+AITR|Financial Services
+AITRU|Financial Services
+AIU|Consumer Defensive
+AIV|Real Estate
+AIXI|Technology
+AIZ|Financial Services
+AJG|Financial Services
+AJX|Real Estate
+AKA|Consumer Cyclical
+AKAM|Technology
+AKAN|Healthcare
+AKBA|Healthcare
+AKLI|Healthcare
+AKR|Real Estate
+AKRO|Healthcare
+AKTS|Technology
+AKTX|Healthcare
+AKYA|Healthcare
+AL|Industrials
+ALAB|Technology
+ALAR|Technology
+ALB|Basic Materials
+ALBT|Real Estate
+ALC|Healthcare
+ALCE|Utilities
+ALCO|Consumer Defensive
+ALCY|Financial Services
+ALDX|Healthcare
+ALE|Utilities
+ALEC|Healthcare
+ALEX|Real Estate
+ALG|Industrials
+ALGM|Technology
+ALGN|Healthcare
+ALGS|Healthcare
+ALGT|Industrials
+ALHC|Healthcare
+ALIM|Healthcare
+ALIT|Technology
+ALK|Industrials
+ALKS|Healthcare
+ALKT|Technology
+ALL|Financial Services
+ALLE|Industrials
+ALLG|Consumer Cyclical
+ALLK|Healthcare
+ALLO|Healthcare
+ALLR|Healthcare
+ALLT|Technology
+ALLY|Financial Services
+ALNT|Technology
+ALNY|Healthcare
+ALOT|Technology
+ALPN|Healthcare
+ALPP|Industrials
+ALRM|Technology
+ALRN|Healthcare
+ALRS|Financial Services
+ALSA|Financial Services
+ALSN|Consumer Cyclical
+ALT|Healthcare
+ALTG|Industrials
+ALTI|Financial Services
+ALTM|Basic Materials
+ALTO|Basic Materials
+ALTR|Technology
+ALUR|Healthcare
+ALV|Consumer Cyclical
+ALVO|Healthcare
+ALVR|Healthcare
+ALX|Real Estate
+ALXO|Healthcare
+ALZN|Healthcare
+AM|Energy
+AMAL|Financial Services
+AMAT|Technology
+AMBA|Technology
+AMBC|Financial Services
+AMBI|Industrials
+AMBO|Consumer Defensive
+AMBP|Consumer Cyclical
+AMC|Communication Services
+AMCR|Consumer Cyclical
+AMCX|Communication Services
+AMD|Technology
+AME|Industrials
+AMED|Healthcare
+AMG|Financial Services
+AMGN|Healthcare
+AMH|Real Estate
+AMIX|Healthcare
+AMK|Financial Services
+AMKR|Technology
+AMLI|Basic Materials
+AMLX|Healthcare
+AMN|Healthcare
+AMP|Financial Services
+AMPG|Technology
+AMPGW|Technology
+AMPH|Healthcare
+AMPL|Technology
+AMPS|Utilities
+AMPX|Industrials
+AMPY|Energy
+AMR|Basic Materials
+AMRC|Industrials
+AMRK|Financial Services
+AMRN|Healthcare
+AMRX|Healthcare
+AMS|Healthcare
+AMSC|Industrials
+AMSF|Financial Services
+AMST|Technology
+AMSWA|Technology
+AMT|Real Estate
+AMTB|Financial Services
+AMTD|Financial Services
+AMTX|Energy
+AMWD|Consumer Cyclical
+AMWL|Healthcare
+AMX|Communication Services
+AMZN|Consumer Cyclical
+AN|Consumer Cyclical
+ANAB|Healthcare
+ANDE|Consumer Defensive
+ANEB|Healthcare
+ANET|Technology
+ANF|Consumer Cyclical
+ANGH|Communication Services
+ANGHW|Communication Services
+ANGI|Communication Services
+ANGO|Healthcare
+ANIK|Healthcare
+ANIP|Healthcare
+ANIX|Healthcare
+ANL|Healthcare
+ANNX|Healthcare
+ANRO|Healthcare
+ANSC|Financial Services
+ANSS|Technology
+ANTE|Communication Services
+ANTX|Healthcare
+ANVS|Healthcare
+ANY|Technology
+AOD|Financial Services
+AOGO|Financial Services
+AOGOW|Financial Services
+AOMR|Real Estate
+AON|Financial Services
+AONC|Healthcare
+AONCW|Healthcare
+AORT|Healthcare
+AOS|Industrials
+AOSL|Technology
+AOUT|Consumer Cyclical
+AP|Industrials
+APA|Energy
+APAM|Financial Services
+APCA|Financial Services
+APCX|Technology
+APD|Basic Materials
+APDN|Healthcare
+APEI|Consumer Defensive
+APG|Industrials
+APGE|Healthcare
+APH|Technology
+API|Technology
+APLD|Financial Services
+APLE|Real Estate
+APLM|Healthcare
+APLS|Healthcare
+APLT|Healthcare
+APM|Healthcare
+APO|Financial Services
+APOG|Industrials
+APP|Technology
+APPF|Technology
+APPN|Technology
+APPS|Technology
+APRE|Healthcare
+APT|Industrials
+APTO|Healthcare
+APTV|Consumer Cyclical
+APVO|Healthcare
+APWC|Industrials
+APXI|Financial Services
+APYX|Healthcare
+AQB|Consumer Defensive
+AQMS|Industrials
+AQN|Utilities
+AQNU|Utilities
+AQST|Healthcare
+AQU|Financial Services
+AR|Energy
+ARAY|Healthcare
+ARBB|Technology
+ARBE|Technology
+ARBEW|Technology
+ARBK|Financial Services
+ARC|Industrials
+ARCB|Industrials
+ARCC|Financial Services
+ARCH|Basic Materials
+ARCO|Consumer Cyclical
+ARCT|Healthcare
+ARDC|Financial Services
+ARDX|Healthcare
+ARE|Real Estate
+AREB|Consumer Cyclical
+AREC|Basic Materials
+AREN|Communication Services
+ARES|Financial Services
+ARGX|Healthcare
+ARHS|Consumer Cyclical
+ARI|Real Estate
+ARIS|Utilities
+ARKO|Consumer Cyclical
+ARKOW|Consumer Cyclical
+ARKR|Consumer Cyclical
+ARL|Real Estate
+ARLO|Industrials
+ARLP|Energy
+ARM|Technology
+ARMK|Industrials
+ARMN|Basic Materials
+ARMP|Healthcare
+AROC|Energy
+AROW|Financial Services
+ARQ|Industrials
+ARQQ|Technology
+ARQQW|Technology
+ARQT|Healthcare
+ARR|Real Estate
+ARRY|Technology
+ARTL|Healthcare
+ARTLW|Healthcare
+ARTNA|Utilities
+ARTW|Industrials
+ARVN|Healthcare
+ARW|Technology
+ARWR|Healthcare
+ARYD|Financial Services
+AS|Consumer Cyclical
+ASA|Financial Services
+ASAI|Consumer Defensive
+ASAN|Technology
+ASB|Financial Services
+ASC|Industrials
+ASCB|Financial Services
+ASCBW|Financial Services
+ASG|Financial Services
+ASGN|Technology
+ASH|Basic Materials
+ASIX|Basic Materials
+ASLE|Industrials
+ASLN|Healthcare
+ASM|Basic Materials
+ASMB|Healthcare
+ASML|Technology
+ASND|Healthcare
+ASNS|Technology
+ASO|Consumer Cyclical
+ASPI|Basic Materials
+ASPN|Industrials
+ASPS|Real Estate
+ASR|Industrials
+ASRT|Healthcare
+ASRV|Financial Services
+ASST|Communication Services
+ASTC|Industrials
+ASTE|Industrials
+ASTH|Healthcare
+ASTI|Technology
+ASTL|Basic Materials
+ASTLW|Basic Materials
+ASTR|Industrials
+ASTS|Technology
+ASTSW|Technology
+ASUR|Technology
+ASX|Technology
+ASXC|Healthcare
+ASYS|Technology
+ATAI|Healthcare
+ATAT|Consumer Cyclical
+ATCH|Technology
+ATEC|Healthcare
+ATEK|Financial Services
+ATEN|Technology
+ATER|Consumer Cyclical
+ATEX|Communication Services
+ATGE|Consumer Defensive
+ATGL|Technology
+ATHA|Healthcare
+ATHE|Healthcare
+ATHM|Communication Services
+ATI|Industrials
+ATIF|Financial Services
+ATIP|Healthcare
+ATKR|Industrials
+ATLC|Financial Services
+ATLCP|Financial Services
+ATLO|Financial Services
+ATLX|Basic Materials
+ATMC|Financial Services
+ATMCU|Financial Services
+ATMCW|Financial Services
+ATMU|Industrials
+ATMV|Financial Services
+ATMVU|Financial Services
+ATNF|Healthcare
+ATNFW|Healthcare
+ATNI|Communication Services
+ATNM|Healthcare
+ATO|Utilities
+ATOM|Technology
+ATOS|Healthcare
+ATPC|Consumer Defensive
+ATR|Healthcare
+ATRA|Healthcare
+ATRC|Healthcare
+ATRI|Healthcare
+ATRO|Industrials
+ATS|Industrials
+ATSG|Industrials
+ATUS|Communication Services
+ATXG|Industrials
+ATXI|Healthcare
+ATXS|Healthcare
+AU|Basic Materials
+AUB|Financial Services
+AUBN|Financial Services
+AUDC|Technology
+AUGX|Healthcare
+AUID|Technology
+AULT|Industrials
+AUMN|Basic Materials
+AUNA|Healthcare
+AUPH|Healthcare
+AUR|Technology
+AURA|Healthcare
+AUROW|Technology
+AUST|Basic Materials
+AUTL|Healthcare
+AUUD|Technology
+AUUDW|Technology
+AUVI|Consumer Cyclical
+AUVIP|Consumer Cyclical
+AVA|Utilities
+AVAH|Healthcare
+AVAL|Financial Services
+AVAV|Industrials
+AVB|Real Estate
+AVBP|Healthcare
+AVD|Basic Materials
+AVDL|Healthcare
+AVDX|Technology
+AVGO|Technology
+AVGR|Healthcare
+AVIR|Healthcare
+AVK|Financial Services
+AVNS|Healthcare
+AVNT|Basic Materials
+AVNW|Technology
+AVO|Consumer Defensive
+AVPT|Technology
+AVPTW|Technology
+AVRO|Healthcare
+AVT|Technology
+AVTE|Healthcare
+AVTR|Basic Materials
+AVTX|Healthcare
+AVXL|Healthcare
+AVY|Consumer Cyclical
+AWF|Financial Services
+AWH|Healthcare
+AWI|Industrials
+AWIN|Technology
+AWK|Utilities
+AWP|Financial Services
+AWR|Utilities
+AWRE|Technology
+AWX|Industrials
+AX|Financial Services
+AXDX|Healthcare
+AXGN|Healthcare
+AXIL|Technology
+AXL|Consumer Cyclical
+AXNX|Healthcare
+AXON|Industrials
+AXP|Financial Services
+AXR|Real Estate
+AXS|Financial Services
+AXSM|Healthcare
+AXTA|Basic Materials
+AXTI|Technology
+AY|Utilities
+AYI|Industrials
+AYRO|Consumer Cyclical
+AYTU|Healthcare
+AZ|Industrials
+AZEK|Industrials
+AZN|Healthcare
+AZO|Consumer Cyclical
+AZPN|Technology
+AZTA|Healthcare
+AZTR|Healthcare
+AZUL|Industrials
+AZZ|Industrials
+B|Industrials
+BA|Industrials
+BABA|Consumer Cyclical
+BAC|Financial Services
+BACA|Financial Services
+BACK|Healthcare
+BAER|Industrials
+BAERW|Industrials
+BAFN|Financial Services
+BAH|Industrials
+BAK|Basic Materials
+BALL|Consumer Cyclical
+BALY|Consumer Cyclical
+BAM|Financial Services
+BANC|Financial Services
+BAND|Technology
+BANF|Financial Services
+BANL|Energy
+BANR|Financial Services
+BANX|Financial Services
+BAOS|Communication Services
+BAP|Financial Services
+BARK|Consumer Cyclical
+BASE|Technology
+BATL|Energy
+BATRA|Communication Services
+BATRK|Communication Services
+BAX|Healthcare
+BB|Technology
+BBAI|Technology
+BBAR|Financial Services
+BBCP|Industrials
+BBD|Financial Services
+BBDC|Financial Services
+BBDO|Financial Services
+BBGI|Communication Services
+BBIO|Healthcare
+BBLG|Healthcare
+BBLGW|Healthcare
+BBN|Financial Services
+BBSI|Industrials
+BBU|Industrials
+BBUC|Financial Services
+BBVA|Financial Services
+BBW|Consumer Cyclical
+BBWI|Consumer Cyclical
+BBY|Consumer Cyclical
+BC|Consumer Cyclical
+BCAB|Healthcare
+BCAL|Financial Services
+BCAN|Technology
+BCBP|Financial Services
+BCC|Basic Materials
+BCDA|Healthcare
+BCDAW|Healthcare
+BCE|Communication Services
+BCG|Financial Services
+BCGWW|Financial Services
+BCH|Financial Services
+BCLI|Healthcare
+BCML|Financial Services
+BCO|Industrials
+BCOV|Technology
+BCOW|Financial Services
+BCPC|Basic Materials
+BCRX|Healthcare
+BCS|Financial Services
+BCSA|Financial Services
+BCSAU|Financial Services
+BCSAW|Financial Services
+BCSF|Financial Services
+BCTX|Healthcare
+BCTXW|Healthcare
+BCV|Financial Services
+BCX|Financial Services
+BCYC|Healthcare
+BDC|Technology
+BDJ|Financial Services
+BDL|Consumer Cyclical
+BDN|Real Estate
+BDRX|Healthcare
+BDSX|Healthcare
+BDTX|Healthcare
+BDX|Healthcare
+BE|Industrials
+BEAM|Healthcare
+BEAT|Healthcare
+BECN|Industrials
+BEDU|Consumer Defensive
+BEEM|Technology
+BEEP|Industrials
+BEKE|Real Estate
+BELFA|Technology
+BELFB|Technology
+BEN|Financial Services
+BENF|Financial Services
+BENFW|Financial Services
+BEP|Utilities
+BEPC|Utilities
+BERY|Consumer Cyclical
+BEST|Industrials
+BETR|Financial Services
+BETRW|Financial Services
+BFAC|Financial Services
+BFAM|Consumer Cyclical
+BFC|Financial Services
+BFH|Financial Services
+BFI|Consumer Cyclical
+BFIIW|Consumer Cyclical
+BFIN|Financial Services
+BFK|Financial Services
+BFLY|Healthcare
+BFRG|Healthcare
+BFRI|Healthcare
+BFS|Real Estate
+BFST|Financial Services
+BFZ|Financial Services
+BG|Consumer Defensive
+BGB|Financial Services
+BGC|Financial Services
+BGFV|Consumer Cyclical
+BGH|Financial Services
+BGI|Consumer Cyclical
+BGR|Financial Services
+BGS|Consumer Defensive
+BGSF|Industrials
+BGT|Financial Services
+BGX|Financial Services
+BGXX|Healthcare
+BGY|Financial Services
+BH|Consumer Cyclical
+BHAC|Financial Services
+BHACW|Financial Services
+BHAT|Communication Services
+BHB|Financial Services
+BHC|Healthcare
+BHE|Technology
+BHF|Financial Services
+BHFAM|Financial Services
+BHFAN|Financial Services
+BHFAO|Financial Services
+BHFAP|Financial Services
+BHIL|Basic Materials
+BHK|Financial Services
+BHLB|Financial Services
+BHM|Real Estate
+BHP|Basic Materials
+BHR|Real Estate
+BHRB|Financial Services
+BHV|Financial Services
+BHVN|Healthcare
+BIAF|Healthcare
+BIAFW|Healthcare
+BIDU|Communication Services
+BIG|Consumer Defensive
+BIGC|Technology
+BIGZ|Financial Services
+BIIB|Healthcare
+BILI|Communication Services
+BILL|Technology
+BIMI|Healthcare
+BIO|Healthcare
+BIOL|Healthcare
+BIOR|Healthcare
+BIOX|Basic Materials
+BIP|Utilities
+BIPC|Utilities
+BIRD|Consumer Cyclical
+BIRK|Consumer Cyclical
+BIT|Financial Services
+BITE|Financial Services
+BITF|Financial Services
+BIVI|Healthcare
+BJ|Consumer Defensive
+BJDX|Healthcare
+BJRI|Consumer Cyclical
+BK|Financial Services
+BKD|Healthcare
+BKE|Consumer Cyclical
+BKH|Utilities
+BKHA|Financial Services
+BKHAU|Financial Services
+BKKT|Technology
+BKN|Financial Services
+BKNG|Consumer Cyclical
+BKR|Energy
+BKSY|Technology
+BKT|Financial Services
+BKTI|Technology
+BKU|Financial Services
+BKYI|Industrials
+BL|Technology
+BLAC|Financial Services
+BLBD|Consumer Cyclical
+BLBX|Technology
+BLCO|Healthcare
+BLD|Industrials
+BLDE|Industrials
+BLDEW|Industrials
+BLDP|Industrials
+BLDR|Industrials
+BLE|Financial Services
+BLEU|Financial Services
+BLEUW|Financial Services
+BLFS|Healthcare
+BLFY|Financial Services
+BLIN|Technology
+BLK|Financial Services
+BLKB|Technology
+BLMN|Consumer Cyclical
+BLND|Technology
+BLNK|Industrials
+BLRX|Healthcare
+BLTE|Healthcare
+BLUA|Financial Services
+BLUE|Healthcare
+BLW|Financial Services
+BLX|Financial Services
+BLZE|Technology
+BMA|Financial Services
+BMBL|Technology
+BME|Financial Services
+BMEA|Healthcare
+BMI|Technology
+BMN|Financial Services
+BMO|Financial Services
+BMR|Technology
+BMRA|Healthcare
+BMRC|Financial Services
+BMRN|Healthcare
+BMTX|Technology
+BMY|Healthcare
+BN|Financial Services
+BNAI|Technology
+BNAIW|Technology
+BNED|Consumer Cyclical
+BNGO|Healthcare
+BNIX|Financial Services
+BNL|Real Estate
+BNOX|Healthcare
+BNR|Healthcare
+BNRE|Financial Services
+BNRG|Utilities
+BNS|Financial Services
+BNTC|Healthcare
+BNTX|Healthcare
+BNY|Financial Services
+BNZI|Technology
+BOC|Communication Services
+BOCN|Financial Services
+BODI|Communication Services
+BOE|Financial Services
+BOF|Consumer Defensive
+BOH|Financial Services
+BOKF|Financial Services
+BOLD|Healthcare
+BOLT|Healthcare
+BON|Consumer Defensive
+BOOM|Energy
+BOOT|Consumer Cyclical
+BORR|Energy
+BOSC|Technology
+BOTJ|Financial Services
+BOWL|Consumer Cyclical
+BOWN|Financial Services
+BOX|Technology
+BOXL|Technology
+BP|Energy
+BPMC|Healthcare
+BPOP|Financial Services
+BPRN|Financial Services
+BPT|Energy
+BPTH|Healthcare
+BPYPN|Real Estate
+BPYPO|Real Estate
+BPYPP|Real Estate
+BQ|Consumer Cyclical
+BR|Technology
+BRAC|Financial Services
+BRAG|Consumer Cyclical
+BRBR|Consumer Defensive
+BRBS|Financial Services
+BRC|Industrials
+BRCC|Consumer Defensive
+BRDG|Financial Services
+BREA|Communication Services
+BREZ|Financial Services
+BREZW|Financial Services
+BRFH|Consumer Defensive
+BRFS|Consumer Defensive
+BRID|Consumer Defensive
+BRKH|Financial Services
+BRKHU|Financial Services
+BRKHW|Financial Services
+BRKL|Financial Services
+BRKR|Healthcare
+BRLS|Consumer Defensive
+BRLSW|Consumer Defensive
+BRLT|Consumer Cyclical
+BRN|Energy
+BRNS|Healthcare
+BRO|Financial Services
+BROG|Energy
+BROGW|Energy
+BROS|Consumer Cyclical
+BRP|Financial Services
+BRSH|Consumer Defensive
+BRSHW|Consumer Defensive
+BRSP|Real Estate
+BRT|Real Estate
+BRTX|Healthcare
+BRW|Financial Services
+BRX|Real Estate
+BRY|Energy
+BRZE|Technology
+BSAC|Financial Services
+BSBK|Financial Services
+BSBR|Financial Services
+BSET|Consumer Cyclical
+BSFC|Consumer Defensive
+BSGM|Healthcare
+BSIG|Financial Services
+BSL|Financial Services
+BSM|Energy
+BSRR|Financial Services
+BST|Financial Services
+BSTZ|Financial Services
+BSVN|Financial Services
+BSX|Healthcare
+BSY|Technology
+BTA|Financial Services
+BTAI|Healthcare
+BTBD|Consumer Cyclical
+BTBT|Financial Services
+BTCM|Technology
+BTCS|Financial Services
+BTCT|Consumer Defensive
+BTCTW|Consumer Defensive
+BTCY|Healthcare
+BTDR|Technology
+BTE|Energy
+BTG|Basic Materials
+BTI|Consumer Defensive
+BTM|Financial Services
+BTMD|Healthcare
+BTO|Financial Services
+BTOC|Industrials
+BTOG|Financial Services
+BTSG|Healthcare
+BTSGU|Healthcare
+BTT|Financial Services
+BTTR|Consumer Defensive
+BTU|Energy
+BTZ|Financial Services
+BUD|Consumer Defensive
+BUI|Financial Services
+BUJA|Financial Services
+BUR|Financial Services
+BURL|Consumer Cyclical
+BURU|Industrials
+BUSE|Financial Services
+BV|Industrials
+BVFL|Financial Services
+BVN|Basic Materials
+BVS|Healthcare
+BW|Industrials
+BWA|Consumer Cyclical
+BWAQ|Financial Services
+BWAQW|Financial Services
+BWAY|Healthcare
+BWB|Financial Services
+BWBBP|Financial Services
+BWEN|Industrials
+BWFG|Financial Services
+BWG|Financial Services
+BWLP|Industrials
+BWMN|Industrials
+BWMX|Consumer Cyclical
+BWXT|Industrials
+BX|Financial Services
+BXC|Industrials
+BXMT|Real Estate
+BXMX|Financial Services
+BXP|Real Estate
+BXSL|Financial Services
+BY|Financial Services
+BYD|Consumer Cyclical
+BYFC|Financial Services
+BYM|Financial Services
+BYND|Consumer Defensive
+BYNO|Financial Services
+BYNOW|Financial Services
+BYON|Consumer Cyclical
+BYRN|Industrials
+BYSI|Healthcare
+BYU|Financial Services
+BZ|Industrials
+BZFD|Communication Services
+BZFDW|Communication Services
+BZH|Consumer Cyclical
+BZUN|Consumer Cyclical
+C|Financial Services
+CAAP|Industrials
+CAAS|Consumer Cyclical
+CABA|Healthcare
+CABO|Communication Services
+CAC|Financial Services
+CACC|Financial Services
+CACI|Technology
+CACO|Industrials
+CADE|Financial Services
+CADL|Healthcare
+CAE|Industrials
+CAF|Financial Services
+CAG|Consumer Defensive
+CAH|Healthcare
+CAKE|Consumer Cyclical
+CAL|Consumer Cyclical
+CALB|Financial Services
+CALC|Healthcare
+CALM|Consumer Defensive
+CALT|Healthcare
+CALX|Technology
+CAMP|Technology
+CAMT|Technology
+CAN|Technology
+CANF|Healthcare
+CANG|Consumer Cyclical
+CAPL|Energy
+CAPR|Healthcare
+CAR|Industrials
+CARA|Healthcare
+CARE|Financial Services
+CARG|Consumer Cyclical
+CARM|Healthcare
+CARR|Industrials
+CARS|Consumer Cyclical
+CART|Consumer Cyclical
+CARV|Financial Services
+CASH|Financial Services
+CASI|Healthcare
+CASS|Industrials
+CASY|Consumer Cyclical
+CAT|Industrials
+CATC|Financial Services
+CATO|Consumer Cyclical
+CATX|Healthcare
+CATY|Financial Services
+CAUD|Technology
+CAVA|Consumer Cyclical
+CB|Financial Services
+CBAN|Financial Services
+CBAT|Industrials
+CBFV|Financial Services
+CBH|Financial Services
+CBL|Real Estate
+CBNK|Financial Services
+CBOE|Financial Services
+CBRE|Real Estate
+CBRG|Financial Services
+CBRL|Consumer Cyclical
+CBSH|Financial Services
+CBT|Basic Materials
+CBU|Financial Services
+CBUS|Healthcare
+CBZ|Industrials
+CC|Basic Materials
+CCAP|Financial Services
+CCB|Financial Services
+CCBG|Financial Services
+CCCC|Healthcare
+CCCS|Technology
+CCD|Financial Services
+CCEL|Healthcare
+CCEP|Consumer Defensive
+CCG|Communication Services
+CCGWW|Communication Services
+CCI|Real Estate
+CCIF|Financial Services
+CCJ|Energy
+CCK|Consumer Cyclical
+CCL|Consumer Cyclical
+CCLD|Healthcare
+CCLDO|Healthcare
+CCLDP|Healthcare
+CCM|Healthcare
+CCNE|Financial Services
+CCNEP|Financial Services
+CCO|Communication Services
+CCOI|Communication Services
+CCRD|Technology
+CCRN|Healthcare
+CCS|Consumer Cyclical
+CCSI|Technology
+CCTG|Industrials
+CCTS|Financial Services
+CCU|Consumer Defensive
+CDAQ|Financial Services
+CDAQW|Financial Services
+CDE|Basic Materials
+CDIO|Healthcare
+CDIOW|Healthcare
+CDLR|Industrials
+CDLX|Communication Services
+CDMO|Healthcare
+CDNA|Healthcare
+CDNS|Technology
+CDP|Real Estate
+CDRE|Industrials
+CDRO|Consumer Cyclical
+CDTG|Industrials
+CDTX|Healthcare
+CDW|Technology
+CDXC|Healthcare
+CDXS|Healthcare
+CDZI|Utilities
+CDZIP|Utilities
+CE|Basic Materials
+CEAD|Industrials
+CECO|Industrials
+CEE|Financial Services
+CEG|Utilities
+CEI|Energy
+CEIX|Energy
+CELC|Healthcare
+CELH|Consumer Defensive
+CELU|Healthcare
+CELUW|Healthcare
+CELZ|Healthcare
+CEM|Financial Services
+CENN|Consumer Cyclical
+CENT|Consumer Defensive
+CENTA|Consumer Defensive
+CENX|Basic Materials
+CEPU|Utilities
+CERE|Healthcare
+CERO|Healthcare
+CEROW|Healthcare
+CERS|Healthcare
+CERT|Healthcare
+CET|Financial Services
+CETX|Technology
+CETY|Industrials
+CEV|Financial Services
+CEVA|Technology
+CF|Basic Materials
+CFB|Financial Services
+CFBK|Financial Services
+CFFI|Financial Services
+CFFN|Financial Services
+CFFS|Financial Services
+CFFSW|Financial Services
+CFG|Financial Services
+CFLT|Technology
+CFR|Financial Services
+CFSB|Financial Services
+CG|Financial Services
+CGA|Basic Materials
+CGAU|Basic Materials
+CGBD|Financial Services
+CGC|Healthcare
+CGEM|Healthcare
+CGEN|Healthcare
+CGNT|Technology
+CGNX|Technology
+CGO|Financial Services
+CGON|Healthcare
+CGTX|Healthcare
+CHAA|Financial Services
+CHCI|Real Estate
+CHCO|Financial Services
+CHCT|Real Estate
+CHD|Consumer Defensive
+CHDN|Consumer Cyclical
+CHE|Healthcare
+CHEF|Consumer Defensive
+CHEK|Healthcare
+CHGG|Consumer Defensive
+CHH|Consumer Cyclical
+CHI|Financial Services
+CHK|Energy
+CHKEL|Energy
+CHKEW|Energy
+CHKEZ|Energy
+CHKP|Technology
+CHMG|Financial Services
+CHMI|Real Estate
+CHN|Financial Services
+CHNR|Industrials
+CHPT|Consumer Cyclical
+CHR|Communication Services
+CHRD|Energy
+CHRO|Healthcare
+CHRS|Healthcare
+CHRW|Industrials
+CHSCL|Consumer Defensive
+CHSCM|Consumer Defensive
+CHSCN|Consumer Defensive
+CHSCO|Consumer Defensive
+CHSCP|Consumer Defensive
+CHSN|Consumer Cyclical
+CHT|Communication Services
+CHTR|Communication Services
+CHUY|Consumer Cyclical
+CHW|Financial Services
+CHWY|Consumer Cyclical
+CHX|Energy
+CHY|Financial Services
+CI|Healthcare
+CIA|Financial Services
+CIB|Financial Services
+CIEN|Technology
+CIF|Financial Services
+CIFR|Financial Services
+CIFRW|Financial Services
+CIG|Utilities
+CIGI|Real Estate
+CII|Financial Services
+CIK|Financial Services
+CIM|Real Estate
+CINF|Financial Services
+CING|Healthcare
+CINT|Technology
+CIO|Real Estate
+CION|Financial Services
+CISO|Technology
+CISS|Industrials
+CITEW|Financial Services
+CIVB|Financial Services
+CIVI|Energy
+CIX|Industrials
+CJET|Consumer Cyclical
+CJJD|Healthcare
+CKPT|Healthcare
+CKX|Energy
+CL|Consumer Defensive
+CLAR|Consumer Cyclical
+CLB|Energy
+CLBK|Financial Services
+CLBT|Technology
+CLBTW|Technology
+CLCO|Energy
+CLDI|Healthcare
+CLDT|Real Estate
+CLDX|Healthcare
+CLEU|Consumer Defensive
+CLF|Basic Materials
+CLFD|Technology
+CLGN|Healthcare
+CLH|Industrials
+CLIR|Industrials
+CLLS|Healthcare
+CLM|Financial Services
+CLMB|Technology
+CLMT|Energy
+CLNE|Energy
+CLNN|Healthcare
+CLNNW|Healthcare
+CLOE|Financial Services
+CLOV|Healthcare
+CLPR|Real Estate
+CLPS|Technology
+CLPT|Healthcare
+CLRB|Healthcare
+CLRC|Financial Services
+CLRO|Technology
+CLS|Technology
+CLSD|Healthcare
+CLSK|Financial Services
+CLST|Financial Services
+CLVT|Technology
+CLW|Basic Materials
+CLWT|Industrials
+CLX|Consumer Defensive
+CM|Financial Services
+CMA|Financial Services
+CMAX|Healthcare
+CMBM|Technology
+CMC|Basic Materials
+CMCA|Financial Services
+CMCAW|Financial Services
+CMCL|Basic Materials
+CMCM|Communication Services
+CMCO|Industrials
+CMCSA|Communication Services
+CMCT|Real Estate
+CME|Financial Services
+CMG|Consumer Cyclical
+CMI|Industrials
+CMLS|Communication Services
+CMMB|Healthcare
+CMND|Healthcare
+CMP|Basic Materials
+CMPO|Industrials
+CMPOW|Industrials
+CMPR|Communication Services
+CMPS|Healthcare
+CMPX|Healthcare
+CMRE|Industrials
+CMRX|Healthcare
+CMS|Utilities
+CMT|Basic Materials
+CMTG|Real Estate
+CMTL|Technology
+CMU|Financial Services
+CNA|Financial Services
+CNC|Healthcare
+CNDA|Financial Services
+CNDT|Technology
+CNET|Communication Services
+CNEY|Basic Materials
+CNF|Financial Services
+CNFR|Financial Services
+CNGL|Financial Services
+CNGLW|Financial Services
+CNHI|Industrials
+CNI|Industrials
+CNK|Communication Services
+CNM|Industrials
+CNMD|Healthcare
+CNNE|Consumer Cyclical
+CNO|Financial Services
+CNOB|Financial Services
+CNOBP|Financial Services
+CNP|Utilities
+CNQ|Energy
+CNS|Financial Services
+CNSL|Communication Services
+CNSP|Healthcare
+CNTA|Healthcare
+CNTB|Healthcare
+CNTG|Healthcare
+CNTX|Healthcare
+CNTY|Consumer Cyclical
+CNVS|Communication Services
+CNX|Energy
+CNXC|Technology
+CNXN|Technology
+COCH|Healthcare
+COCHW|Healthcare
+COCO|Consumer Defensive
+COCP|Healthcare
+CODA|Industrials
+CODI|Industrials
+CODX|Healthcare
+COE|Consumer Defensive
+COEP|Healthcare
+COF|Financial Services
+COFS|Financial Services
+COGT|Healthcare
+COHN|Financial Services
+COHR|Technology
+COHU|Technology
+COIN|Financial Services
+COKE|Consumer Defensive
+COLB|Financial Services
+COLD|Real Estate
+COLL|Healthcare
+COLM|Consumer Cyclical
+COMM|Technology
+COMP|Real Estate
+CONN|Consumer Cyclical
+COO|Healthcare
+COOK|Consumer Cyclical
+COOL|Financial Services
+COOLU|Financial Services
+COOLW|Financial Services
+COOP|Financial Services
+COP|Energy
+COR|Healthcare
+CORT|Healthcare
+CORZ|Technology
+CORZW|Technology
+CORZZ|Technology
+COSM|Healthcare
+COST|Consumer Defensive
+COTY|Consumer Defensive
+COUR|Consumer Defensive
+COYA|Healthcare
+CP|Industrials
+CPA|Industrials
+CPAC|Basic Materials
+CPAY|Technology
+CPB|Consumer Defensive
+CPBI|Financial Services
+CPF|Financial Services
+CPHC|Consumer Cyclical
+CPHI|Healthcare
+CPIX|Healthcare
+CPK|Utilities
+CPLP|Industrials
+CPNG|Consumer Cyclical
+CPOP|Communication Services
+CPRI|Consumer Cyclical
+CPRT|Industrials
+CPRX|Healthcare
+CPS|Consumer Cyclical
+CPSH|Technology
+CPSS|Financial Services
+CPT|Real Estate
+CQP|Energy
+CR|Industrials
+CRAI|Industrials
+CRBG|Financial Services
+CRBP|Healthcare
+CRBU|Healthcare
+CRC|Energy
+CRCT|Technology
+CRDF|Healthcare
+CRDL|Healthcare
+CRDO|Technology
+CREG|Utilities
+CRESW|Industrials
+CRESY|Industrials
+CREV|Consumer Cyclical
+CREX|Technology
+CRF|Financial Services
+CRGO|Industrials
+CRGOW|Industrials
+CRGX|Healthcare
+CRGY|Energy
+CRH|Basic Materials
+CRI|Consumer Cyclical
+CRIS|Healthcare
+CRK|Energy
+CRKN|Basic Materials
+CRL|Healthcare
+CRM|Technology
+CRMD|Healthcare
+CRML|Basic Materials
+CRMLW|Basic Materials
+CRMT|Consumer Cyclical
+CRNC|Technology
+CRNT|Technology
+CRNX|Healthcare
+CRON|Healthcare
+CROX|Consumer Cyclical
+CRS|Industrials
+CRSP|Healthcare
+CRSR|Technology
+CRT|Energy
+CRTO|Communication Services
+CRUS|Technology
+CRVL|Financial Services
+CRVO|Healthcare
+CRVS|Healthcare
+CRWD|Technology
+CRWS|Consumer Cyclical
+CSAN|Energy
+CSBR|Healthcare
+CSCO|Technology
+CSGP|Real Estate
+CSGS|Technology
+CSIQ|Technology
+CSL|Industrials
+CSLM|Financial Services
+CSLR|Technology
+CSPI|Technology
+CSQ|Financial Services
+CSR|Real Estate
+CSSE|Communication Services
+CSSEL|Communication Services
+CSSEP|Communication Services
+CSTE|Industrials
+CSTL|Healthcare
+CSTM|Basic Materials
+CSV|Consumer Cyclical
+CSWC|Financial Services
+CSWI|Industrials
+CSX|Industrials
+CTAS|Industrials
+CTBI|Financial Services
+CTCX|Healthcare
+CTGO|Basic Materials
+CTHR|Consumer Cyclical
+CTKB|Healthcare
+CTLP|Technology
+CTLT|Healthcare
+CTM|Technology
+CTMX|Healthcare
+CTNM|Healthcare
+CTNT|Consumer Cyclical
+CTO|Real Estate
+CTOS|Industrials
+CTR|Financial Services
+CTRA|Energy
+CTRE|Real Estate
+CTRI|Utilities
+CTRM|Industrials
+CTRN|Consumer Cyclical
+CTS|Technology
+CTSH|Technology
+CTSO|Healthcare
+CTV|Communication Services
+CTVA|Basic Materials
+CTXR|Healthcare
+CUBA|Financial Services
+CUBE|Real Estate
+CUBI|Financial Services
+CUE|Healthcare
+CUK|Consumer Cyclical
+CULL|Financial Services
+CULP|Consumer Cyclical
+CURI|Communication Services
+CURIW|Communication Services
+CURV|Consumer Cyclical
+CUTR|Healthcare
+CUZ|Real Estate
+CVAC|Healthcare
+CVBF|Financial Services
+CVCO|Consumer Cyclical
+CVE|Energy
+CVEO|Industrials
+CVGI|Consumer Cyclical
+CVGW|Consumer Defensive
+CVI|Energy
+CVII|Financial Services
+CVIIU|Financial Services
+CVIIW|Financial Services
+CVKD|Healthcare
+CVLG|Industrials
+CVLT|Technology
+CVLY|Financial Services
+CVM|Healthcare
+CVNA|Consumer Cyclical
+CVR|Industrials
+CVRX|Healthcare
+CVS|Healthcare
+CVU|Industrials
+CVV|Industrials
+CVX|Energy
+CW|Industrials
+CWAN|Technology
+CWBC|Financial Services
+CWCO|Utilities
+CWD|Financial Services
+CWEN|Utilities
+CWH|Consumer Cyclical
+CWK|Real Estate
+CWST|Industrials
+CWT|Utilities
+CX|Basic Materials
+CXAI|Technology
+CXDO|Communication Services
+CXE|Financial Services
+CXH|Financial Services
+CXM|Technology
+CXT|Industrials
+CXW|Industrials
+CYBN|Healthcare
+CYBR|Technology
+CYCC|Healthcare
+CYCCP|Healthcare
+CYCN|Healthcare
+CYD|Consumer Cyclical
+CYH|Healthcare
+CYN|Technology
+CYRX|Industrials
+CYTH|Healthcare
+CYTK|Healthcare
+CYTO|Healthcare
+CZFS|Financial Services
+CZNC|Financial Services
+CZOO|Consumer Cyclical
+CZR|Consumer Cyclical
+CZWI|Financial Services
+D|Utilities
+DAC|Industrials
+DADA|Consumer Cyclical
+DAIO|Technology
+DAKT|Technology
+DAL|Industrials
+DALN|Communication Services
+DAN|Consumer Cyclical
+DAO|Consumer Defensive
+DAR|Consumer Defensive
+DARE|Healthcare
+DASH|Communication Services
+DATS|Technology
+DATSW|Technology
+DAVA|Technology
+DAVE|Technology
+DAVEW|Technology
+DAWN|Healthcare
+DAY|Technology
+DB|Financial Services
+DBD|Technology
+DBGI|Consumer Cyclical
+DBGIW|Consumer Cyclical
+DBI|Consumer Cyclical
+DBL|Financial Services
+DBRG|Real Estate
+DBVT|Healthcare
+DBX|Technology
+DC|Basic Materials
+DCBO|Technology
+DCGO|Healthcare
+DCI|Industrials
+DCO|Industrials
+DCOM|Financial Services
+DCOMP|Financial Services
+DCPH|Healthcare
+DCTH|Healthcare
+DD|Basic Materials
+DDC|Consumer Defensive
+DDD|Technology
+DDI|Communication Services
+DDL|Consumer Defensive
+DDOG|Technology
+DDS|Consumer Cyclical
+DE|Industrials
+DEA|Real Estate
+DEC|Energy
+DECA|Financial Services
+DECAW|Financial Services
+DECK|Consumer Cyclical
+DEI|Real Estate
+DELL|Technology
+DENN|Consumer Cyclical
+DEO|Consumer Defensive
+DERM|Healthcare
+DESP|Consumer Cyclical
+DFH|Consumer Cyclical
+DFIN|Financial Services
+DFLI|Industrials
+DFLIW|Industrials
+DFP|Financial Services
+DFS|Financial Services
+DG|Consumer Defensive
+DGHI|Technology
+DGICA|Financial Services
+DGICB|Financial Services
+DGII|Technology
+DGLY|Communication Services
+DGX|Healthcare
+DH|Healthcare
+DHAC|Financial Services
+DHACU|Financial Services
+DHACW|Financial Services
+DHAI|Healthcare
+DHAIW|Healthcare
+DHC|Real Estate
+DHF|Financial Services
+DHI|Consumer Cyclical
+DHIL|Financial Services
+DHR|Healthcare
+DHT|Energy
+DHX|Technology
+DHY|Financial Services
+DIAX|Financial Services
+DIBS|Consumer Cyclical
+DIN|Consumer Cyclical
+DINO|Energy
+DIOD|Technology
+DIS|Communication Services
+DIST|Financial Services
+DIT|Consumer Defensive
+DJCO|Technology
+DJT|Communication Services
+DJTWW|Communication Services
+DK|Energy
+DKL|Energy
+DKNG|Consumer Cyclical
+DKS|Consumer Cyclical
+DLA|Consumer Cyclical
+DLB|Industrials
+DLHC|Industrials
+DLNG|Energy
+DLO|Technology
+DLPN|Communication Services
+DLR|Real Estate
+DLTH|Consumer Cyclical
+DLTR|Consumer Defensive
+DLX|Communication Services
+DM|Technology
+DMA|Financial Services
+DMAC|Healthcare
+DMB|Financial Services
+DMF|Financial Services
+DMLP|Energy
+DMO|Financial Services
+DMRC|Technology
+DMTK|Healthcare
+DMYY|Financial Services
+DNA|Healthcare
+DNB|Financial Services
+DNLI|Healthcare
+DNMR|Basic Materials
+DNN|Energy
+DNOW|Industrials
+DNP|Financial Services
+DNTH|Healthcare
+DNUT|Consumer Defensive
+DO|Energy
+DOC|Real Estate
+DOCN|Technology
+DOCS|Healthcare
+DOCU|Technology
+DOGZ|Consumer Cyclical
+DOLE|Consumer Defensive
+DOMA|Financial Services
+DOMH|Healthcare
+DOMO|Technology
+DOOO|Consumer Cyclical
+DORM|Consumer Cyclical
+DOUG|Real Estate
+DOV|Industrials
+DOW|Basic Materials
+DOX|Technology
+DOYU|Communication Services
+DPCS|Financial Services
+DPG|Financial Services
+DPRO|Industrials
+DPSI|Technology
+DPZ|Consumer Cyclical
+DQ|Technology
+DRCT|Communication Services
+DRD|Basic Materials
+DRH|Real Estate
+DRI|Consumer Cyclical
+DRIO|Healthcare
+DRMA|Healthcare
+DRMAW|Healthcare
+DRQ|Energy
+DRRX|Healthcare
+DRS|Industrials
+DRTS|Healthcare
+DRTSW|Healthcare
+DRUG|Healthcare
+DRVN|Consumer Cyclical
+DSGN|Healthcare
+DSGR|Industrials
+DSGX|Technology
+DSL|Financial Services
+DSM|Financial Services
+DSP|Technology
+DSS|Consumer Cyclical
+DSU|Financial Services
+DSWL|Technology
+DSX|Industrials
+DT|Technology
+DTC|Consumer Cyclical
+DTCK|Consumer Defensive
+DTE|Utilities
+DTF|Financial Services
+DTI|Energy
+DTIL|Healthcare
+DTM|Energy
+DTSS|Technology
+DTST|Technology
+DTSTW|Technology
+DUET|Financial Services
+DUK|Utilities
+DUO|Real Estate
+DUOL|Technology
+DUOT|Technology
+DV|Technology
+DVA|Healthcare
+DVAX|Healthcare
+DVN|Energy
+DWSN|Energy
+DX|Real Estate
+DXC|Technology
+DXCM|Healthcare
+DXF|Financial Services
+DXLG|Consumer Cyclical
+DXPE|Industrials
+DXR|Healthcare
+DXYN|Consumer Cyclical
+DY|Industrials
+DYAI|Healthcare
+DYCQ|Financial Services
+DYCQU|Financial Services
+DYN|Healthcare
+DYNT|Healthcare
+DZSI|Technology
+E|Energy
+EA|Communication Services
+EAD|Financial Services
+EAF|Industrials
+EARN|Financial Services
+EAST|Consumer Defensive
+EAT|Consumer Cyclical
+EB|Technology
+EBAY|Consumer Cyclical
+EBC|Financial Services
+EBF|Industrials
+EBMT|Financial Services
+EBON|Technology
+EBR|Utilities
+EBS|Healthcare
+EBTC|Financial Services
+EC|Energy
+ECBK|Financial Services
+ECC|Financial Services
+ECCC|Financial Services
+ECCF|Financial Services
+ECDA|Consumer Cyclical
+ECDAW|Consumer Cyclical
+ECF|Financial Services
+ECL|Basic Materials
+ECO|Industrials
+ECOR|Healthcare
+ECPG|Financial Services
+ECVT|Basic Materials
+ECX|Consumer Cyclical
+ED|Utilities
+EDAP|Healthcare
+EDBL|Consumer Defensive
+EDBLW|Consumer Defensive
+EDD|Financial Services
+EDF|Financial Services
+EDIT|Healthcare
+EDN|Utilities
+EDR|Communication Services
+EDRY|Industrials
+EDSA|Healthcare
+EDTK|Consumer Defensive
+EDU|Consumer Defensive
+EDUC|Communication Services
+EE|Energy
+EEA|Financial Services
+EEFT|Technology
+EEIQ|Consumer Defensive
+EEX|Communication Services
+EFC|Real Estate
+EFOI|Consumer Cyclical
+EFR|Financial Services
+EFSC|Financial Services
+EFSCP|Financial Services
+EFSH|Industrials
+EFT|Financial Services
+EFTR|Healthcare
+EFTRW|Healthcare
+EFX|Industrials
+EFXT|Energy
+EG|Financial Services
+EGAN|Technology
+EGBN|Financial Services
+EGF|Financial Services
+EGHT|Technology
+EGIO|Technology
+EGO|Basic Materials
+EGP|Real Estate
+EGRX|Healthcare
+EGY|Energy
+EH|Industrials
+EHAB|Healthcare
+EHC|Healthcare
+EHI|Financial Services
+EHTH|Financial Services
+EIC|Financial Services
+EICA|Financial Services
+EICB|Financial Services
+EICC|Financial Services
+EIG|Financial Services
+EIM|Financial Services
+EIX|Utilities
+EJH|Consumer Cyclical
+EKSO|Healthcare
+EL|Consumer Defensive
+ELA|Consumer Cyclical
+ELAB|Healthcare
+ELAN|Healthcare
+ELBM|Basic Materials
+ELDN|Healthcare
+ELEV|Healthcare
+ELF|Consumer Defensive
+ELLO|Utilities
+ELMD|Healthcare
+ELME|Real Estate
+ELP|Utilities
+ELPC|Utilities
+ELS|Real Estate
+ELSE|Technology
+ELTK|Technology
+ELTX|Healthcare
+ELUT|Healthcare
+ELV|Healthcare
+ELVA|Industrials
+ELVN|Healthcare
+ELWS|Technology
+ELYM|Healthcare
+EM|Consumer Cyclical
+EMBC|Healthcare
+EMD|Financial Services
+EME|Industrials
+EMF|Financial Services
+EMKR|Technology
+EML|Industrials
+EMLD|Financial Services
+EMLDW|Financial Services
+EMN|Basic Materials
+EMO|Financial Services
+EMR|Industrials
+EMX|Basic Materials
+ENB|Energy
+ENFN|Technology
+ENG|Industrials
+ENGN|Healthcare
+ENGNW|Healthcare
+ENIC|Utilities
+ENLC|Energy
+ENLT|Utilities
+ENLV|Healthcare
+ENOV|Industrials
+ENPH|Technology
+ENR|Industrials
+ENS|Industrials
+ENSC|Healthcare
+ENSG|Healthcare
+ENSV|Energy
+ENTA|Healthcare
+ENTG|Technology
+ENTX|Healthcare
+ENV|Technology
+ENVA|Financial Services
+ENVB|Healthcare
+ENVX|Industrials
+ENX|Financial Services
+ENZ|Healthcare
+EOD|Financial Services
+EOG|Energy
+EOI|Financial Services
+EOLS|Healthcare
+EOS|Financial Services
+EOSE|Industrials
+EOSEW|Industrials
+EOT|Financial Services
+EP|Energy
+EPAC|Industrials
+EPAM|Technology
+EPC|Consumer Defensive
+EPD|Energy
+EPIX|Healthcare
+EPM|Energy
+EPOW|Industrials
+EPR|Real Estate
+EPRT|Real Estate
+EPRX|Healthcare
+EPSN|Energy
+EQ|Healthcare
+EQBK|Financial Services
+EQC|Real Estate
+EQH|Financial Services
+EQIX|Real Estate
+EQNR|Energy
+EQR|Real Estate
+EQS|Financial Services
+EQT|Energy
+EQX|Basic Materials
+ERAS|Healthcare
+ERC|Financial Services
+ERF|Energy
+ERH|Financial Services
+ERIC|Technology
+ERIE|Financial Services
+ERII|Industrials
+ERJ|Industrials
+ERNA|Healthcare
+ERO|Basic Materials
+ES|Utilities
+ESAB|Industrials
+ESCA|Consumer Cyclical
+ESE|Technology
+ESEA|Industrials
+ESGL|Industrials
+ESGLW|Industrials
+ESGR|Financial Services
+ESGRO|Financial Services
+ESGRP|Financial Services
+ESHA|Financial Services
+ESI|Basic Materials
+ESLA|Healthcare
+ESLT|Industrials
+ESNT|Financial Services
+ESOA|Industrials
+ESP|Industrials
+ESPR|Healthcare
+ESQ|Financial Services
+ESRT|Real Estate
+ESS|Real Estate
+ESSA|Financial Services
+ESTA|Healthcare
+ESTC|Technology
+ET|Energy
+ETB|Financial Services
+ETD|Consumer Cyclical
+ETG|Financial Services
+ETJ|Financial Services
+ETN|Industrials
+ETNB|Healthcare
+ETO|Financial Services
+ETON|Healthcare
+ETR|Utilities
+ETRN|Energy
+ETSY|Consumer Cyclical
+ETV|Financial Services
+ETW|Financial Services
+ETWO|Technology
+ETX|Financial Services
+ETY|Financial Services
+EU|Energy
+EUDA|Healthcare
+EUDAW|Healthcare
+EURN|Energy
+EVA|Basic Materials
+EVAX|Healthcare
+EVBG|Technology
+EVBN|Financial Services
+EVC|Communication Services
+EVCM|Technology
+EVE|Financial Services
+EVER|Communication Services
+EVEX|Industrials
+EVF|Financial Services
+EVG|Financial Services
+EVGN|Healthcare
+EVGO|Consumer Cyclical
+EVGOW|Consumer Cyclical
+EVGR|Financial Services
+EVGRW|Financial Services
+EVH|Healthcare
+EVI|Industrials
+EVLV|Industrials
+EVLVW|Industrials
+EVM|Financial Services
+EVN|Financial Services
+EVO|Healthcare
+EVOK|Healthcare
+EVR|Financial Services
+EVRG|Utilities
+EVRI|Consumer Cyclical
+EVT|Financial Services
+EVTC|Technology
+EVTL|Industrials
+EVTV|Consumer Cyclical
+EVV|Financial Services
+EW|Healthcare
+EWBC|Financial Services
+EWCZ|Consumer Defensive
+EWTX|Healthcare
+EXAI|Healthcare
+EXAS|Healthcare
+EXC|Utilities
+EXEL|Healthcare
+EXFY|Technology
+EXG|Financial Services
+EXK|Basic Materials
+EXLS|Technology
+EXP|Basic Materials
+EXPD|Industrials
+EXPE|Consumer Cyclical
+EXPI|Real Estate
+EXPO|Industrials
+EXR|Real Estate
+EXTO|Consumer Cyclical
+EXTR|Technology
+EYE|Consumer Cyclical
+EYEN|Healthcare
+EYPT|Healthcare
+EZFL|Technology
+EZGO|Consumer Cyclical
+EZPW|Financial Services
+F|Consumer Cyclical
+FA|Industrials
+FAAS|Technology
+FAASW|Technology
+FAF|Financial Services
+FAM|Financial Services
+FAMI|Consumer Defensive
+FANG|Energy
+FANH|Financial Services
+FARM|Consumer Defensive
+FARO|Technology
+FAST|Industrials
+FAT|Consumer Cyclical
+FATBB|Consumer Cyclical
+FATBP|Consumer Cyclical
+FATBW|Consumer Cyclical
+FATE|Healthcare
+FATH|Industrials
+FAX|Financial Services
+FBIN|Industrials
+FBIO|Healthcare
+FBIOP|Healthcare
+FBIZ|Financial Services
+FBK|Financial Services
+FBLG|Healthcare
+FBMS|Financial Services
+FBNC|Financial Services
+FBP|Financial Services
+FBRT|Real Estate
+FBRX|Healthcare
+FBYD|Industrials
+FBYDW|Industrials
+FC|Consumer Defensive
+FCAP|Financial Services
+FCBC|Financial Services
+FCCO|Financial Services
+FCEL|Industrials
+FCF|Financial Services
+FCFS|Financial Services
+FCN|Industrials
+FCNCA|Financial Services
+FCNCO|Financial Services
+FCNCP|Financial Services
+FCO|Financial Services
+FCPT|Real Estate
+FCT|Financial Services
+FCUV|Technology
+FCX|Basic Materials
+FDBC|Financial Services
+FDMT|Healthcare
+FDP|Consumer Defensive
+FDS|Financial Services
+FDUS|Financial Services
+FDX|Industrials
+FE|Utilities
+FEAM|Basic Materials
+FEBO|Technology
+FEDU|Consumer Defensive
+FEIM|Technology
+FELE|Industrials
+FEMY|Healthcare
+FENC|Healthcare
+FENG|Communication Services
+FER|Industrials
+FERG|Industrials
+FET|Energy
+FEXD|Financial Services
+FF|Basic Materials
+FFA|Financial Services
+FFBC|Financial Services
+FFC|Financial Services
+FFIC|Financial Services
+FFIE|Consumer Cyclical
+FFIN|Financial Services
+FFIV|Technology
+FFNW|Financial Services
+FFWM|Financial Services
+FG|Financial Services
+FGB|Financial Services
+FGBI|Financial Services
+FGBIP|Financial Services
+FGEN|Healthcare
+FGF|Financial Services
+FGFPP|Financial Services
+FGI|Consumer Cyclical
+FHB|Financial Services
+FHI|Financial Services
+FHLT|Financial Services
+FHLTW|Financial Services
+FHN|Financial Services
+FHTX|Healthcare
+FI|Technology
+FIAC|Financial Services
+FIACW|Financial Services
+FIBK|Financial Services
+FICO|Technology
+FIGS|Consumer Cyclical
+FIHL|Financial Services
+FINS|Financial Services
+FINV|Financial Services
+FINW|Financial Services
+FIP|Industrials
+FIS|Technology
+FISI|Financial Services
+FITB|Financial Services
+FITBI|Financial Services
+FITBO|Financial Services
+FITBP|Financial Services
+FIVE|Consumer Cyclical
+FIVN|Technology
+FIX|Industrials
+FIZZ|Consumer Defensive
+FKWL|Technology
+FL|Consumer Cyclical
+FLC|Financial Services
+FLEX|Technology
+FLGC|Healthcare
+FLGT|Healthcare
+FLIC|Financial Services
+FLJ|Real Estate
+FLL|Consumer Cyclical
+FLNC|Utilities
+FLNG|Energy
+FLNT|Communication Services
+FLO|Consumer Defensive
+FLR|Industrials
+FLS|Industrials
+FLUT|Consumer Cyclical
+FLUX|Industrials
+FLWS|Consumer Cyclical
+FLXS|Consumer Cyclical
+FLYW|Technology
+FLYX|Industrials
+FMAO|Financial Services
+FMBH|Financial Services
+FMC|Basic Materials
+FMN|Financial Services
+FMNB|Financial Services
+FMS|Healthcare
+FMST|Basic Materials
+FMSTW|Basic Materials
+FMX|Consumer Defensive
+FMY|Financial Services
+FN|Technology
+FNA|Healthcare
+FNB|Financial Services
+FNCB|Financial Services
+FNCH|Healthcare
+FND|Consumer Cyclical
+FNF|Financial Services
+FNGR|Communication Services
+FNKO|Consumer Cyclical
+FNLC|Financial Services
+FNV|Basic Materials
+FNVT|Financial Services
+FNVTW|Financial Services
+FNWB|Financial Services
+FNWD|Financial Services
+FOA|Financial Services
+FOF|Financial Services
+FOLD|Healthcare
+FONR|Healthcare
+FOR|Real Estate
+FORA|Healthcare
+FORD|Consumer Cyclical
+FORL|Financial Services
+FORM|Technology
+FORR|Industrials
+FORTY|Technology
+FOSL|Consumer Cyclical
+FOUR|Technology
+FOX|Communication Services
+FOXA|Communication Services
+FOXF|Consumer Cyclical
+FOXO|Healthcare
+FPAY|Industrials
+FPF|Financial Services
+FPH|Real Estate
+FPI|Real Estate
+FR|Real Estate
+FRA|Financial Services
+FRAF|Financial Services
+FRBA|Financial Services
+FRES|Healthcare
+FREY|Industrials
+FRGE|Technology
+FRGT|Technology
+FRHC|Financial Services
+FRLA|Financial Services
+FRME|Financial Services
+FRMEP|Financial Services
+FRO|Energy
+FROG|Technology
+FRPH|Real Estate
+FRPT|Consumer Defensive
+FRSH|Technology
+FRST|Financial Services
+FRSX|Consumer Cyclical
+FRT|Real Estate
+FRZA|Consumer Cyclical
+FSBC|Financial Services
+FSBW|Financial Services
+FSCO|Financial Services
+FSD|Financial Services
+FSEA|Financial Services
+FSFG|Financial Services
+FSI|Basic Materials
+FSK|Financial Services
+FSLR|Technology
+FSLY|Technology
+FSM|Basic Materials
+FSP|Real Estate
+FSS|Industrials
+FSTR|Industrials
+FSV|Real Estate
+FT|Financial Services
+FTAI|Industrials
+FTAIM|Industrials
+FTAIN|Industrials
+FTAIO|Industrials
+FTAIP|Industrials
+FTCI|Technology
+FTDR|Consumer Cyclical
+FTEK|Industrials
+FTEL|Consumer Cyclical
+FTF|Financial Services
+FTFT|Technology
+FTHM|Real Estate
+FTI|Energy
+FTII|Financial Services
+FTK|Energy
+FTLF|Consumer Defensive
+FTNT|Technology
+FTRE|Healthcare
+FTS|Utilities
+FTV|Technology
+FUBO|Communication Services
+FUFU|Financial Services
+FUFUW|Financial Services
+FUL|Basic Materials
+FULC|Healthcare
+FULT|Financial Services
+FULTP|Financial Services
+FUN|Consumer Cyclical
+FUNC|Financial Services
+FUND|Financial Services
+FURY|Basic Materials
+FUSB|Financial Services
+FUSN|Healthcare
+FUTU|Financial Services
+FVCB|Financial Services
+FVRR|Communication Services
+FWONA|Communication Services
+FWONK|Communication Services
+FWRD|Industrials
+FWRG|Consumer Cyclical
+FXNC|Financial Services
+FYBR|Communication Services
+G|Technology
+GAB|Financial Services
+GABC|Financial Services
+GAIA|Communication Services
+GAIN|Financial Services
+GALT|Healthcare
+GAM|Financial Services
+GAMB|Consumer Cyclical
+GAMC|Financial Services
+GAMCW|Financial Services
+GAME|Communication Services
+GAN|Consumer Cyclical
+GANX|Healthcare
+GAQ|Financial Services
+GASS|Industrials
+GATE|Financial Services
+GATO|Basic Materials
+GATX|Industrials
+GAU|Basic Materials
+GB|Technology
+GBAB|Financial Services
+GBBK|Financial Services
+GBBKW|Financial Services
+GBCI|Financial Services
+GBDC|Financial Services
+GBIO|Healthcare
+GBLI|Financial Services
+GBNY|Financial Services
+GBR|Real Estate
+GBTG|Technology
+GBX|Industrials
+GCBC|Financial Services
+GCI|Communication Services
+GCMG|Financial Services
+GCMGW|Financial Services
+GCO|Consumer Cyclical
+GCT|Technology
+GCTK|Healthcare
+GCTS|Technology
+GCV|Financial Services
+GD|Industrials
+GDC|Communication Services
+GDDY|Technology
+GDEN|Consumer Cyclical
+GDEV|Communication Services
+GDHG|Consumer Cyclical
+GDL|Financial Services
+GDOT|Financial Services
+GDRX|Healthcare
+GDS|Technology
+GDTC|Healthcare
+GDV|Financial Services
+GDYN|Technology
+GE|Industrials
+GECC|Financial Services
+GEF|Consumer Cyclical
+GEG|Financial Services
+GEHC|Healthcare
+GEL|Energy
+GEN|Technology
+GENC|Industrials
+GENE|Healthcare
+GENI|Communication Services
+GENK|Consumer Cyclical
+GEO|Industrials
+GEOS|Energy
+GERN|Healthcare
+GES|Consumer Cyclical
+GETR|Technology
+GETY|Communication Services
+GEV|Utilities
+GEVO|Basic Materials
+GF|Financial Services
+GFAI|Industrials
+GFAIW|Industrials
+GFF|Industrials
+GFI|Basic Materials
+GFL|Industrials
+GFR|Energy
+GFS|Technology
+GGAL|Financial Services
+GGB|Basic Materials
+GGG|Industrials
+GGN|Financial Services
+GGR|Consumer Cyclical
+GGROW|Consumer Cyclical
+GGT|Financial Services
+GGZ|Financial Services
+GH|Healthcare
+GHC|Consumer Defensive
+GHG|Consumer Cyclical
+GHI|Financial Services
+GHIX|Financial Services
+GHIXW|Financial Services
+GHLD|Financial Services
+GHM|Industrials
+GHRS|Healthcare
+GHSI|Healthcare
+GHY|Financial Services
+GIB|Technology
+GIC|Industrials
+GIFI|Industrials
+GIGM|Communication Services
+GIII|Consumer Cyclical
+GIL|Consumer Cyclical
+GILD|Healthcare
+GILT|Technology
+GIPR|Real Estate
+GIPRW|Real Estate
+GIS|Consumer Defensive
+GKOS|Healthcare
+GL|Financial Services
+GLAC|Financial Services
+GLACU|Financial Services
+GLAD|Financial Services
+GLBE|Consumer Cyclical
+GLBS|Industrials
+GLBZ|Financial Services
+GLDD|Industrials
+GLDG|Basic Materials
+GLLI|Financial Services
+GLMD|Healthcare
+GLNG|Energy
+GLO|Financial Services
+GLOB|Technology
+GLP|Energy
+GLPG|Healthcare
+GLPI|Real Estate
+GLQ|Financial Services
+GLRE|Financial Services
+GLSI|Healthcare
+GLST|Financial Services
+GLSTW|Financial Services
+GLT|Basic Materials
+GLTO|Healthcare
+GLU|Financial Services
+GLUE|Healthcare
+GLV|Financial Services
+GLW|Technology
+GLYC|Healthcare
+GM|Consumer Cyclical
+GMAB|Healthcare
+GME|Consumer Cyclical
+GMED|Healthcare
+GMFI|Financial Services
+GMFIW|Financial Services
+GMGI|Communication Services
+GMM|Technology
+GMRE|Real Estate
+GMS|Industrials
+GNE|Utilities
+GNFT|Healthcare
+GNK|Industrials
+GNL|Real Estate
+GNLN|Consumer Defensive
+GNLX|Healthcare
+GNPX|Healthcare
+GNRC|Industrials
+GNS|Consumer Defensive
+GNSS|Technology
+GNT|Financial Services
+GNTA|Healthcare
+GNTX|Consumer Cyclical
+GNTY|Financial Services
+GNW|Financial Services
+GO|Consumer Defensive
+GOCO|Financial Services
+GODN|Financial Services
+GOEV|Consumer Cyclical
+GOEVW|Consumer Cyclical
+GOF|Financial Services
+GOGL|Industrials
+GOGO|Communication Services
+GOLD|Basic Materials
+GOLF|Consumer Cyclical
+GOOD|Real Estate
+GOODN|Real Estate
+GOOG|Communication Services
+GOOGL|Communication Services
+GOOS|Consumer Cyclical
+GORO|Basic Materials
+GORV|Consumer Cyclical
+GOSS|Healthcare
+GOTU|Consumer Defensive
+GOVX|Healthcare
+GOVXW|Healthcare
+GP|Industrials
+GPAC|Financial Services
+GPACW|Financial Services
+GPAK|Industrials
+GPATU|Financial Services
+GPC|Consumer Cyclical
+GPCR|Healthcare
+GPI|Consumer Cyclical
+GPK|Consumer Cyclical
+GPMT|Real Estate
+GPN|Industrials
+GPOR|Energy
+GPRE|Basic Materials
+GPRK|Energy
+GPRO|Technology
+GPS|Consumer Cyclical
+GRAB|Technology
+GRABW|Technology
+GRBK|Consumer Cyclical
+GRC|Industrials
+GRDI|Financial Services
+GREE|Financial Services
+GRF|Financial Services
+GRFS|Healthcare
+GRFX|Basic Materials
+GRI|Healthcare
+GRIN|Industrials
+GRMN|Technology
+GRND|Technology
+GRNQ|Industrials
+GRNT|Energy
+GROM|Communication Services
+GROV|Consumer Defensive
+GROW|Financial Services
+GROY|Basic Materials
+GRPN|Communication Services
+GRRR|Technology
+GRRRW|Technology
+GRTS|Healthcare
+GRTX|Healthcare
+GRVY|Communication Services
+GRWG|Consumer Cyclical
+GRX|Financial Services
+GRYP|Financial Services
+GS|Financial Services
+GSAT|Communication Services
+GSBC|Financial Services
+GSBD|Financial Services
+GSHD|Financial Services
+GSIT|Technology
+GSIW|Financial Services
+GSK|Healthcare
+GSL|Industrials
+GSM|Basic Materials
+GSMGW|Communication Services
+GSUN|Consumer Defensive
+GT|Consumer Cyclical
+GTAC|Financial Services
+GTACW|Financial Services
+GTBP|Healthcare
+GTE|Energy
+GTEC|Industrials
+GTES|Industrials
+GTHX|Healthcare
+GTIM|Consumer Cyclical
+GTLB|Technology
+GTLS|Industrials
+GTN|Communication Services
+GTX|Consumer Cyclical
+GTY|Real Estate
+GURE|Basic Materials
+GUT|Financial Services
+GUTS|Healthcare
+GV|Consumer Defensive
+GVA|Industrials
+GVH|Industrials
+GVP|Technology
+GWAV|Industrials
+GWH|Industrials
+GWRE|Technology
+GWRS|Utilities
+GWW|Industrials
+GXAI|Communication Services
+GXO|Industrials
+GYRE|Healthcare
+GYRO|Real Estate
+H|Consumer Cyclical
+HA|Industrials
+HAE|Healthcare
+HAFC|Financial Services
+HAFN|Industrials
+HAIA|Financial Services
+HAIAW|Financial Services
+HAIN|Consumer Defensive
+HAL|Energy
+HALO|Healthcare
+HAO|Communication Services
+HAS|Consumer Cyclical
+HASI|Real Estate
+HAYN|Industrials
+HAYW|Industrials
+HBAN|Financial Services
+HBANL|Financial Services
+HBANM|Financial Services
+HBANP|Financial Services
+HBB|Consumer Cyclical
+HBCP|Financial Services
+HBI|Consumer Cyclical
+HBIO|Healthcare
+HBM|Basic Materials
+HBNC|Financial Services
+HBT|Financial Services
+HCA|Healthcare
+HCAT|Healthcare
+HCC|Basic Materials
+HCI|Financial Services
+HCKT|Technology
+HCM|Healthcare
+HCP|Technology
+HCSG|Healthcare
+HCTI|Healthcare
+HCVI|Financial Services
+HCVIW|Financial Services
+HCWB|Healthcare
+HD|Consumer Cyclical
+HDB|Financial Services
+HDSN|Basic Materials
+HE|Utilities
+HEAR|Technology
+HEES|Industrials
+HEI|Industrials
+HELE|Consumer Defensive
+HEPA|Healthcare
+HEPS|Consumer Cyclical
+HEQ|Financial Services
+HES|Energy
+HESM|Energy
+HFBL|Financial Services
+HFFG|Consumer Defensive
+HFRO|Financial Services
+HFWA|Financial Services
+HG|Financial Services
+HGAS|Basic Materials
+HGBL|Financial Services
+HGTY|Financial Services
+HGV|Consumer Cyclical
+HHGC|Financial Services
+HHH|Real Estate
+HHS|Industrials
+HI|Industrials
+HIBB|Consumer Cyclical
+HIE|Financial Services
+HIFS|Financial Services
+HIG|Financial Services
+HIHO|Industrials
+HII|Industrials
+HIMS|Consumer Defensive
+HIMX|Technology
+HIO|Financial Services
+HIPO|Financial Services
+HITI|Healthcare
+HIVE|Financial Services
+HIW|Real Estate
+HIX|Financial Services
+HKD|Technology
+HKIT|Technology
+HL|Basic Materials
+HLF|Consumer Defensive
+HLI|Financial Services
+HLIO|Industrials
+HLIT|Technology
+HLLY|Consumer Cyclical
+HLMN|Industrials
+HLN|Healthcare
+HLNE|Financial Services
+HLP|Basic Materials
+HLT|Consumer Cyclical
+HLTH|Healthcare
+HLVX|Healthcare
+HLX|Energy
+HLXB|Financial Services
+HMC|Consumer Cyclical
+HMN|Financial Services
+HMNF|Financial Services
+HMST|Financial Services
+HMY|Basic Materials
+HNI|Industrials
+HNNA|Financial Services
+HNRA|Financial Services
+HNRG|Energy
+HNST|Consumer Defensive
+HNVR|Financial Services
+HNW|Financial Services
+HOFT|Consumer Cyclical
+HOFV|Communication Services
+HOFVW|Communication Services
+HOG|Consumer Cyclical
+HOLI|Industrials
+HOLO|Technology
+HOLOW|Technology
+HOLX|Healthcare
+HOMB|Financial Services
+HON|Industrials
+HONE|Financial Services
+HOOD|Financial Services
+HOOK|Healthcare
+HOPE|Financial Services
+HOTH|Healthcare
+HOUR|Consumer Cyclical
+HOUS|Real Estate
+HOV|Consumer Cyclical
+HOVR|Industrials
+HOVRW|Industrials
+HOWL|Healthcare
+HP|Energy
+HPCO|Consumer Defensive
+HPE|Technology
+HPF|Financial Services
+HPH|Financial Services
+HPI|Financial Services
+HPK|Energy
+HPKEW|Energy
+HPP|Real Estate
+HPQ|Technology
+HPS|Financial Services
+HQH|Financial Services
+HQI|Industrials
+HQL|Financial Services
+HQY|Healthcare
+HR|Real Estate
+HRB|Consumer Cyclical
+HRI|Industrials
+HRL|Consumer Defensive
+HRMY|Healthcare
+HROW|Healthcare
+HRT|Industrials
+HRTG|Financial Services
+HRTX|Healthcare
+HRYU|Communication Services
+HRZN|Financial Services
+HSAI|Consumer Cyclical
+HSBC|Financial Services
+HSCS|Healthcare
+HSCSW|Healthcare
+HSDT|Healthcare
+HSHP|Industrials
+HSIC|Healthcare
+HSII|Industrials
+HSON|Industrials
+HSPO|Financial Services
+HSPOW|Financial Services
+HST|Real Estate
+HSTM|Healthcare
+HSY|Consumer Defensive
+HTBI|Financial Services
+HTBK|Financial Services
+HTCR|Technology
+HTD|Financial Services
+HTGC|Financial Services
+HTH|Financial Services
+HTHT|Consumer Cyclical
+HTIA|Real Estate
+HTIBP|Real Estate
+HTLD|Industrials
+HTLF|Financial Services
+HTLFP|Financial Services
+HTOO|Utilities
+HTOOW|Utilities
+HTZ|Industrials
+HTZWW|Industrials
+HUBB|Industrials
+HUBC|Technology
+HUBG|Industrials
+HUBS|Technology
+HUDA|Financial Services
+HUDAU|Financial Services
+HUDI|Basic Materials
+HUGE|Healthcare
+HUIZ|Financial Services
+HUM|Healthcare
+HUMA|Healthcare
+HUMAW|Healthcare
+HUN|Basic Materials
+HURC|Industrials
+HURN|Industrials
+HUSA|Energy
+HUT|Financial Services
+HUYA|Communication Services
+HVT|Consumer Cyclical
+HWBK|Financial Services
+HWC|Financial Services
+HWH|Consumer Cyclical
+HWKN|Basic Materials
+HWM|Industrials
+HXL|Industrials
+HY|Industrials
+HYAC|Financial Services
+HYB|Financial Services
+HYFM|Industrials
+HYI|Financial Services
+HYLN|Consumer Cyclical
+HYMC|Basic Materials
+HYMCL|Basic Materials
+HYMCW|Basic Materials
+HYPR|Healthcare
+HYT|Financial Services
+HYW|Financial Services
+HYZN|Consumer Cyclical
+HYZNW|Consumer Cyclical
+HZO|Consumer Cyclical
+IAC|Communication Services
+IAE|Financial Services
+IAF|Financial Services
+IAG|Basic Materials
+IART|Healthcare
+IAS|Communication Services
+IAUX|Basic Materials
+IBAC|Financial Services
+IBCP|Financial Services
+IBEX|Technology
+IBIO|Healthcare
+IBKR|Financial Services
+IBM|Technology
+IBN|Financial Services
+IBOC|Financial Services
+IBP|Consumer Cyclical
+IBRX|Healthcare
+IBTA|Technology
+IBTX|Financial Services
+ICAD|Healthcare
+ICCC|Healthcare
+ICCH|Financial Services
+ICCM|Healthcare
+ICCT|Healthcare
+ICD|Energy
+ICE|Financial Services
+ICFI|Industrials
+ICG|Technology
+ICHR|Technology
+ICL|Basic Materials
+ICLK|Communication Services
+ICLR|Healthcare
+ICMB|Financial Services
+ICU|Healthcare
+ICUCW|Healthcare
+ICUI|Healthcare
+IDA|Utilities
+IDAI|Technology
+IDCC|Technology
+IDE|Financial Services
+IDEX|Industrials
+IDN|Technology
+IDR|Basic Materials
+IDT|Communication Services
+IDXX|Healthcare
+IDYA|Healthcare
+IE|Basic Materials
+IEP|Energy
+IESC|Industrials
+IEX|Industrials
+IFBD|Technology
+IFF|Basic Materials
+IFIN|Financial Services
+IFN|Financial Services
+IFRX|Healthcare
+IFS|Financial Services
+IGA|Financial Services
+IGC|Healthcare
+IGD|Financial Services
+IGI|Financial Services
+IGIC|Financial Services
+IGMS|Healthcare
+IGR|Financial Services
+IGT|Consumer Cyclical
+IGTA|Financial Services
+IH|Consumer Defensive
+IHD|Financial Services
+IHG|Consumer Cyclical
+IHRT|Communication Services
+IHS|Communication Services
+IHT|Real Estate
+IIF|Financial Services
+III|Technology
+IIIN|Industrials
+IIIV|Technology
+IIM|Financial Services
+IINN|Healthcare
+IINNW|Healthcare
+IIPR|Real Estate
+IKNA|Healthcare
+IKT|Healthcare
+ILAG|Industrials
+ILMN|Healthcare
+ILPT|Real Estate
+IMAB|Healthcare
+IMAQ|Financial Services
+IMAQW|Financial Services
+IMAX|Communication Services
+IMCC|Healthcare
+IMCR|Healthcare
+IMKTA|Consumer Defensive
+IMMP|Healthcare
+IMMR|Technology
+IMMX|Healthcare
+IMNM|Healthcare
+IMNN|Healthcare
+IMO|Energy
+IMOS|Technology
+IMPP|Energy
+IMPPP|Energy
+IMRN|Healthcare
+IMRX|Healthcare
+IMTE|Technology
+IMTX|Healthcare
+IMTXW|Healthcare
+IMUX|Healthcare
+IMVT|Healthcare
+IMXI|Technology
+INAB|Healthcare
+INAQ|Financial Services
+INAQW|Financial Services
+INBK|Financial Services
+INBS|Healthcare
+INBX|Healthcare
+INCR|Healthcare
+INCY|Healthcare
+INDB|Financial Services
+INDI|Technology
+INDO|Energy
+INDP|Healthcare
+INDV|Healthcare
+INFA|Technology
+INFN|Technology
+INFU|Healthcare
+INFY|Technology
+ING|Financial Services
+INGN|Healthcare
+INGR|Consumer Defensive
+INHD|Basic Materials
+INKT|Healthcare
+INLX|Technology
+INM|Healthcare
+INMB|Healthcare
+INMD|Healthcare
+INN|Real Estate
+INNV|Healthcare
+INO|Healthcare
+INOD|Technology
+INSE|Consumer Cyclical
+INSG|Technology
+INSI|Financial Services
+INSM|Healthcare
+INSP|Healthcare
+INST|Technology
+INSW|Energy
+INTA|Technology
+INTC|Technology
+INTE|Financial Services
+INTG|Consumer Cyclical
+INTJ|Industrials
+INTR|Financial Services
+INTS|Healthcare
+INTT|Technology
+INTU|Technology
+INTZ|Technology
+INUV|Communication Services
+INVA|Healthcare
+INVE|Technology
+INVH|Real Estate
+INVO|Healthcare
+INVZ|Consumer Cyclical
+INVZW|Consumer Cyclical
+INZY|Healthcare
+IOBT|Healthcare
+IONM|Healthcare
+IONQ|Technology
+IONR|Basic Materials
+IONS|Healthcare
+IOR|Financial Services
+IOSP|Basic Materials
+IOT|Technology
+IOVA|Healthcare
+IP|Consumer Cyclical
+IPA|Healthcare
+IPAR|Consumer Defensive
+IPDN|Industrials
+IPG|Communication Services
+IPGP|Technology
+IPHA|Healthcare
+IPI|Basic Materials
+IPSC|Healthcare
+IPW|Consumer Cyclical
+IPWR|Industrials
+IPX|Basic Materials
+IPXX|Financial Services
+IQ|Communication Services
+IQI|Financial Services
+IQV|Healthcare
+IR|Industrials
+IRAA|Financial Services
+IRAAW|Financial Services
+IRBT|Consumer Cyclical
+IRDM|Communication Services
+IREN|Financial Services
+IRIX|Healthcare
+IRM|Real Estate
+IRMD|Healthcare
+IROH|Financial Services
+IROHU|Financial Services
+IROHW|Financial Services
+IRON|Healthcare
+IROQ|Financial Services
+IRS|Real Estate
+IRT|Real Estate
+IRTC|Healthcare
+IRWD|Healthcare
+ISD|Financial Services
+ISDR|Technology
+ISPC|Healthcare
+ISPO|Consumer Cyclical
+ISPOW|Consumer Cyclical
+ISPR|Consumer Defensive
+ISRG|Healthcare
+ISRL|Financial Services
+ISSC|Industrials
+ISTR|Financial Services
+ISUN|Technology
+IT|Technology
+ITCI|Healthcare
+ITGR|Healthcare
+ITI|Technology
+ITIC|Financial Services
+ITOS|Healthcare
+ITP|Basic Materials
+ITRG|Basic Materials
+ITRI|Technology
+ITRM|Healthcare
+ITRN|Technology
+ITT|Industrials
+ITUB|Financial Services
+ITW|Industrials
+IVA|Healthcare
+IVAC|Industrials
+IVCA|Financial Services
+IVCAW|Financial Services
+IVCB|Financial Services
+IVCBW|Financial Services
+IVCP|Financial Services
+IVDA|Industrials
+IVP|Consumer Cyclical
+IVR|Real Estate
+IVT|Real Estate
+IVVD|Healthcare
+IVZ|Financial Services
+IX|Financial Services
+IXAQ|Financial Services
+IXAQW|Financial Services
+IXHL|Healthcare
+IZEA|Communication Services
+IZM|Technology
+J|Industrials
+JACK|Consumer Cyclical
+JAGX|Healthcare
+JAKK|Consumer Cyclical
+JAMF|Technology
+JAN|Industrials
+JANX|Healthcare
+JAZZ|Healthcare
+JBGS|Real Estate
+JBHT|Industrials
+JBI|Industrials
+JBL|Technology
+JBLU|Industrials
+JBSS|Consumer Defensive
+JBT|Industrials
+JCE|Financial Services
+JCI|Industrials
+JCSE|Industrials
+JCTCF|Basic Materials
+JD|Consumer Cyclical
+JEF|Financial Services
+JELD|Industrials
+JEQ|Financial Services
+JEWL|Consumer Cyclical
+JFBR|Consumer Cyclical
+JFBRW|Consumer Cyclical
+JFIN|Communication Services
+JFR|Financial Services
+JFU|Technology
+JG|Technology
+JGH|Financial Services
+JHG|Financial Services
+JHI|Financial Services
+JHS|Financial Services
+JHX|Basic Materials
+JILL|Consumer Cyclical
+JJSF|Consumer Defensive
+JKHY|Technology
+JKS|Technology
+JL|Consumer Cyclical
+JLL|Real Estate
+JLS|Financial Services
+JMIA|Consumer Cyclical
+JMM|Financial Services
+JMSB|Financial Services
+JNJ|Healthcare
+JNPR|Technology
+JNVR|Technology
+JOB|Industrials
+JOBY|Industrials
+JOE|Real Estate
+JOF|Financial Services
+JOUT|Consumer Cyclical
+JPC|Financial Services
+JPI|Financial Services
+JPM|Financial Services
+JQC|Financial Services
+JRI|Financial Services
+JRS|Financial Services
+JRSH|Consumer Cyclical
+JRVR|Financial Services
+JSPR|Healthcare
+JSPRW|Healthcare
+JTAI|Technology
+JTAIW|Technology
+JTAIZ|Technology
+JUNE|Industrials
+JVA|Consumer Defensive
+JVSA|Financial Services
+JVSAU|Financial Services
+JWEL|Consumer Cyclical
+JWN|Consumer Cyclical
+JWSM|Financial Services
+JXJT|Consumer Cyclical
+JXN|Financial Services
+JYD|Industrials
+JYNT|Healthcare
+JZ|Consumer Defensive
+JZXN|Consumer Cyclical
+K|Consumer Defensive
+KA|Healthcare
+KACLW|Financial Services
+KAI|Industrials
+KALA|Healthcare
+KALU|Basic Materials
+KALV|Healthcare
+KAR|Consumer Cyclical
+KARO|Technology
+KAVL|Consumer Defensive
+KB|Financial Services
+KBH|Consumer Cyclical
+KBR|Industrials
+KC|Technology
+KCGI|Financial Services
+KD|Technology
+KDP|Consumer Defensive
+KE|Industrials
+KELYA|Industrials
+KELYB|Industrials
+KEN|Utilities
+KEP|Utilities
+KEQU|Consumer Cyclical
+KEX|Industrials
+KEY|Financial Services
+KEYS|Technology
+KF|Financial Services
+KFFB|Financial Services
+KFRC|Industrials
+KFS|Consumer Cyclical
+KFY|Industrials
+KGC|Basic Materials
+KGEI|Energy
+KGS|Energy
+KHC|Consumer Defensive
+KIDS|Healthcare
+KIM|Real Estate
+KIND|Communication Services
+KINS|Financial Services
+KIO|Financial Services
+KIRK|Consumer Cyclical
+KITT|Industrials
+KITTW|Industrials
+KKR|Financial Services
+KLAC|Technology
+KLG|Consumer Defensive
+KLIC|Technology
+KLTR|Technology
+KLXE|Energy
+KMB|Consumer Defensive
+KMDA|Healthcare
+KMI|Energy
+KMPR|Financial Services
+KMT|Industrials
+KMX|Consumer Cyclical
+KN|Technology
+KNDI|Consumer Cyclical
+KNF|Basic Materials
+KNOP|Industrials
+KNSA|Healthcare
+KNSL|Financial Services
+KNTK|Energy
+KNW|Technology
+KNX|Industrials
+KO|Consumer Defensive
+KOD|Healthcare
+KODK|Industrials
+KOF|Consumer Defensive
+KOP|Basic Materials
+KOPN|Technology
+KORE|Communication Services
+KOS|Energy
+KOSS|Technology
+KPLT|Technology
+KPLTW|Technology
+KPRX|Healthcare
+KPTI|Healthcare
+KR|Consumer Defensive
+KRC|Real Estate
+KREF|Real Estate
+KRG|Real Estate
+KRKR|Communication Services
+KRMD|Healthcare
+KRNL|Financial Services
+KRNLW|Financial Services
+KRNT|Industrials
+KRNY|Financial Services
+KRO|Basic Materials
+KRON|Healthcare
+KROS|Healthcare
+KRP|Energy
+KRRO|Healthcare
+KRT|Consumer Cyclical
+KRUS|Consumer Cyclical
+KRYS|Healthcare
+KSCP|Industrials
+KSM|Financial Services
+KSPI|Technology
+KSS|Consumer Cyclical
+KT|Communication Services
+KTB|Consumer Cyclical
+KTCC|Technology
+KTF|Financial Services
+KTOS|Industrials
+KTRA|Healthcare
+KTTA|Healthcare
+KTTAW|Healthcare
+KUKE|Communication Services
+KULR|Technology
+KURA|Healthcare
+KVAC|Financial Services
+KVACU|Financial Services
+KVACW|Financial Services
+KVHI|Technology
+KVUE|Consumer Defensive
+KVYO|Technology
+KW|Real Estate
+KWE|Industrials
+KWESW|Industrials
+KWR|Basic Materials
+KXIN|Consumer Cyclical
+KYMR|Healthcare
+KYN|Financial Services
+KYTX|Healthcare
+KZIA|Healthcare
+KZR|Healthcare
+L|Financial Services
+LAAC|Basic Materials
+LAB|Healthcare
+LABP|Healthcare
+LAC|Basic Materials
+LAD|Consumer Cyclical
+LADR|Real Estate
+LAES|Technology
+LAKE|Consumer Cyclical
+LAMR|Real Estate
+LANC|Consumer Defensive
+LAND|Real Estate
+LANDM|Real Estate
+LANDO|Real Estate
+LANDP|Real Estate
+LANV|Consumer Cyclical
+LARK|Financial Services
+LASE|Industrials
+LASR|Technology
+LATG|Financial Services
+LAUR|Consumer Defensive
+LAW|Technology
+LAZ|Financial Services
+LAZR|Consumer Cyclical
+LBPH|Healthcare
+LBRDA|Communication Services
+LBRDK|Communication Services
+LBRDP|Communication Services
+LBRT|Energy
+LBTYA|Communication Services
+LBTYB|Communication Services
+LBTYK|Communication Services
+LC|Financial Services
+LCFY|Communication Services
+LCID|Consumer Cyclical
+LCII|Consumer Cyclical
+LCNB|Financial Services
+LCTX|Healthcare
+LCUT|Consumer Cyclical
+LCW|Financial Services
+LDI|Financial Services
+LDOS|Technology
+LDTC|Technology
+LDTCW|Technology
+LDWY|Communication Services
+LE|Consumer Cyclical
+LEA|Consumer Cyclical
+LECO|Industrials
+LEDS|Technology
+LEE|Communication Services
+LEG|Consumer Cyclical
+LEGH|Consumer Cyclical
+LEGN|Healthcare
+LEGT|Financial Services
+LEN|Consumer Cyclical
+LENZ|Healthcare
+LEO|Financial Services
+LESL|Consumer Cyclical
+LEU|Energy
+LEV|Industrials
+LEVI|Consumer Cyclical
+LEXX|Healthcare
+LEXXW|Healthcare
+LFCR|Healthcare
+LFLY|Healthcare
+LFMD|Healthcare
+LFMDP|Healthcare
+LFST|Healthcare
+LFT|Real Estate
+LFUS|Technology
+LFVN|Consumer Defensive
+LFWD|Healthcare
+LGCB|Consumer Cyclical
+LGCL|Technology
+LGHL|Financial Services
+LGHLW|Financial Services
+LGI|Financial Services
+LGIH|Consumer Cyclical
+LGL|Technology
+LGMK|Healthcare
+LGND|Healthcare
+LGO|Basic Materials
+LGVN|Healthcare
+LH|Healthcare
+LHX|Industrials
+LI|Consumer Cyclical
+LICN|Industrials
+LICY|Industrials
+LIDR|Technology
+LIDRW|Technology
+LIFE|Healthcare
+LIFW|Healthcare
+LIFWW|Healthcare
+LII|Industrials
+LILA|Communication Services
+LILAK|Communication Services
+LILM|Industrials
+LILMW|Industrials
+LIN|Basic Materials
+LINC|Consumer Defensive
+LIND|Consumer Cyclical
+LINK|Technology
+LIPO|Healthcare
+LIQT|Industrials
+LITB|Consumer Cyclical
+LITE|Technology
+LITM|Basic Materials
+LIVE|Consumer Cyclical
+LIVN|Healthcare
+LIXT|Healthcare
+LIXTW|Healthcare
+LKCO|Technology
+LKFN|Financial Services
+LKQ|Consumer Cyclical
+LL|Consumer Cyclical
+LLAP|Industrials
+LLY|Healthcare
+LLYVA|Communication Services
+LLYVK|Communication Services
+LMAT|Healthcare
+LMB|Industrials
+LMFA|Financial Services
+LMND|Financial Services
+LMNR|Consumer Defensive
+LMT|Industrials
+LNC|Financial Services
+LND|Consumer Defensive
+LNG|Energy
+LNKB|Financial Services
+LNN|Industrials
+LNSR|Healthcare
+LNT|Utilities
+LNTH|Healthcare
+LNW|Consumer Cyclical
+LNZA|Industrials
+LOAN|Real Estate
+LOB|Financial Services
+LOBO|Consumer Cyclical
+LOCL|Consumer Defensive
+LOCO|Consumer Cyclical
+LODE|Basic Materials
+LOGC|Consumer Cyclical
+LOGI|Technology
+LOMA|Basic Materials
+LOOP|Basic Materials
+LOPE|Consumer Defensive
+LOT|Consumer Cyclical
+LOTWW|Consumer Cyclical
+LOVE|Consumer Cyclical
+LOW|Consumer Cyclical
+LPCN|Healthcare
+LPG|Energy
+LPL|Technology
+LPLA|Financial Services
+LPRO|Financial Services
+LPSN|Technology
+LPTH|Technology
+LPTV|Communication Services
+LPTX|Healthcare
+LPX|Industrials
+LQDA|Healthcare
+LQDT|Consumer Cyclical
+LQR|Consumer Defensive
+LRCX|Technology
+LRE|Real Estate
+LRFC|Financial Services
+LRHC|Real Estate
+LRMR|Healthcare
+LRN|Consumer Defensive
+LSAK|Technology
+LSBK|Financial Services
+LSCC|Technology
+LSDI|Healthcare
+LSEA|Real Estate
+LSEAW|Real Estate
+LSF|Consumer Defensive
+LSPD|Technology
+LSTA|Healthcare
+LSTR|Industrials
+LSXMA|Communication Services
+LSXMB|Communication Services
+LSXMK|Communication Services
+LTBR|Industrials
+LTC|Real Estate
+LTH|Consumer Cyclical
+LTRN|Healthcare
+LTRX|Technology
+LTRY|Consumer Cyclical
+LU|Financial Services
+LUCD|Healthcare
+LUCY|Healthcare
+LULU|Consumer Cyclical
+LUMN|Communication Services
+LUMO|Healthcare
+LUNA|Technology
+LUNG|Healthcare
+LUNR|Industrials
+LUV|Industrials
+LUXH|Consumer Cyclical
+LUXHP|Consumer Cyclical
+LVLU|Consumer Cyclical
+LVO|Communication Services
+LVRO|Basic Materials
+LVS|Consumer Cyclical
+LVTX|Healthcare
+LVWR|Consumer Cyclical
+LW|Consumer Defensive
+LWAY|Consumer Defensive
+LWLG|Basic Materials
+LX|Financial Services
+LXEH|Consumer Defensive
+LXEO|Healthcare
+LXFR|Industrials
+LXP|Real Estate
+LXRX|Healthcare
+LXU|Basic Materials
+LYB|Basic Materials
+LYEL|Healthcare
+LYFT|Technology
+LYG|Financial Services
+LYRA|Healthcare
+LYT|Technology
+LYTS|Technology
+LYV|Communication Services
+LZ|Industrials
+LZB|Consumer Cyclical
+LZM|Basic Materials
+M|Consumer Cyclical
+MA|Financial Services
+MAA|Real Estate
+MAC|Real Estate
+MACA|Financial Services
+MACK|Healthcare
+MAG|Basic Materials
+MAIA|Healthcare
+MAIN|Financial Services
+MAMA|Consumer Defensive
+MAMO|Consumer Cyclical
+MAN|Industrials
+MANH|Technology
+MANU|Communication Services
+MAPS|Technology
+MAPSW|Technology
+MAQC|Financial Services
+MAR|Consumer Cyclical
+MARA|Financial Services
+MARPS|Energy
+MARX|Financial Services
+MARXU|Financial Services
+MAS|Industrials
+MASI|Healthcare
+MASS|Healthcare
+MAT|Consumer Cyclical
+MATH|Financial Services
+MATV|Basic Materials
+MATW|Industrials
+MATX|Industrials
+MAV|Financial Services
+MAX|Communication Services
+MAXN|Technology
+MAYS|Real Estate
+MBC|Consumer Cyclical
+MBCN|Financial Services
+MBI|Financial Services
+MBIN|Financial Services
+MBINM|Financial Services
+MBINN|Financial Services
+MBINO|Financial Services
+MBIO|Healthcare
+MBLY|Consumer Cyclical
+MBNKP|Financial Services
+MBOT|Healthcare
+MBRX|Healthcare
+MBUU|Consumer Cyclical
+MBWM|Financial Services
+MC|Financial Services
+MCAA|Financial Services
+MCAC|Financial Services
+MCACW|Financial Services
+MCAG|Financial Services
+MCB|Financial Services
+MCBC|Financial Services
+MCBS|Financial Services
+MCD|Consumer Cyclical
+MCFT|Consumer Cyclical
+MCHP|Technology
+MCHX|Communication Services
+MCI|Financial Services
+MCK|Healthcare
+MCN|Financial Services
+MCO|Financial Services
+MCR|Financial Services
+MCRB|Healthcare
+MCRI|Consumer Cyclical
+MCS|Communication Services
+MCVT|Financial Services
+MCW|Consumer Cyclical
+MCY|Financial Services
+MD|Healthcare
+MDAI|Healthcare
+MDAIW|Healthcare
+MDB|Technology
+MDBH|Financial Services
+MDGL|Healthcare
+MDIA|Communication Services
+MDJH|Real Estate
+MDLZ|Consumer Defensive
+MDRR|Real Estate
+MDRRP|Real Estate
+MDT|Healthcare
+MDU|Industrials
+MDV|Real Estate
+MDWD|Healthcare
+MDXG|Healthcare
+MDXH|Healthcare
+ME|Healthcare
+MEC|Industrials
+MED|Consumer Cyclical
+MEDP|Healthcare
+MEDS|Healthcare
+MEG|Industrials
+MEGL|Financial Services
+MEI|Technology
+MEIP|Healthcare
+MELI|Consumer Cyclical
+MEOH|Basic Materials
+MERC|Basic Materials
+MESA|Industrials
+MESO|Healthcare
+MET|Financial Services
+META|Communication Services
+METC|Basic Materials
+METCB|Basic Materials
+MFA|Real Estate
+MFC|Financial Services
+MFD|Financial Services
+MFG|Financial Services
+MFH|Financial Services
+MFI|Technology
+MFIC|Financial Services
+MFIN|Financial Services
+MFM|Financial Services
+MG|Industrials
+MGA|Consumer Cyclical
+MGEE|Utilities
+MGF|Financial Services
+MGIC|Technology
+MGIH|Consumer Cyclical
+MGLD|Financial Services
+MGM|Consumer Cyclical
+MGNI|Communication Services
+MGNX|Healthcare
+MGOL|Communication Services
+MGPI|Consumer Defensive
+MGRC|Industrials
+MGRM|Healthcare
+MGRX|Healthcare
+MGTX|Healthcare
+MGX|Healthcare
+MGY|Energy
+MGYR|Financial Services
+MHD|Financial Services
+MHF|Financial Services
+MHH|Industrials
+MHI|Financial Services
+MHK|Consumer Cyclical
+MHLD|Financial Services
+MHN|Financial Services
+MHO|Consumer Cyclical
+MHUA|Healthcare
+MI|Consumer Cyclical
+MICS|Technology
+MIDD|Industrials
+MIGI|Financial Services
+MIN|Financial Services
+MIND|Technology
+MINDP|Technology
+MINM|Technology
+MIR|Industrials
+MIRA|Healthcare
+MIRM|Healthcare
+MIST|Healthcare
+MITA|Financial Services
+MITK|Technology
+MITQ|Technology
+MITT|Real Estate
+MIY|Financial Services
+MKL|Financial Services
+MKSI|Technology
+MKTW|Technology
+MKTX|Financial Services
+ML|Technology
+MLAB|Technology
+MLCO|Consumer Cyclical
+MLEC|Healthcare
+MLECW|Healthcare
+MLGO|Technology
+MLI|Industrials
+MLKN|Consumer Cyclical
+MLM|Basic Materials
+MLNK|Technology
+MLP|Real Estate
+MLR|Consumer Cyclical
+MLSS|Healthcare
+MLTX|Healthcare
+MLYS|Healthcare
+MMAT|Technology
+MMC|Financial Services
+MMD|Financial Services
+MMI|Real Estate
+MMLP|Energy
+MMM|Industrials
+MMS|Industrials
+MMSI|Healthcare
+MMT|Financial Services
+MMU|Financial Services
+MMV|Communication Services
+MMVWW|Communication Services
+MMYT|Consumer Cyclical
+MNDO|Technology
+MNDR|Healthcare
+MNDY|Technology
+MNKD|Healthcare
+MNMD|Healthcare
+MNOV|Healthcare
+MNPR|Healthcare
+MNR|Energy
+MNRO|Consumer Cyclical
+MNSB|Financial Services
+MNSBP|Financial Services
+MNSO|Consumer Cyclical
+MNST|Consumer Defensive
+MNTK|Utilities
+MNTN|Financial Services
+MNTS|Industrials
+MNTSW|Industrials
+MNTX|Industrials
+MNY|Communication Services
+MNYWW|Communication Services
+MO|Consumer Defensive
+MOB|Technology
+MOBBW|Technology
+MOBX|Technology
+MOBXW|Technology
+MOD|Consumer Cyclical
+MODD|Healthcare
+MODG|Consumer Cyclical
+MODN|Technology
+MODV|Healthcare
+MOFG|Financial Services
+MOGO|Technology
+MOGU|Consumer Cyclical
+MOH|Healthcare
+MOLN|Healthcare
+MOMO|Communication Services
+MOND|Consumer Cyclical
+MOR|Healthcare
+MORF|Healthcare
+MORN|Financial Services
+MOS|Basic Materials
+MOV|Consumer Cyclical
+MOVE|Healthcare
+MP|Basic Materials
+MPA|Financial Services
+MPAA|Consumer Cyclical
+MPB|Financial Services
+MPC|Energy
+MPLN|Healthcare
+MPLX|Energy
+MPTI|Technology
+MPU|Communication Services
+MPV|Financial Services
+MPW|Real Estate
+MPWR|Technology
+MPX|Consumer Cyclical
+MQ|Technology
+MQT|Financial Services
+MQY|Financial Services
+MRAI|Healthcare
+MRAM|Technology
+MRBK|Financial Services
+MRC|Energy
+MRCC|Financial Services
+MRCY|Industrials
+MRDB|Technology
+MREO|Healthcare
+MRIN|Technology
+MRK|Healthcare
+MRKR|Healthcare
+MRM|Consumer Cyclical
+MRNA|Healthcare
+MRNO|Real Estate
+MRNOW|Real Estate
+MRNS|Healthcare
+MRO|Energy
+MRSN|Healthcare
+MRT|Technology
+MRTN|Industrials
+MRUS|Healthcare
+MRVI|Healthcare
+MRVL|Technology
+MRX|Financial Services
+MS|Financial Services
+MSA|Industrials
+MSAI|Technology
+MSAIW|Technology
+MSB|Basic Materials
+MSBI|Financial Services
+MSBIP|Financial Services
+MSC|Consumer Cyclical
+MSCI|Financial Services
+MSD|Financial Services
+MSEX|Utilities
+MSFT|Technology
+MSGE|Consumer Cyclical
+MSGM|Communication Services
+MSGS|Communication Services
+MSI|Technology
+MSM|Industrials
+MSN|Technology
+MSS|Consumer Defensive
+MSSA|Financial Services
+MSTR|Technology
+MT|Basic Materials
+MTA|Basic Materials
+MTAL|Basic Materials
+MTB|Financial Services
+MTC|Technology
+MTCH|Communication Services
+MTD|Healthcare
+MTDR|Energy
+MTEK|Technology
+MTEM|Healthcare
+MTEN|Industrials
+MTEX|Consumer Defensive
+MTG|Financial Services
+MTH|Consumer Cyclical
+MTLS|Technology
+MTN|Consumer Cyclical
+MTNB|Healthcare
+MTR|Energy
+MTRN|Basic Materials
+MTRX|Industrials
+MTSI|Technology
+MTTR|Technology
+MTUS|Basic Materials
+MTW|Industrials
+MTX|Basic Materials
+MTZ|Industrials
+MU|Technology
+MUA|Financial Services
+MUC|Financial Services
+MUE|Financial Services
+MUFG|Financial Services
+MUI|Financial Services
+MUJ|Financial Services
+MULN|Consumer Cyclical
+MUR|Energy
+MURA|Healthcare
+MUSA|Consumer Cyclical
+MUX|Basic Materials
+MVBF|Financial Services
+MVF|Financial Services
+MVIS|Technology
+MVO|Energy
+MVST|Industrials
+MVSTW|Industrials
+MVT|Financial Services
+MWA|Industrials
+MWG|Industrials
+MX|Technology
+MXC|Energy
+MXCT|Healthcare
+MXE|Financial Services
+MXF|Financial Services
+MXL|Technology
+MYD|Financial Services
+MYE|Consumer Cyclical
+MYFW|Financial Services
+MYGN|Healthcare
+MYI|Financial Services
+MYMD|Healthcare
+MYN|Financial Services
+MYNA|Technology
+MYND|Consumer Defensive
+MYNZ|Healthcare
+MYO|Healthcare
+MYPS|Communication Services
+MYRG|Industrials
+MYSZ|Technology
+MYTE|Consumer Cyclical
+NA|Technology
+NAAS|Consumer Cyclical
+NABL|Technology
+NAC|Financial Services
+NAD|Financial Services
+NAII|Consumer Defensive
+NAK|Basic Materials
+NAMS|Healthcare
+NAMSW|Healthcare
+NAN|Financial Services
+NAOV|Healthcare
+NAPA|Consumer Defensive
+NARI|Healthcare
+NAT|Industrials
+NATH|Consumer Cyclical
+NATL|Technology
+NATR|Consumer Defensive
+NAUT|Healthcare
+NAVI|Financial Services
+NAZ|Financial Services
+NB|Basic Materials
+NBB|Financial Services
+NBBK|Financial Services
+NBH|Financial Services
+NBHC|Financial Services
+NBIX|Healthcare
+NBN|Financial Services
+NBR|Energy
+NBSTW|Financial Services
+NBTB|Financial Services
+NBTX|Healthcare
+NBY|Healthcare
+NC|Energy
+NCA|Financial Services
+NCI|Consumer Cyclical
+NCL|Consumer Cyclical
+NCLH|Consumer Cyclical
+NCMI|Communication Services
+NCNA|Healthcare
+NCNC|Consumer Cyclical
+NCNO|Technology
+NCPL|Financial Services
+NCPLW|Financial Services
+NCRA|Consumer Defensive
+NCSM|Energy
+NCTY|Financial Services
+NCV|Financial Services
+NCZ|Financial Services
+NDAQ|Financial Services
+NDLS|Consumer Cyclical
+NDP|Financial Services
+NDRA|Healthcare
+NDSN|Industrials
+NE|Energy
+NEA|Financial Services
+NECB|Financial Services
+NEE|Utilities
+NEGG|Consumer Cyclical
+NEM|Basic Materials
+NEN|Real Estate
+NEO|Healthcare
+NEOG|Healthcare
+NEON|Technology
+NEOV|Industrials
+NEOVW|Industrials
+NEP|Utilities
+NEPH|Healthcare
+NERV|Healthcare
+NET|Technology
+NETD|Financial Services
+NETDU|Financial Services
+NETDW|Financial Services
+NEU|Basic Materials
+NEUE|Healthcare
+NEWP|Basic Materials
+NEWT|Financial Services
+NEXA|Basic Materials
+NEXI|Healthcare
+NEXN|Communication Services
+NEXT|Energy
+NFBK|Financial Services
+NFE|Utilities
+NFG|Energy
+NFGC|Basic Materials
+NFJ|Financial Services
+NFLX|Communication Services
+NFYS|Financial Services
+NG|Basic Materials
+NGD|Basic Materials
+NGG|Utilities
+NGL|Energy
+NGNE|Healthcare
+NGS|Energy
+NGVC|Consumer Defensive
+NGVT|Basic Materials
+NHC|Healthcare
+NHI|Real Estate
+NHS|Financial Services
+NHTC|Consumer Cyclical
+NI|Utilities
+NIC|Financial Services
+NICE|Technology
+NICK|Financial Services
+NIE|Financial Services
+NIM|Financial Services
+NINE|Energy
+NIO|Consumer Cyclical
+NISN|Financial Services
+NITO|Basic Materials
+NIU|Consumer Cyclical
+NJR|Utilities
+NKE|Consumer Cyclical
+NKGN|Healthcare
+NKGNW|Healthcare
+NKLA|Industrials
+NKSH|Financial Services
+NKTR|Healthcare
+NKTX|Healthcare
+NKX|Financial Services
+NL|Industrials
+NLOP|Real Estate
+NLSP|Healthcare
+NLSPW|Healthcare
+NLY|Real Estate
+NMCO|Financial Services
+NMFC|Financial Services
+NMG|Basic Materials
+NMHI|Industrials
+NMHIW|Industrials
+NMI|Financial Services
+NMIH|Financial Services
+NML|Financial Services
+NMM|Industrials
+NMR|Financial Services
+NMRA|Healthcare
+NMRK|Real Estate
+NMS|Financial Services
+NMT|Financial Services
+NMTC|Healthcare
+NMZ|Financial Services
+NN|Technology
+NNAG|Financial Services
+NNAGU|Financial Services
+NNAVW|Technology
+NNBR|Industrials
+NNDM|Technology
+NNE|Industrials
+NNI|Financial Services
+NNN|Real Estate
+NNOX|Healthcare
+NNVC|Healthcare
+NNY|Financial Services
+NOA|Energy
+NOAH|Financial Services
+NOC|Industrials
+NODK|Financial Services
+NOG|Energy
+NOK|Technology
+NOM|Financial Services
+NOMD|Consumer Defensive
+NOTE|Technology
+NOTV|Healthcare
+NOV|Energy
+NOVA|Technology
+NOVT|Technology
+NOVV|Financial Services
+NOW|Technology
+NPAB|Financial Services
+NPABW|Financial Services
+NPCE|Healthcare
+NPCT|Financial Services
+NPFD|Financial Services
+NPK|Industrials
+NPO|Industrials
+NPV|Financial Services
+NPWR|Industrials
+NQP|Financial Services
+NR|Energy
+NRBO|Healthcare
+NRC|Healthcare
+NRDS|Communication Services
+NRDY|Technology
+NREF|Real Estate
+NRG|Utilities
+NRGV|Utilities
+NRIM|Financial Services
+NRIX|Healthcare
+NRK|Financial Services
+NRO|Financial Services
+NRP|Energy
+NRSN|Healthcare
+NRSNW|Healthcare
+NRT|Energy
+NRXP|Healthcare
+NRXPW|Healthcare
+NRXS|Healthcare
+NSA|Real Estate
+NSC|Industrials
+NSIT|Technology
+NSP|Industrials
+NSPR|Healthcare
+NSSC|Industrials
+NSTS|Financial Services
+NSYS|Healthcare
+NTAP|Technology
+NTB|Financial Services
+NTBL|Healthcare
+NTCT|Technology
+NTES|Communication Services
+NTG|Financial Services
+NTGR|Technology
+NTIC|Basic Materials
+NTIP|Industrials
+NTLA|Healthcare
+NTNX|Technology
+NTR|Basic Materials
+NTRA|Healthcare
+NTRB|Healthcare
+NTRBW|Healthcare
+NTRP|Consumer Cyclical
+NTRS|Financial Services
+NTRSO|Financial Services
+NTST|Real Estate
+NTWK|Technology
+NTZ|Consumer Cyclical
+NU|Financial Services
+NUE|Basic Materials
+NUKK|Technology
+NUKKW|Technology
+NURO|Healthcare
+NUS|Consumer Defensive
+NUTX|Healthcare
+NUV|Financial Services
+NUVB|Healthcare
+NUVL|Healthcare
+NUVO|Healthcare
+NUVOW|Healthcare
+NUW|Financial Services
+NUWE|Healthcare
+NUZE|Consumer Defensive
+NVAC|Financial Services
+NVAX|Healthcare
+NVCR|Healthcare
+NVCT|Healthcare
+NVDA|Technology
+NVEC|Technology
+NVEE|Industrials
+NVEI|Technology
+NVFY|Consumer Cyclical
+NVG|Financial Services
+NVGS|Energy
+NVMI|Technology
+NVNI|Technology
+NVNIW|Technology
+NVNO|Healthcare
+NVO|Healthcare
+NVOS|Healthcare
+NVR|Consumer Cyclical
+NVRI|Industrials
+NVRO|Healthcare
+NVS|Healthcare
+NVST|Healthcare
+NVT|Industrials
+NVTS|Technology
+NVVE|Consumer Cyclical
+NVVEW|Consumer Cyclical
+NVX|Industrials
+NWBI|Financial Services
+NWE|Utilities
+NWFL|Financial Services
+NWG|Financial Services
+NWGL|Basic Materials
+NWL|Consumer Defensive
+NWLI|Financial Services
+NWN|Utilities
+NWPX|Industrials
+NWS|Communication Services
+NWSA|Communication Services
+NWTN|Consumer Cyclical
+NWTNW|Consumer Cyclical
+NX|Industrials
+NXC|Financial Services
+NXDT|Real Estate
+NXE|Energy
+NXG|Financial Services
+NXGL|Healthcare
+NXGLW|Healthcare
+NXJ|Financial Services
+NXL|Healthcare
+NXLIW|Healthcare
+NXN|Financial Services
+NXP|Financial Services
+NXPI|Technology
+NXPL|Technology
+NXPLW|Technology
+NXRT|Real Estate
+NXST|Communication Services
+NXT|Technology
+NXTC|Healthcare
+NXTT|Technology
+NXU|Industrials
+NYAX|Technology
+NYC|Real Estate
+NYCB|Financial Services
+NYMT|Real Estate
+NYMTL|Real Estate
+NYMTM|Real Estate
+NYMTN|Real Estate
+NYMTZ|Real Estate
+NYT|Communication Services
+NYXH|Healthcare
+NZF|Financial Services
+O|Real Estate
+OABI|Healthcare
+OABIW|Healthcare
+OAKU|Financial Services
+OAKUU|Financial Services
+OB|Communication Services
+OBDC|Financial Services
+OBE|Energy
+OBIO|Healthcare
+OBK|Financial Services
+OBLG|Technology
+OBT|Financial Services
+OC|Industrials
+OCAX|Financial Services
+OCAXU|Financial Services
+OCAXW|Financial Services
+OCC|Technology
+OCCI|Financial Services
+OCCIN|Financial Services
+OCCIO|Financial Services
+OCEA|Healthcare
+OCFC|Financial Services
+OCFCP|Financial Services
+OCFT|Technology
+OCG|Consumer Cyclical
+OCGN|Healthcare
+OCN|Financial Services
+OCS|Healthcare
+OCSL|Financial Services
+OCTO|Consumer Cyclical
+OCUL|Healthcare
+OCUP|Healthcare
+OCX|Healthcare
+ODC|Basic Materials
+ODD|Technology
+ODFL|Industrials
+ODP|Consumer Cyclical
+ODV|Basic Materials
+ODVWZ|Basic Materials
+OEC|Basic Materials
+OESX|Industrials
+OFG|Financial Services
+OFIX|Healthcare
+OFLX|Industrials
+OFS|Financial Services
+OGE|Utilities
+OGEN|Healthcare
+OGI|Healthcare
+OGN|Healthcare
+OGS|Utilities
+OHI|Real Estate
+OI|Consumer Cyclical
+OIA|Financial Services
+OII|Energy
+OIS|Energy
+OKE|Energy
+OKLO|Utilities
+OKTA|Technology
+OKYO|Healthcare
+OLB|Technology
+OLED|Technology
+OLK|Healthcare
+OLLI|Consumer Defensive
+OLMA|Healthcare
+OLN|Basic Materials
+OLO|Technology
+OLP|Real Estate
+OLPX|Consumer Cyclical
+OM|Healthcare
+OMAB|Industrials
+OMC|Communication Services
+OMCL|Healthcare
+OMER|Healthcare
+OMEX|Industrials
+OMF|Financial Services
+OMGA|Healthcare
+OMH|Real Estate
+OMI|Healthcare
+OMIC|Healthcare
+ON|Technology
+ONB|Financial Services
+ONBPO|Financial Services
+ONBPP|Financial Services
+ONCO|Healthcare
+ONCT|Healthcare
+ONCY|Healthcare
+ONDS|Technology
+ONEW|Consumer Cyclical
+ONFO|Communication Services
+ONFOW|Communication Services
+ONL|Real Estate
+ONMD|Healthcare
+ONON|Consumer Cyclical
+ONTF|Technology
+ONTO|Technology
+ONVO|Healthcare
+ONYX|Financial Services
+OOMA|Technology
+OP|Industrials
+OPAD|Real Estate
+OPAL|Utilities
+OPBK|Financial Services
+OPCH|Healthcare
+OPEN|Real Estate
+OPFI|Financial Services
+OPGN|Healthcare
+OPHC|Financial Services
+OPI|Real Estate
+OPK|Healthcare
+OPOF|Financial Services
+OPP|Financial Services
+OPRA|Communication Services
+OPRT|Financial Services
+OPRX|Healthcare
+OPT|Healthcare
+OPTN|Healthcare
+OPTT|Industrials
+OPTX|Technology
+OPTXW|Technology
+OPXS|Industrials
+OPY|Financial Services
+OR|Basic Materials
+ORA|Utilities
+ORAN|Communication Services
+ORC|Real Estate
+ORCL|Technology
+ORGN|Basic Materials
+ORGNW|Basic Materials
+ORGO|Healthcare
+ORGS|Healthcare
+ORI|Financial Services
+ORIC|Healthcare
+ORLA|Basic Materials
+ORLY|Consumer Cyclical
+ORMP|Healthcare
+ORN|Industrials
+ORRF|Financial Services
+OSBC|Financial Services
+OSCR|Healthcare
+OSG|Energy
+OSI|Financial Services
+OSIS|Technology
+OSK|Industrials
+OSPN|Technology
+OSS|Technology
+OST|Technology
+OSUR|Healthcare
+OSW|Consumer Cyclical
+OTEX|Technology
+OTIS|Industrials
+OTLK|Healthcare
+OTLY|Consumer Defensive
+OTRK|Healthcare
+OTTR|Utilities
+OUST|Technology
+OUT|Real Estate
+OVBC|Financial Services
+OVID|Healthcare
+OVLY|Financial Services
+OVV|Energy
+OWL|Financial Services
+OWLT|Healthcare
+OXBR|Financial Services
+OXBRW|Financial Services
+OXLC|Financial Services
+OXLCM|Financial Services
+OXLCN|Financial Services
+OXLCO|Financial Services
+OXLCP|Financial Services
+OXM|Consumer Cyclical
+OXSQ|Financial Services
+OXY|Energy
+OZ|Real Estate
+OZK|Financial Services
+OZKAP|Financial Services
+PAA|Energy
+PAAS|Basic Materials
+PAC|Industrials
+PACB|Healthcare
+PACK|Consumer Cyclical
+PACS|Healthcare
+PAG|Consumer Cyclical
+PAGP|Energy
+PAGS|Technology
+PAHC|Healthcare
+PAI|Financial Services
+PAL|Industrials
+PALI|Healthcare
+PALT|Technology
+PAM|Utilities
+PANL|Industrials
+PANW|Technology
+PAPL|Financial Services
+PAR|Technology
+PARA|Communication Services
+PARAA|Communication Services
+PARR|Energy
+PASG|Healthcare
+PATH|Technology
+PATK|Consumer Cyclical
+PAVM|Healthcare
+PAVMZ|Healthcare
+PAVS|Consumer Defensive
+PAX|Financial Services
+PAXS|Financial Services
+PAY|Technology
+PAYC|Technology
+PAYO|Technology
+PAYOW|Technology
+PAYS|Technology
+PAYX|Industrials
+PB|Financial Services
+PBA|Energy
+PBBK|Financial Services
+PBF|Energy
+PBFS|Financial Services
+PBH|Healthcare
+PBHC|Financial Services
+PBI|Industrials
+PBPB|Consumer Cyclical
+PBR|Energy
+PBT|Energy
+PBYI|Healthcare
+PCAR|Industrials
+PCB|Financial Services
+PCF|Financial Services
+PCG|Utilities
+PCH|Real Estate
+PCK|Financial Services
+PCM|Financial Services
+PCN|Financial Services
+PCOR|Technology
+PCQ|Financial Services
+PCRX|Healthcare
+PCSA|Healthcare
+PCT|Industrials
+PCTTW|Industrials
+PCTY|Technology
+PCVX|Healthcare
+PCYO|Utilities
+PD|Technology
+PDCO|Healthcare
+PDD|Consumer Cyclical
+PDEX|Healthcare
+PDFS|Technology
+PDI|Financial Services
+PDLB|Financial Services
+PDM|Real Estate
+PDO|Basic Materials
+PDS|Energy
+PDSB|Healthcare
+PDT|Financial Services
+PDYN|Technology
+PDYNW|Technology
+PEB|Real Estate
+PEBK|Financial Services
+PEBO|Financial Services
+PECO|Real Estate
+PED|Energy
+PEG|Utilities
+PEGA|Technology
+PEGR|Financial Services
+PEGY|Technology
+PEN|Healthcare
+PENN|Consumer Cyclical
+PEO|Financial Services
+PEP|Consumer Defensive
+PEPG|Healthcare
+PERF|Technology
+PERI|Communication Services
+PESI|Industrials
+PET|Technology
+PETQ|Healthcare
+PETS|Healthcare
+PETWW|Technology
+PETZ|Consumer Defensive
+PEV|Consumer Cyclical
+PFBC|Financial Services
+PFC|Financial Services
+PFD|Financial Services
+PFE|Healthcare
+PFG|Financial Services
+PFGC|Consumer Defensive
+PFIE|Energy
+PFIS|Financial Services
+PFL|Financial Services
+PFLT|Financial Services
+PFMT|Industrials
+PFN|Financial Services
+PFO|Financial Services
+PFS|Financial Services
+PFSI|Financial Services
+PFTA|Financial Services
+PFTAU|Financial Services
+PFTAW|Financial Services
+PFX|Financial Services
+PG|Consumer Defensive
+PGC|Financial Services
+PGEN|Healthcare
+PGNY|Healthcare
+PGP|Financial Services
+PGR|Financial Services
+PGRE|Real Estate
+PGRU|Communication Services
+PGY|Technology
+PGYWW|Technology
+PGZ|Financial Services
+PH|Industrials
+PHAR|Healthcare
+PHAT|Healthcare
+PHD|Financial Services
+PHG|Healthcare
+PHGE|Healthcare
+PHI|Communication Services
+PHIN|Consumer Cyclical
+PHIO|Healthcare
+PHK|Financial Services
+PHM|Consumer Cyclical
+PHR|Healthcare
+PHT|Financial Services
+PHUN|Technology
+PHVS|Healthcare
+PHX|Energy
+PHYT|Financial Services
+PI|Technology
+PII|Consumer Cyclical
+PIII|Healthcare
+PIIIW|Healthcare
+PIK|Consumer Cyclical
+PIM|Financial Services
+PINC|Healthcare
+PINE|Real Estate
+PINS|Communication Services
+PIPR|Financial Services
+PIRS|Healthcare
+PIXY|Industrials
+PJT|Financial Services
+PK|Real Estate
+PKBK|Financial Services
+PKE|Industrials
+PKG|Consumer Cyclical
+PKOH|Industrials
+PKST|Real Estate
+PKX|Basic Materials
+PL|Industrials
+PLAB|Technology
+PLAG|Consumer Defensive
+PLAO|Financial Services
+PLAOW|Financial Services
+PLAY|Communication Services
+PLBC|Financial Services
+PLBY|Consumer Cyclical
+PLCE|Consumer Cyclical
+PLD|Real Estate
+PLG|Basic Materials
+PLL|Basic Materials
+PLMI|Financial Services
+PLMIW|Financial Services
+PLMJ|Financial Services
+PLMR|Financial Services
+PLNT|Consumer Cyclical
+PLOW|Consumer Cyclical
+PLPC|Industrials
+PLRX|Healthcare
+PLSE|Healthcare
+PLTK|Communication Services
+PLTN|Financial Services
+PLTNU|Financial Services
+PLTNW|Financial Services
+PLTR|Technology
+PLUG|Industrials
+PLUR|Healthcare
+PLUS|Technology
+PLX|Healthcare
+PLXS|Technology
+PLYA|Consumer Cyclical
+PLYM|Real Estate
+PM|Consumer Defensive
+PMCB|Healthcare
+PMD|Healthcare
+PMEC|Industrials
+PMF|Financial Services
+PML|Financial Services
+PMM|Financial Services
+PMN|Healthcare
+PMNT|Consumer Cyclical
+PMO|Financial Services
+PMT|Real Estate
+PMTS|Financial Services
+PMVP|Healthcare
+PMX|Financial Services
+PNBK|Financial Services
+PNC|Financial Services
+PNF|Financial Services
+PNFP|Financial Services
+PNFPP|Financial Services
+PNI|Financial Services
+PNM|Utilities
+PNNT|Financial Services
+PNR|Industrials
+PNRG|Energy
+PNST|Consumer Cyclical
+PNTG|Healthcare
+PNW|Utilities
+POAI|Healthcare
+POCI|Healthcare
+PODC|Communication Services
+PODD|Healthcare
+POET|Technology
+POLA|Industrials
+POOL|Industrials
+POR|Utilities
+POST|Consumer Defensive
+POWI|Technology
+POWL|Industrials
+POWW|Industrials
+POWWP|Industrials
+PPBI|Financial Services
+PPBT|Healthcare
+PPC|Consumer Defensive
+PPG|Basic Materials
+PPIH|Industrials
+PPL|Utilities
+PPSI|Industrials
+PPT|Financial Services
+PPTA|Basic Materials
+PPYA|Financial Services
+PPYAU|Financial Services
+PR|Energy
+PRA|Financial Services
+PRAA|Financial Services
+PRAX|Healthcare
+PRCH|Technology
+PRCT|Healthcare
+PRDO|Consumer Defensive
+PRE|Healthcare
+PRFT|Technology
+PRFX|Healthcare
+PRG|Industrials
+PRGO|Healthcare
+PRGS|Technology
+PRI|Financial Services
+PRIM|Industrials
+PRK|Financial Services
+PRKS|Consumer Cyclical
+PRLB|Industrials
+PRLD|Healthcare
+PRLH|Financial Services
+PRLHW|Financial Services
+PRM|Basic Materials
+PRME|Healthcare
+PRMW|Consumer Defensive
+PRO|Technology
+PROC|Healthcare
+PROCW|Healthcare
+PROF|Healthcare
+PROK|Healthcare
+PROP|Financial Services
+PROV|Financial Services
+PRPH|Healthcare
+PRPL|Consumer Cyclical
+PRPO|Healthcare
+PRQR|Healthcare
+PRSO|Technology
+PRST|Technology
+PRSTW|Technology
+PRT|Energy
+PRTA|Healthcare
+PRTC|Healthcare
+PRTG|Healthcare
+PRTH|Technology
+PRTS|Consumer Cyclical
+PRU|Financial Services
+PRVA|Healthcare
+PRZO|Industrials
+PSA|Real Estate
+PSEC|Financial Services
+PSF|Financial Services
+PSFE|Technology
+PSHG|Industrials
+PSMT|Consumer Defensive
+PSN|Technology
+PSNL|Healthcare
+PSNY|Consumer Cyclical
+PSNYW|Consumer Cyclical
+PSO|Communication Services
+PSQH|Technology
+PSTG|Technology
+PSTL|Real Estate
+PSTV|Healthcare
+PSTX|Healthcare
+PSX|Energy
+PT|Financial Services
+PTA|Financial Services
+PTC|Technology
+PTCT|Healthcare
+PTEN|Energy
+PTGX|Healthcare
+PTIX|Healthcare
+PTIXW|Healthcare
+PTLO|Consumer Cyclical
+PTMN|Financial Services
+PTN|Healthcare
+PTON|Consumer Cyclical
+PTPI|Healthcare
+PTSI|Industrials
+PTVE|Consumer Cyclical
+PTWO|Financial Services
+PTWOW|Financial Services
+PTY|Financial Services
+PUBM|Technology
+PUCKW|Financial Services
+PUK|Financial Services
+PULM|Healthcare
+PUMP|Energy
+PVBC|Financial Services
+PVH|Consumer Cyclical
+PVL|Energy
+PW|Real Estate
+PWFL|Technology
+PWM|Financial Services
+PWOD|Financial Services
+PWP|Financial Services
+PWR|Industrials
+PWSC|Technology
+PWUP|Financial Services
+PWUPU|Financial Services
+PWUPW|Financial Services
+PX|Financial Services
+PXDT|Technology
+PXLW|Technology
+PXS|Energy
+PXSAP|Energy
+PXSAW|Energy
+PYCR|Technology
+PYN|Financial Services
+PYPD|Healthcare
+PYPL|Financial Services
+PYXS|Healthcare
+PZC|Financial Services
+PZG|Basic Materials
+PZZA|Consumer Cyclical
+QBTS|Technology
+QCOM|Technology
+QCRH|Financial Services
+QD|Financial Services
+QDEL|Healthcare
+QDRO|Financial Services
+QETA|Financial Services
+QFIN|Financial Services
+QGEN|Healthcare
+QH|Technology
+QIPT|Healthcare
+QLGN|Healthcare
+QLI|Healthcare
+QLYS|Technology
+QMCO|Technology
+QNCX|Healthcare
+QNRX|Healthcare
+QNST|Communication Services
+QOMO|Financial Services
+QQQX|Financial Services
+QRHC|Industrials
+QRTEA|Consumer Cyclical
+QRTEB|Consumer Cyclical
+QRTEP|Consumer Cyclical
+QRVO|Technology
+QS|Consumer Cyclical
+QSG|Consumer Defensive
+QSI|Healthcare
+QSIAW|Healthcare
+QSR|Consumer Cyclical
+QTI|Healthcare
+QTRX|Healthcare
+QTTB|Healthcare
+QTWO|Technology
+QUAD|Industrials
+QUBT|Technology
+QUIK|Technology
+QURE|Healthcare
+R|Industrials
+RA|Financial Services
+RACE|Consumer Cyclical
+RAIL|Industrials
+RAMP|Technology
+RAND|Financial Services
+RANI|Healthcare
+RAPT|Healthcare
+RARE|Healthcare
+RAVE|Consumer Cyclical
+RAY|Consumer Defensive
+RAYA|Industrials
+RBA|Industrials
+RBB|Financial Services
+RBBN|Communication Services
+RBC|Industrials
+RBCAA|Financial Services
+RBCP|Industrials
+RBKB|Financial Services
+RBLX|Communication Services
+RBOT|Healthcare
+RBRK|Technology
+RBT|Technology
+RC|Real Estate
+RCAT|Technology
+RCEL|Healthcare
+RCG|Financial Services
+RCI|Communication Services
+RCKT|Healthcare
+RCKY|Consumer Cyclical
+RCL|Consumer Cyclical
+RCM|Healthcare
+RCMT|Industrials
+RCON|Energy
+RCRT|Industrials
+RCS|Financial Services
+RCUS|Healthcare
+RDCM|Communication Services
+RDDT|Communication Services
+RDFN|Real Estate
+RDHL|Healthcare
+RDI|Communication Services
+RDIB|Communication Services
+RDN|Financial Services
+RDNT|Healthcare
+RDUS|Basic Materials
+RDVT|Technology
+RDW|Industrials
+RDWR|Technology
+RDY|Healthcare
+RDZN|Technology
+REAL|Consumer Cyclical
+REAX|Real Estate
+REBN|Consumer Cyclical
+REE|Consumer Cyclical
+REFI|Real Estate
+REFR|Technology
+REG|Real Estate
+REGCO|Real Estate
+REGCP|Real Estate
+REGN|Healthcare
+REI|Energy
+REKR|Technology
+RELI|Financial Services
+RELIW|Financial Services
+RELL|Technology
+RELX|Industrials
+RELY|Technology
+RENB|Healthcare
+RENE|Financial Services
+RENEU|Financial Services
+RENEW|Financial Services
+RENT|Consumer Cyclical
+REPL|Healthcare
+REPX|Energy
+RERE|Consumer Cyclical
+RES|Energy
+RETO|Basic Materials
+REVB|Healthcare
+REVBW|Healthcare
+REVG|Industrials
+REX|Basic Materials
+REXR|Real Estate
+REYN|Consumer Cyclical
+REZI|Industrials
+RF|Financial Services
+RFAC|Financial Services
+RFI|Financial Services
+RFIL|Industrials
+RFL|Real Estate
+RGA|Financial Services
+RGC|Healthcare
+RGCO|Utilities
+RGEN|Healthcare
+RGF|Consumer Defensive
+RGLD|Basic Materials
+RGLS|Healthcare
+RGNX|Healthcare
+RGP|Industrials
+RGR|Industrials
+RGS|Consumer Cyclical
+RGT|Financial Services
+RGTI|Technology
+RGTIW|Technology
+RH|Consumer Cyclical
+RHE|Healthcare
+RHI|Industrials
+RHP|Real Estate
+RICK|Consumer Cyclical
+RIG|Energy
+RIGL|Healthcare
+RILY|Financial Services
+RILYL|Financial Services
+RILYP|Financial Services
+RIO|Basic Materials
+RIOT|Financial Services
+RITM|Real Estate
+RIV|Financial Services
+RIVN|Consumer Cyclical
+RJF|Financial Services
+RKDA|Consumer Defensive
+RKLB|Industrials
+RKT|Financial Services
+RL|Consumer Cyclical
+RLAY|Healthcare
+RLGT|Industrials
+RLI|Financial Services
+RLJ|Real Estate
+RLMD|Healthcare
+RLTY|Financial Services
+RLX|Consumer Defensive
+RLYB|Healthcare
+RM|Financial Services
+RMAX|Real Estate
+RMBI|Financial Services
+RMBL|Consumer Cyclical
+RMBS|Technology
+RMCF|Consumer Defensive
+RMCO|Financial Services
+RMCOW|Financial Services
+RMD|Healthcare
+RMM|Financial Services
+RMNI|Technology
+RMR|Real Estate
+RMT|Financial Services
+RMTI|Healthcare
+RNA|Healthcare
+RNAC|Healthcare
+RNAZ|Healthcare
+RNG|Technology
+RNGR|Energy
+RNLX|Healthcare
+RNP|Financial Services
+RNR|Financial Services
+RNST|Financial Services
+RNW|Utilities
+RNWWW|Utilities
+RNXT|Healthcare
+ROAD|Industrials
+ROCK|Industrials
+ROCL|Financial Services
+ROCLU|Financial Services
+ROG|Technology
+ROIC|Real Estate
+ROIV|Healthcare
+ROK|Industrials
+ROKU|Communication Services
+ROL|Consumer Cyclical
+ROMA|Industrials
+ROOT|Financial Services
+ROP|Technology
+ROST|Consumer Cyclical
+RPAY|Technology
+RPD|Technology
+RPHM|Healthcare
+RPID|Healthcare
+RPM|Basic Materials
+RPRX|Healthcare
+RPTX|Healthcare
+RQI|Financial Services
+RR|Industrials
+RRAC|Financial Services
+RRBI|Financial Services
+RRC|Energy
+RRGB|Consumer Cyclical
+RS|Basic Materials
+RSG|Industrials
+RSI|Consumer Cyclical
+RSKD|Technology
+RSLS|Healthcare
+RSSS|Technology
+RSVR|Communication Services
+RTC|Technology
+RTO|Industrials
+RTX|Industrials
+RUM|Technology
+RUMBW|Technology
+RUN|Technology
+RUSHA|Consumer Cyclical
+RUSHB|Consumer Cyclical
+RVLV|Consumer Cyclical
+RVMD|Healthcare
+RVMDW|Healthcare
+RVNC|Healthcare
+RVP|Healthcare
+RVPH|Healthcare
+RVPHW|Healthcare
+RVSB|Financial Services
+RVSN|Industrials
+RVT|Financial Services
+RVTY|Healthcare
+RVYL|Technology
+RWAY|Financial Services
+RWOD|Financial Services
+RWODW|Financial Services
+RWT|Real Estate
+RXO|Industrials
+RXRX|Healthcare
+RXST|Healthcare
+RXT|Technology
+RY|Financial Services
+RYAAY|Industrials
+RYAM|Basic Materials
+RYAN|Financial Services
+RYDE|Technology
+RYI|Industrials
+RYN|Real Estate
+RYTM|Healthcare
+RZLT|Healthcare
+S|Technology
+SA|Basic Materials
+SABA|Financial Services
+SABR|Technology
+SABS|Healthcare
+SABSW|Healthcare
+SACH|Real Estate
+SAFE|Real Estate
+SAFT|Financial Services
+SAGE|Healthcare
+SAH|Consumer Cyclical
+SAI|Financial Services
+SAIA|Industrials
+SAIC|Technology
+SAM|Consumer Defensive
+SAMG|Financial Services
+SAN|Financial Services
+SANA|Healthcare
+SAND|Basic Materials
+SANG|Technology
+SANM|Technology
+SANW|Consumer Defensive
+SAP|Technology
+SAR|Financial Services
+SASR|Financial Services
+SATL|Industrials
+SATS|Technology
+SATX|Technology
+SAVA|Healthcare
+SAVE|Industrials
+SB|Industrials
+SBAC|Real Estate
+SBCF|Financial Services
+SBET|Consumer Cyclical
+SBEV|Consumer Defensive
+SBFG|Financial Services
+SBFM|Healthcare
+SBFMW|Healthcare
+SBGI|Communication Services
+SBH|Consumer Cyclical
+SBI|Financial Services
+SBLK|Industrials
+SBOW|Energy
+SBR|Energy
+SBRA|Real Estate
+SBS|Utilities
+SBSI|Financial Services
+SBSW|Basic Materials
+SBT|Financial Services
+SBUX|Consumer Cyclical
+SBXC|Financial Services
+SCCO|Basic Materials
+SCD|Financial Services
+SCHL|Communication Services
+SCHW|Financial Services
+SCI|Consumer Cyclical
+SCKT|Technology
+SCL|Basic Materials
+SCLX|Healthcare
+SCLXW|Healthcare
+SCM|Financial Services
+SCNI|Healthcare
+SCOR|Communication Services
+SCPH|Healthcare
+SCPX|Healthcare
+SCS|Industrials
+SCSC|Technology
+SCVL|Consumer Cyclical
+SCWO|Industrials
+SCWX|Technology
+SCX|Industrials
+SCYX|Healthcare
+SD|Energy
+SDA|Consumer Cyclical
+SDGR|Healthcare
+SDHC|Real Estate
+SDIG|Financial Services
+SDOT|Consumer Defensive
+SDPI|Energy
+SDRL|Energy
+SE|Consumer Cyclical
+SEAT|Communication Services
+SEATW|Communication Services
+SEB|Industrials
+SEDA|Financial Services
+SEDG|Technology
+SEE|Consumer Cyclical
+SEED|Basic Materials
+SEEL|Healthcare
+SEER|Healthcare
+SEIC|Financial Services
+SELF|Real Estate
+SELX|Technology
+SEM|Healthcare
+SEMR|Technology
+SENEA|Consumer Defensive
+SENEB|Consumer Defensive
+SENS|Healthcare
+SEPA|Financial Services
+SEPAU|Financial Services
+SEPAW|Financial Services
+SER|Healthcare
+SERA|Healthcare
+SERV|Industrials
+SES|Consumer Cyclical
+SEVN|Real Estate
+SEZL|Financial Services
+SF|Financial Services
+SFBC|Financial Services
+SFBS|Financial Services
+SFIX|Consumer Cyclical
+SFL|Industrials
+SFM|Consumer Defensive
+SFNC|Financial Services
+SFST|Financial Services
+SFWL|Industrials
+SG|Consumer Cyclical
+SGA|Communication Services
+SGBX|Industrials
+SGC|Consumer Cyclical
+SGD|Real Estate
+SGE|Technology
+SGH|Technology
+SGHC|Consumer Cyclical
+SGHT|Healthcare
+SGLY|Industrials
+SGMA|Technology
+SGML|Basic Materials
+SGMO|Healthcare
+SGMT|Healthcare
+SGN|Technology
+SGRP|Industrials
+SGRY|Healthcare
+SGU|Energy
+SHAK|Consumer Cyclical
+SHBI|Financial Services
+SHC|Healthcare
+SHCO|Consumer Cyclical
+SHCR|Healthcare
+SHCRW|Healthcare
+SHEL|Energy
+SHEN|Communication Services
+SHFS|Financial Services
+SHFSW|Financial Services
+SHG|Financial Services
+SHIM|Industrials
+SHIP|Industrials
+SHLS|Technology
+SHLT|Healthcare
+SHO|Real Estate
+SHOO|Consumer Cyclical
+SHOP|Technology
+SHOT|Consumer Defensive
+SHOTW|Consumer Defensive
+SHPH|Healthcare
+SHPW|Industrials
+SHPWW|Industrials
+SHW|Basic Materials
+SHYF|Industrials
+SIBN|Healthcare
+SID|Basic Materials
+SIDU|Industrials
+SIEB|Financial Services
+SIF|Industrials
+SIFY|Communication Services
+SIG|Consumer Cyclical
+SIGA|Healthcare
+SIGI|Financial Services
+SIGIP|Financial Services
+SII|Financial Services
+SILC|Technology
+SILK|Healthcare
+SILO|Healthcare
+SILV|Basic Materials
+SIM|Basic Materials
+SIMO|Technology
+SING|Technology
+SINT|Healthcare
+SIRI|Communication Services
+SISI|Consumer Defensive
+SITC|Real Estate
+SITE|Industrials
+SITM|Technology
+SIX|Consumer Cyclical
+SJ|Communication Services
+SJM|Consumer Defensive
+SJT|Energy
+SJW|Utilities
+SKE|Basic Materials
+SKGR|Financial Services
+SKGRW|Financial Services
+SKIL|Consumer Defensive
+SKIN|Consumer Defensive
+SKLZ|Communication Services
+SKM|Communication Services
+SKT|Real Estate
+SKWD|Financial Services
+SKX|Consumer Cyclical
+SKY|Consumer Cyclical
+SKYE|Healthcare
+SKYH|Industrials
+SKYT|Technology
+SKYW|Industrials
+SKYX|Industrials
+SLAB|Technology
+SLAM|Financial Services
+SLAMW|Financial Services
+SLB|Energy
+SLCA|Energy
+SLDB|Healthcare
+SLDP|Industrials
+SLDPW|Industrials
+SLE|Communication Services
+SLF|Financial Services
+SLG|Real Estate
+SLGL|Healthcare
+SLGN|Consumer Cyclical
+SLI|Basic Materials
+SLM|Financial Services
+SLMBP|Financial Services
+SLN|Healthcare
+SLNA|Consumer Cyclical
+SLNAW|Consumer Cyclical
+SLND|Industrials
+SLNG|Energy
+SLNH|Financial Services
+SLNHP|Financial Services
+SLNO|Healthcare
+SLP|Healthcare
+SLQT|Financial Services
+SLRC|Financial Services
+SLRN|Healthcare
+SLRX|Healthcare
+SLS|Healthcare
+SLSR|Basic Materials
+SLVM|Basic Materials
+SM|Energy
+SMAR|Technology
+SMBC|Financial Services
+SMBK|Financial Services
+SMCI|Technology
+SMFG|Financial Services
+SMFL|Consumer Defensive
+SMG|Basic Materials
+SMHI|Industrials
+SMID|Basic Materials
+SMLP|Energy
+SMLR|Healthcare
+SMMT|Healthcare
+SMP|Consumer Cyclical
+SMPL|Consumer Defensive
+SMR|Industrials
+SMRT|Technology
+SMSI|Technology
+SMTC|Technology
+SMTI|Healthcare
+SMWB|Technology
+SMX|Industrials
+SMXT|Technology
+SMXWW|Industrials
+SN|Consumer Cyclical
+SNA|Industrials
+SNAL|Communication Services
+SNAP|Communication Services
+SNAX|Consumer Defensive
+SNBR|Consumer Cyclical
+SNCR|Technology
+SNCY|Industrials
+SND|Energy
+SNDA|Healthcare
+SNDL|Consumer Defensive
+SNDR|Industrials
+SNDX|Healthcare
+SNES|Basic Materials
+SNEX|Financial Services
+SNFCA|Financial Services
+SNGX|Healthcare
+SNN|Healthcare
+SNOA|Healthcare
+SNOW|Technology
+SNPO|Technology
+SNPS|Technology
+SNPX|Healthcare
+SNSE|Healthcare
+SNT|Industrials
+SNTG|Financial Services
+SNTI|Healthcare
+SNV|Financial Services
+SNX|Technology
+SNY|Healthcare
+SO|Utilities
+SOAR|Industrials
+SOBR|Technology
+SOC|Energy
+SOFI|Financial Services
+SOGP|Communication Services
+SOHO|Real Estate
+SOHOB|Real Estate
+SOHON|Real Estate
+SOHOO|Real Estate
+SOHU|Communication Services
+SOI|Energy
+SOL|Technology
+SOLV|Healthcare
+SON|Consumer Cyclical
+SOND|Consumer Cyclical
+SONDW|Consumer Cyclical
+SONM|Technology
+SONN|Healthcare
+SONO|Technology
+SONY|Technology
+SOPA|Technology
+SOPH|Healthcare
+SOR|Financial Services
+SOS|Financial Services
+SOTK|Technology
+SOUN|Technology
+SOUNW|Technology
+SOWG|Consumer Defensive
+SPB|Consumer Defensive
+SPCB|Industrials
+SPCE|Industrials
+SPE|Financial Services
+SPEC|Industrials
+SPECW|Industrials
+SPFI|Financial Services
+SPG|Real Estate
+SPGC|Consumer Cyclical
+SPGI|Financial Services
+SPH|Utilities
+SPHR|Communication Services
+SPI|Technology
+SPIR|Industrials
+SPKL|Financial Services
+SPKLW|Financial Services
+SPLP|Industrials
+SPNS|Technology
+SPNT|Financial Services
+SPOK|Healthcare
+SPOT|Communication Services
+SPPL|Technology
+SPR|Industrials
+SPRB|Healthcare
+SPRC|Healthcare
+SPRO|Healthcare
+SPRU|Technology
+SPRY|Healthcare
+SPSC|Technology
+SPT|Technology
+SPTN|Consumer Defensive
+SPWH|Consumer Cyclical
+SPWR|Technology
+SPXC|Industrials
+SPXX|Financial Services
+SQ|Technology
+SQFT|Real Estate
+SQFTP|Real Estate
+SQFTW|Real Estate
+SQM|Basic Materials
+SQNS|Technology
+SQSP|Technology
+SR|Utilities
+SRAD|Technology
+SRBK|Financial Services
+SRCE|Financial Services
+SRCL|Industrials
+SRDX|Healthcare
+SRE|Utilities
+SRFM|Industrials
+SRG|Real Estate
+SRI|Consumer Cyclical
+SRL|Financial Services
+SRM|Consumer Cyclical
+SRPT|Healthcare
+SRRK|Healthcare
+SRTS|Healthcare
+SRV|Financial Services
+SRZN|Healthcare
+SRZNW|Healthcare
+SSB|Financial Services
+SSBI|Financial Services
+SSBK|Financial Services
+SSD|Basic Materials
+SSIC|Healthcare
+SSKN|Healthcare
+SSL|Basic Materials
+SSNC|Technology
+SSNT|Technology
+SSP|Communication Services
+SSRM|Basic Materials
+SSSS|Financial Services
+SST|Industrials
+SSTI|Technology
+SSTK|Communication Services
+SSY|Healthcare
+SSYS|Technology
+ST|Technology
+STAA|Healthcare
+STAF|Industrials
+STAG|Real Estate
+STBA|Financial Services
+STBX|Communication Services
+STC|Financial Services
+STCN|Communication Services
+STE|Healthcare
+STEL|Financial Services
+STEM|Technology
+STEP|Financial Services
+STER|Technology
+STEW|Financial Services
+STG|Consumer Defensive
+STGW|Communication Services
+STHO|Real Estate
+STI|Industrials
+STIM|Healthcare
+STK|Financial Services
+STKH|Consumer Defensive
+STKL|Consumer Defensive
+STKS|Consumer Cyclical
+STLA|Consumer Cyclical
+STLD|Basic Materials
+STM|Technology
+STN|Industrials
+STNE|Technology
+STNG|Energy
+STOK|Healthcare
+STR|Energy
+STRA|Consumer Defensive
+STRL|Industrials
+STRM|Healthcare
+STRO|Healthcare
+STRR|Healthcare
+STRRP|Healthcare
+STRS|Real Estate
+STRT|Consumer Cyclical
+STRW|Real Estate
+STSS|Healthcare
+STSSW|Healthcare
+STT|Financial Services
+STTK|Healthcare
+STVN|Healthcare
+STWD|Real Estate
+STX|Technology
+STXS|Healthcare
+STZ|Consumer Defensive
+SU|Energy
+SUGP|Industrials
+SUI|Real Estate
+SUM|Basic Materials
+SUN|Energy
+SUP|Consumer Cyclical
+SUPN|Healthcare
+SUPV|Financial Services
+SURG|Technology
+SURGW|Technology
+SUUN|Utilities
+SUZ|Basic Materials
+SVC|Real Estate
+SVCO|Technology
+SVII|Financial Services
+SVIIU|Financial Services
+SVM|Basic Materials
+SVRA|Healthcare
+SVRE|Technology
+SVT|Industrials
+SVV|Consumer Cyclical
+SWAG|Communication Services
+SWAGW|Communication Services
+SWAV|Healthcare
+SWBI|Industrials
+SWI|Technology
+SWIM|Industrials
+SWIN|Financial Services
+SWK|Industrials
+SWKH|Financial Services
+SWKS|Technology
+SWN|Energy
+SWSS|Financial Services
+SWTX|Healthcare
+SWVL|Technology
+SWX|Utilities
+SWZ|Financial Services
+SXC|Basic Materials
+SXI|Industrials
+SXT|Basic Materials
+SXTC|Healthcare
+SXTP|Healthcare
+SY|Healthcare
+SYBT|Financial Services
+SYBX|Healthcare
+SYF|Financial Services
+SYK|Healthcare
+SYM|Industrials
+SYNA|Technology
+SYNX|Technology
+SYPR|Consumer Cyclical
+SYRA|Healthcare
+SYRE|Healthcare
+SYRS|Healthcare
+SYT|Technology
+SYTA|Technology
+SYTAW|Technology
+SYY|Consumer Defensive
+T|Communication Services
+TAC|Utilities
+TACT|Technology
+TAIT|Technology
+TAK|Healthcare
+TAL|Consumer Defensive
+TALK|Healthcare
+TALO|Energy
+TANH|Consumer Defensive
+TAOP|Technology
+TAP|Consumer Defensive
+TARA|Healthcare
+TARO|Healthcare
+TARS|Healthcare
+TASK|Technology
+TATT|Industrials
+TAYD|Industrials
+TBBB|Consumer Defensive
+TBBK|Financial Services
+TBI|Industrials
+TBIO|Healthcare
+TBLA|Communication Services
+TBLAW|Communication Services
+TBLT|Industrials
+TBMC|Financial Services
+TBNK|Financial Services
+TBPH|Healthcare
+TBRG|Healthcare
+TC|Communication Services
+TCBC|Financial Services
+TCBI|Financial Services
+TCBIO|Financial Services
+TCBK|Financial Services
+TCBP|Healthcare
+TCBPW|Healthcare
+TCBS|Financial Services
+TCBX|Financial Services
+TCI|Real Estate
+TCJH|Financial Services
+TCMD|Healthcare
+TCOA|Financial Services
+TCOM|Consumer Cyclical
+TCON|Healthcare
+TCPC|Financial Services
+TCRT|Healthcare
+TCRX|Healthcare
+TCS|Consumer Cyclical
+TCTM|Consumer Defensive
+TCX|Technology
+TD|Financial Services
+TDC|Technology
+TDCX|Industrials
+TDF|Financial Services
+TDG|Industrials
+TDOC|Healthcare
+TDS|Communication Services
+TDUP|Consumer Cyclical
+TDW|Energy
+TDY|Technology
+TEAF|Financial Services
+TEAM|Technology
+TECH|Healthcare
+TECK|Basic Materials
+TECTP|Financial Services
+TEF|Communication Services
+TEI|Financial Services
+TEL|Technology
+TELA|Healthcare
+TELL|Energy
+TELO|Healthcare
+TENB|Technology
+TENK|Financial Services
+TENX|Healthcare
+TEO|Communication Services
+TER|Technology
+TERN|Healthcare
+TETE|Financial Services
+TEVA|Healthcare
+TEX|Industrials
+TFC|Financial Services
+TFFP|Healthcare
+TFII|Industrials
+TFIN|Financial Services
+TFINP|Financial Services
+TFPM|Basic Materials
+TFSL|Financial Services
+TFX|Healthcare
+TG|Industrials
+TGAA|Financial Services
+TGAAW|Financial Services
+TGAN|Technology
+TGB|Basic Materials
+TGI|Industrials
+TGL|Technology
+TGLS|Basic Materials
+TGNA|Communication Services
+TGS|Energy
+TGT|Consumer Defensive
+TGTX|Healthcare
+TH|Industrials
+THAR|Healthcare
+THC|Healthcare
+THCH|Consumer Cyclical
+THCP|Financial Services
+THCPW|Financial Services
+THFF|Financial Services
+THG|Financial Services
+THM|Basic Materials
+THMO|Healthcare
+THO|Consumer Cyclical
+THQ|Financial Services
+THR|Industrials
+THRD|Healthcare
+THRM|Consumer Cyclical
+THRY|Communication Services
+THS|Consumer Defensive
+THTX|Healthcare
+THW|Financial Services
+TIGO|Communication Services
+TIGR|Financial Services
+TIL|Healthcare
+TILE|Industrials
+TIMB|Communication Services
+TIPT|Financial Services
+TIRX|Financial Services
+TISI|Industrials
+TITN|Industrials
+TIVC|Healthcare
+TIXT|Technology
+TJX|Consumer Cyclical
+TK|Energy
+TKC|Communication Services
+TKLF|Consumer Cyclical
+TKNO|Healthcare
+TKO|Communication Services
+TKR|Industrials
+TLF|Consumer Cyclical
+TLGY|Financial Services
+TLIS|Healthcare
+TLK|Communication Services
+TLPH|Healthcare
+TLRY|Healthcare
+TLS|Technology
+TLSA|Healthcare
+TLSI|Healthcare
+TLSIW|Healthcare
+TLYS|Consumer Cyclical
+TM|Consumer Cyclical
+TMC|Basic Materials
+TMCI|Healthcare
+TMCWW|Basic Materials
+TMDX|Healthcare
+TME|Communication Services
+TMHC|Consumer Cyclical
+TMO|Healthcare
+TMP|Financial Services
+TMQ|Basic Materials
+TMTC|Financial Services
+TMUS|Communication Services
+TNC|Industrials
+TNDM|Healthcare
+TNET|Industrials
+TNGX|Healthcare
+TNK|Energy
+TNL|Consumer Cyclical
+TNON|Healthcare
+TNP|Energy
+TNXP|Healthcare
+TNYA|Healthcare
+TOI|Healthcare
+TOIIW|Healthcare
+TOL|Consumer Cyclical
+TOMZ|Industrials
+TOON|Communication Services
+TOP|Financial Services
+TOPS|Energy
+TORO|Industrials
+TOST|Technology
+TOUR|Consumer Cyclical
+TOVX|Healthcare
+TOWN|Financial Services
+TPB|Consumer Defensive
+TPC|Industrials
+TPCS|Industrials
+TPET|Energy
+TPG|Financial Services
+TPH|Consumer Cyclical
+TPHS|Real Estate
+TPIC|Industrials
+TPL|Energy
+TPR|Consumer Cyclical
+TPST|Healthcare
+TPVG|Financial Services
+TPX|Consumer Cyclical
+TPZ|Financial Services
+TR|Consumer Defensive
+TRAK|Technology
+TRAW|Healthcare
+TRC|Industrials
+TRDA|Healthcare
+TREE|Financial Services
+TREX|Industrials
+TRGP|Energy
+TRI|Industrials
+TRIB|Healthcare
+TRIN|Financial Services
+TRIP|Consumer Cyclical
+TRIS|Financial Services
+TRMB|Technology
+TRMD|Energy
+TRMK|Financial Services
+TRML|Healthcare
+TRN|Industrials
+TRNO|Real Estate
+TRNR|Consumer Cyclical
+TRNS|Industrials
+TRON|Financial Services
+TRONW|Financial Services
+TROO|Technology
+TROW|Financial Services
+TROX|Basic Materials
+TRP|Energy
+TRS|Consumer Cyclical
+TRSG|Industrials
+TRST|Financial Services
+TRT|Technology
+TRTL|Financial Services
+TRTX|Real Estate
+TRU|Industrials
+TRUE|Communication Services
+TRUG|Communication Services
+TRUP|Financial Services
+TRV|Financial Services
+TRVG|Communication Services
+TRVI|Healthcare
+TRVN|Healthcare
+TRX|Basic Materials
+TS|Energy
+TSAT|Technology
+TSBK|Financial Services
+TSBX|Healthcare
+TSCO|Consumer Cyclical
+TSE|Basic Materials
+TSEM|Technology
+TSHA|Healthcare
+TSI|Financial Services
+TSLA|Consumer Cyclical
+TSLX|Financial Services
+TSM|Technology
+TSN|Consumer Defensive
+TSQ|Communication Services
+TSRI|Technology
+TSVT|Healthcare
+TT|Industrials
+TTC|Industrials
+TTD|Technology
+TTE|Energy
+TTEC|Technology
+TTEK|Industrials
+TTGT|Communication Services
+TTI|Energy
+TTMI|Technology
+TTNP|Healthcare
+TTOO|Healthcare
+TTP|Financial Services
+TTSH|Consumer Cyclical
+TTWO|Communication Services
+TU|Communication Services
+TUP|Consumer Cyclical
+TURB|Technology
+TURN|Financial Services
+TUSK|Industrials
+TUYA|Technology
+TV|Communication Services
+TVGN|Healthcare
+TVGNW|Healthcare
+TVTX|Healthcare
+TW|Financial Services
+TWG|Consumer Defensive
+TWI|Industrials
+TWIN|Industrials
+TWKS|Technology
+TWLO|Communication Services
+TWLV|Financial Services
+TWLVW|Financial Services
+TWN|Financial Services
+TWO|Real Estate
+TWOU|Consumer Defensive
+TWST|Healthcare
+TX|Basic Materials
+TXG|Healthcare
+TXMD|Healthcare
+TXN|Technology
+TXO|Energy
+TXRH|Consumer Cyclical
+TXT|Industrials
+TY|Financial Services
+TYG|Financial Services
+TYGO|Technology
+TYL|Technology
+TYRA|Healthcare
+TZOO|Communication Services
+U|Technology
+UA|Consumer Cyclical
+UAA|Consumer Cyclical
+UAL|Industrials
+UAMY|Basic Materials
+UAN|Basic Materials
+UAVS|Technology
+UBCP|Financial Services
+UBER|Technology
+UBFO|Financial Services
+UBS|Financial Services
+UBSI|Financial Services
+UBX|Healthcare
+UBXG|Technology
+UCAR|Consumer Cyclical
+UCBI|Financial Services
+UCBIO|Financial Services
+UCL|Communication Services
+UCTT|Technology
+UDMY|Consumer Defensive
+UDR|Real Estate
+UE|Real Estate
+UEC|Energy
+UEIC|Technology
+UFCS|Financial Services
+UFI|Consumer Cyclical
+UFPI|Basic Materials
+UFPT|Healthcare
+UG|Consumer Defensive
+UGI|Utilities
+UGIC|Utilities
+UGP|Energy
+UGRO|Industrials
+UHAL|Industrials
+UHG|Consumer Cyclical
+UHS|Healthcare
+UHT|Real Estate
+UI|Technology
+UIS|Technology
+UK|Real Estate
+UKOMW|Real Estate
+UL|Consumer Defensive
+ULBI|Industrials
+ULCC|Industrials
+ULH|Industrials
+ULS|Industrials
+ULTA|Consumer Cyclical
+ULY|Technology
+UMAC|Financial Services
+UMBF|Financial Services
+UMC|Technology
+UMH|Real Estate
+UNB|Financial Services
+UNCY|Healthcare
+UNF|Industrials
+UNFI|Consumer Defensive
+UNH|Healthcare
+UNIT|Real Estate
+UNM|Financial Services
+UNP|Industrials
+UNTY|Financial Services
+UONE|Communication Services
+UONEK|Communication Services
+UP|Industrials
+UPBD|Technology
+UPC|Healthcare
+UPLD|Technology
+UPS|Industrials
+UPST|Financial Services
+UPWK|Communication Services
+UPXI|Communication Services
+URBN|Consumer Cyclical
+URG|Energy
+URGN|Healthcare
+URI|Industrials
+UROY|Energy
+USA|Financial Services
+USAC|Energy
+USAP|Basic Materials
+USAS|Basic Materials
+USAU|Basic Materials
+USB|Financial Services
+USCB|Financial Services
+USEA|Industrials
+USEG|Energy
+USFD|Consumer Defensive
+USGO|Basic Materials
+USIO|Technology
+USLM|Basic Materials
+USM|Communication Services
+USNA|Consumer Defensive
+USPH|Healthcare
+UTF|Financial Services
+UTG|Financial Services
+UTHR|Healthcare
+UTI|Consumer Defensive
+UTL|Utilities
+UTMD|Healthcare
+UTSI|Technology
+UTZ|Consumer Defensive
+UUU|Industrials
+UUUU|Energy
+UVE|Financial Services
+UVSP|Financial Services
+UVV|Consumer Defensive
+UWMC|Financial Services
+UXIN|Consumer Cyclical
+V|Financial Services
+VABK|Financial Services
+VAC|Consumer Cyclical
+VAL|Energy
+VALE|Basic Materials
+VALN|Healthcare
+VALU|Financial Services
+VANI|Healthcare
+VATE|Industrials
+VBF|Financial Services
+VBFC|Financial Services
+VBIV|Healthcare
+VBNK|Financial Services
+VBTX|Financial Services
+VC|Consumer Cyclical
+VCEL|Healthcare
+VCIG|Industrials
+VCNX|Healthcare
+VCSA|Technology
+VCTR|Financial Services
+VCV|Financial Services
+VCXB|Financial Services
+VCYT|Healthcare
+VECO|Technology
+VEEE|Consumer Cyclical
+VEEV|Healthcare
+VEL|Financial Services
+VEON|Communication Services
+VERA|Healthcare
+VERB|Technology
+VERI|Technology
+VERO|Healthcare
+VERU|Healthcare
+VERV|Healthcare
+VERX|Technology
+VERY|Financial Services
+VET|Energy
+VEV|Consumer Cyclical
+VFC|Consumer Cyclical
+VFF|Consumer Defensive
+VFL|Financial Services
+VFS|Consumer Cyclical
+VFSWW|Consumer Cyclical
+VGAS|Utilities
+VGI|Financial Services
+VGM|Financial Services
+VGR|Consumer Defensive
+VGZ|Basic Materials
+VHAI|Technology
+VHC|Technology
+VHI|Basic Materials
+VIA|Utilities
+VIASP|Utilities
+VIAV|Technology
+VICI|Real Estate
+VICR|Technology
+VIGL|Healthcare
+VIK|Consumer Cyclical
+VINC|Healthcare
+VINE|Consumer Defensive
+VINO|Real Estate
+VINP|Financial Services
+VIOT|Consumer Cyclical
+VIPS|Consumer Cyclical
+VIR|Healthcare
+VIRC|Consumer Cyclical
+VIRI|Healthcare
+VIRT|Financial Services
+VIRX|Healthcare
+VISL|Technology
+VIST|Energy
+VITL|Consumer Defensive
+VIV|Communication Services
+VIVK|Energy
+VKI|Financial Services
+VKQ|Financial Services
+VKTX|Healthcare
+VLCN|Consumer Cyclical
+VLD|Technology
+VLGEA|Consumer Defensive
+VLN|Technology
+VLO|Energy
+VLRS|Industrials
+VLT|Financial Services
+VLTO|Industrials
+VLY|Financial Services
+VLYPO|Financial Services
+VLYPP|Financial Services
+VMAR|Consumer Cyclical
+VMC|Basic Materials
+VMCA|Financial Services
+VMCAW|Financial Services
+VMD|Healthcare
+VMEO|Technology
+VMI|Industrials
+VMO|Financial Services
+VNCE|Consumer Cyclical
+VNDA|Healthcare
+VNET|Technology
+VNO|Real Estate
+VNOM|Energy
+VNRX|Healthcare
+VNT|Technology
+VOC|Energy
+VOD|Communication Services
+VOR|Healthcare
+VOXR|Basic Materials
+VOXX|Technology
+VOYA|Financial Services
+VPG|Technology
+VPV|Financial Services
+VRA|Consumer Cyclical
+VRAR|Technology
+VRAX|Healthcare
+VRCA|Healthcare
+VRDN|Healthcare
+VRE|Real Estate
+VREX|Healthcare
+VRM|Consumer Cyclical
+VRME|Industrials
+VRN|Energy
+VRNA|Healthcare
+VRNS|Technology
+VRNT|Technology
+VRPX|Healthcare
+VRRM|Industrials
+VRSK|Industrials
+VRSN|Technology
+VRT|Industrials
+VRTS|Financial Services
+VRTX|Healthcare
+VS|Technology
+VSAT|Technology
+VSCO|Consumer Cyclical
+VSEC|Industrials
+VSH|Technology
+VSME|Communication Services
+VST|Utilities
+VSTA|Consumer Defensive
+VSTM|Healthcare
+VSTO|Consumer Cyclical
+VSTS|Industrials
+VTAK|Healthcare
+VTEX|Technology
+VTGN|Healthcare
+VTLE|Energy
+VTMX|Real Estate
+VTN|Financial Services
+VTNR|Energy
+VTOL|Energy
+VTR|Real Estate
+VTRS|Healthcare
+VTRU|Consumer Defensive
+VTS|Energy
+VTSI|Industrials
+VTVT|Healthcare
+VTYX|Healthcare
+VUZI|Technology
+VVI|Industrials
+VVOS|Healthcare
+VVPR|Technology
+VVR|Financial Services
+VVV|Energy
+VVX|Industrials
+VWE|Consumer Defensive
+VWEWW|Consumer Defensive
+VXRT|Healthcare
+VYGR|Healthcare
+VYNE|Healthcare
+VYX|Technology
+VZ|Communication Services
+VZIO|Technology
+VZLA|Basic Materials
+W|Consumer Cyclical
+WAB|Industrials
+WABC|Financial Services
+WAFD|Financial Services
+WAFDP|Financial Services
+WAFU|Consumer Defensive
+WAL|Financial Services
+WALD|Technology
+WALDW|Technology
+WASH|Financial Services
+WAT|Healthcare
+WATT|Technology
+WAVD|Technology
+WAVE|Utilities
+WAVS|Financial Services
+WB|Communication Services
+WBA|Healthcare
+WBD|Communication Services
+WBS|Financial Services
+WBUY|Consumer Cyclical
+WBX|Technology
+WCC|Industrials
+WCN|Industrials
+WD|Financial Services
+WDAY|Technology
+WDC|Technology
+WDFC|Basic Materials
+WDH|Financial Services
+WDS|Energy
+WEA|Financial Services
+WEAV|Healthcare
+WEC|Utilities
+WEL|Financial Services
+WELL|Real Estate
+WEN|Consumer Cyclical
+WERN|Industrials
+WES|Energy
+WEST|Consumer Defensive
+WESTW|Consumer Defensive
+WETH|Real Estate
+WEX|Technology
+WEYS|Consumer Cyclical
+WF|Financial Services
+WFC|Financial Services
+WFCF|Technology
+WFG|Basic Materials
+WFRD|Energy
+WGO|Consumer Cyclical
+WGS|Healthcare
+WGSWW|Healthcare
+WH|Consumer Cyclical
+WHD|Energy
+WHF|Financial Services
+WHG|Financial Services
+WHLM|Industrials
+WHLR|Real Estate
+WHLRD|Real Estate
+WHLRP|Real Estate
+WHR|Consumer Cyclical
+WIA|Financial Services
+WILC|Consumer Defensive
+WIMI|Communication Services
+WINA|Consumer Cyclical
+WING|Consumer Cyclical
+WINT|Healthcare
+WINV|Financial Services
+WINVW|Financial Services
+WIRE|Industrials
+WISA|Technology
+WIT|Technology
+WIW|Financial Services
+WIX|Technology
+WK|Technology
+WKC|Energy
+WKEY|Technology
+WKHS|Consumer Cyclical
+WKME|Technology
+WKSP|Consumer Cyclical
+WKSPW|Consumer Cyclical
+WLDN|Industrials
+WLDS|Technology
+WLFC|Industrials
+WLGS|Industrials
+WLK|Basic Materials
+WLKP|Basic Materials
+WLY|Communication Services
+WLYB|Communication Services
+WM|Industrials
+WMB|Energy
+WMG|Communication Services
+WMK|Consumer Defensive
+WMPN|Financial Services
+WMS|Industrials
+WMT|Consumer Defensive
+WNC|Industrials
+WNEB|Financial Services
+WNS|Technology
+WNW|Consumer Cyclical
+WOLF|Technology
+WOOF|Consumer Cyclical
+WOR|Industrials
+WORX|Healthcare
+WOW|Communication Services
+WPC|Real Estate
+WPM|Basic Materials
+WPP|Communication Services
+WPRT|Consumer Cyclical
+WRAP|Technology
+WRB|Financial Services
+WRBY|Healthcare
+WRK|Consumer Cyclical
+WRLD|Financial Services
+WRN|Basic Materials
+WRNT|Technology
+WS|Basic Materials
+WSBC|Financial Services
+WSBCP|Financial Services
+WSBF|Financial Services
+WSC|Industrials
+WSFS|Financial Services
+WSM|Consumer Cyclical
+WSO|Industrials
+WSR|Real Estate
+WST|Healthcare
+WT|Financial Services
+WTBA|Financial Services
+WTFC|Financial Services
+WTFCM|Financial Services
+WTFCP|Financial Services
+WTI|Energy
+WTM|Financial Services
+WTMA|Financial Services
+WTO|Technology
+WTRG|Utilities
+WTS|Industrials
+WTTR|Basic Materials
+WTW|Financial Services
+WU|Financial Services
+WULF|Financial Services
+WVE|Healthcare
+WVVI|Consumer Defensive
+WVVIP|Consumer Defensive
+WW|Consumer Cyclical
+WWD|Industrials
+WWR|Basic Materials
+WWW|Consumer Cyclical
+WY|Real Estate
+WYNN|Consumer Cyclical
+WYY|Technology
+X|Basic Materials
+XAIR|Healthcare
+XBIO|Healthcare
+XBIOW|Healthcare
+XBIT|Healthcare
+XBP|Technology
+XBPEW|Technology
+XCUR|Healthcare
+XEL|Utilities
+XELA|Technology
+XELAP|Technology
+XELB|Consumer Cyclical
+XENE|Healthcare
+XERS|Healthcare
+XFIN|Financial Services
+XFOR|Healthcare
+XGN|Healthcare
+XHR|Real Estate
+XIN|Real Estate
+XLO|Healthcare
+XMTR|Industrials
+XNCR|Healthcare
+XNET|Communication Services
+XOM|Energy
+XOMA|Healthcare
+XOMAO|Healthcare
+XOMAP|Healthcare
+XOS|Industrials
+XP|Financial Services
+XPEL|Consumer Cyclical
+XPER|Technology
+XPEV|Consumer Cyclical
+XPL|Basic Materials
+XPO|Industrials
+XPOF|Consumer Cyclical
+XPON|Industrials
+XPRO|Energy
+XRAY|Healthcare
+XRTX|Healthcare
+XRX|Technology
+XTIA|Industrials
+XTKG|Technology
+XTLB|Healthcare
+XTNT|Healthcare
+XWEL|Healthcare
+XXII|Consumer Defensive
+XYF|Financial Services
+XYL|Industrials
+XYLO|Healthcare
+YALA|Technology
+YCBD|Healthcare
+YELP|Communication Services
+YETI|Consumer Cyclical
+YEXT|Technology
+YGMZ|Industrials
+YHGJ|Consumer Cyclical
+YI|Healthcare
+YIBO|Technology
+YJ|Consumer Cyclical
+YMAB|Healthcare
+YMM|Technology
+YORW|Utilities
+YOSH|Consumer Cyclical
+YOTA|Financial Services
+YOU|Technology
+YPF|Energy
+YQ|Consumer Defensive
+YRD|Financial Services
+YS|Healthcare
+YSG|Consumer Defensive
+YTRA|Consumer Cyclical
+YUM|Consumer Cyclical
+YUMC|Consumer Cyclical
+YY|Communication Services
+YYAI|Consumer Cyclical
+YYGH|Consumer Cyclical
+Z|Communication Services
+ZAPP|Consumer Cyclical
+ZBAO|Financial Services
+ZBH|Healthcare
+ZBRA|Technology
+ZCAR|Industrials
+ZCARW|Industrials
+ZCMD|Healthcare
+ZD|Communication Services
+ZDGE|Communication Services
+ZENV|Technology
+ZEO|Technology
+ZEOWW|Technology
+ZEPP|Technology
+ZETA|Technology
+ZEUS|Basic Materials
+ZG|Communication Services
+ZGN|Consumer Cyclical
+ZH|Communication Services
+ZI|Technology
+ZIM|Industrials
+ZIMV|Healthcare
+ZION|Financial Services
+ZIONO|Financial Services
+ZIONP|Financial Services
+ZIP|Industrials
+ZJYL|Healthcare
+ZK|Consumer Cyclical
+ZKH|Consumer Cyclical
+ZKIN|Basic Materials
+ZLAB|Healthcare
+ZLS|Financial Services
+ZM|Technology
+ZNTL|Healthcare
+ZOM|Healthcare
+ZONE|Industrials
+ZOOZ|Consumer Cyclical
+ZOOZW|Consumer Cyclical
+ZPTA|Technology
+ZPTAW|Technology
+ZS|Technology
+ZTEK|Healthcare
+ZTO|Industrials
+ZTS|Healthcare
+ZUMZ|Consumer Cyclical
+ZUO|Technology
+ZURA|Healthcare
+ZVIA|Consumer Defensive
+ZVRA|Healthcare
+ZVSA|Healthcare
+ZWS|Industrials
+ZYME|Healthcare
+ZYXI|Healthcare

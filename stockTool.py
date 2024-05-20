@@ -76,7 +76,7 @@ def homeButtonBuilder():
     bg = "lightgray"
     selectColor = "lightyellow"
 
-    findButton = tk.Button(homeFrame, text="Find Stock", activebackground=selectColor, bd=bd, bg=bg, height=3, width=10, font=("Arial", 12), command=findStock)
+    findButton = tk.Button(homeFrame, text="Find Stock", activebackground=selectColor, bd=bd, bg=bg, height=3, width=10, font=("Arial", 12), command=lambda : findStock())
     findButton.grid(column=2, row=3, sticky="ew")
 
     watchListButton = tk.Button(homeFrame, text="Watchlist", activebackground=selectColor,bd=bd, bg=bg, height=3, width=10, font=("Arial", 12), command=watchList)
@@ -85,7 +85,7 @@ def homeButtonBuilder():
     compareButton = tk.Button(homeFrame, text="Compare \nStocks", activebackground=selectColor,bd=bd, bg=bg, height=3, width=10, font=("Arial", 12), command=None)
     compareButton.grid(column=2, row=5, sticky="ew")
 
-    browseTopButton = tk.Button(homeFrame, text="Browse Top", activebackground=selectColor,bd=bd, bg=bg, height=3, width=10, font=("Arial", 12), command=None)
+    browseTopButton = tk.Button(homeFrame, text="Browse Stocks", activebackground=selectColor,bd=bd, bg=bg, height=3, width=10, font=("Arial", 12), command=browseStocks)
     browseTopButton.grid(column=6, row=5, sticky="ew")
 def homeBuildWatchList():
     file = open("watchlist.txt")
@@ -175,7 +175,7 @@ def findStock():
     enterStock = tk.Entry(stockFrame, textvariable=stock, border=5)
     enterStock.grid(row=0, column=0, sticky="nw")
     homeButton = tk.Button(stockFrame, text="Home", command=lambda : backToHome(stockFrame))
-    homeButton.grid(row=0, column=7, sticky="ne")
+    homeButton.grid(row=0, column=7, sticky="new")
     submitButton = tk.Button(stockFrame, text="Find Stock Ticker", command=lambda : findStockParse(stock=enterStock, stockFrame=stockFrame))
     submitButton.grid(row=0, column=1, sticky="nw")
 def findStockParse(stock : tk.Entry, stockFrame : tk.Frame):
@@ -219,7 +219,14 @@ def findStockBuilder(ticker : str, frame : tk.Frame):
         stockBio = tk.Label(frame, text=f"Country: {stockInfo["country"]}\nIndustry: {stockInfo["industry"]}\nFirst Trading Date: {time.strftime("%Y-%m-%d", time.localtime(stockInfo["firstTradeDateEpochUtc"]))}", bg="white", font=("Arial",10)).grid(row=0, column=2, columnspan=4, sticky="s")
         isStock = True
     except:
-        stockBio = tk.Label(frame, text=f"Fund (collection of stocks)\nFirst Trading Date: {time.strftime("%Y-%m-%d", time.localtime(stockInfo["firstTradeDateEpochUtc"]))}", bg="white", font=("Arial",10)).grid(row=0, column=2, columnspan=4, sticky="s")
+        try:
+            stockBio = tk.Label(frame, text=f"Fund (collection of stocks)\nFirst Trading Date: {time.strftime("%Y-%m-%d", time.localtime(stockInfo["firstTradeDateEpochUtc"]))}", bg="white", font=("Arial",10)).grid(row=0, column=2, columnspan=4, sticky="s")
+        except: 
+            try:
+                stockBio = tk.Label(frame, text=f"Country: {stockInfo["country"]}\nIndustry: {stockInfo["industry"]}", bg="white", font=("Arial",10)).grid(row=0, column=2, columnspan=4, sticky="s")
+                isStock=True
+            except:
+                stockBio = tk.Label(frame, text="Error displaying bio", bg="white", font=("Arial",10)).grid(row=0, column=2, columnspan=4, sticky="s")
     findStockLeftInfoBuilder(frame=frame, info=stockInfo, isStock=isStock)
     if(lastMarketDatetime==datetime.date.today()):
         periodOptions = ["Today","1 week", "4 weeks", "1 year", "5 years"]
@@ -325,19 +332,28 @@ def watchList():
     homeFrame.grid_forget()
     watchListFrame.grid(row=0, column=0, sticky="nsew")
     colweights = [1,5,2,2,2,2,2,2]
-    rowweights = [1,1,1,1,1,1]
+    rowweights = [1,2,2,2,2,2]
     for i in range(6):
         watchListFrame.grid_rowconfigure(i, weight=rowweights[i])
     for i in range(8):
         watchListFrame.grid_columnconfigure(i, weight=colweights[i])
     homeButton = tk.Button(watchListFrame, text="Home", command=lambda : backToHome(watchListFrame), border=5, relief="raised")
-    homeButton.grid(row=0, column=7, sticky="ne")
-    addButton = tk.Button(watchListFrame, text="Add stock to watchlist", command = lambda : watchListAdd(frame=watchListFrame), border=5, relief="raised")
-    addButton.grid(row=3, column=3)
-    watchListLeftBuilder(watchListFrame)
-    tk.Label(watchListFrame, text="Your watchlist", bg="white", font=("Arial", 20)).grid(row=0, column=2, columnspan=2)
-    tk.Button(watchListFrame, text="Refresh", command = lambda : watchListLeftBuilder(watchListFrame), border=5, relief="raised").grid(row=1,column=7, sticky="ne")
+    homeButton.grid(row=0, column=7, sticky="new")
+    addButton = tk.Button(watchListFrame, text="Add stock to watchlist", command = lambda : watchListAdd(frame=watchListFrame, entry=addEntry), border=5, relief="raised")
+    addButton.grid(row=2, column=3, sticky="s")
+    default = ""
+    addEntry=tk.Entry(watchListFrame, bg="white", textvariable=default, border=5)
+    addEntry.grid(row=3, column=3, sticky="n")
 
+    rmButton = tk.Button(watchListFrame, text="Remove stock from watchlist", command=lambda : watchListRm(frame=watchListFrame, entry=rmEntry), border=5, relief="raised")
+    rmButton.grid(row=4,column=3, sticky="s")
+    rmEntry=tk.Entry(watchListFrame, bg="white", textvariable=default, border=5)
+    rmEntry.grid(row=5, column=3, sticky="n")
+    watchListLeftBuilder(watchListFrame)
+    tk.Label(watchListFrame, text="Your watchlist", bg="white", font=("Arial", 20)).grid(row=0, column=1, columnspan=3, sticky="n")
+    tk.Button(watchListFrame, text="Refresh", command = lambda : watchListLeftBuilder(watchListFrame), border=5, relief="raised").grid(row=1,column=7, sticky="ne")
+    tk.Label(watchListFrame, text="Past Day", bg="white").grid(row=0, column=0, sticky="w")
+    tk.Label(watchListFrame, text="Ticker - Name", bg="white").grid(row=0, column=0)
 def watchListLeftBuilder(frame : tk.Frame):
     file = open("watchlist.txt")
     for widget in frame.winfo_children():
@@ -357,11 +373,10 @@ def watchListLeftBuilder(frame : tk.Frame):
             except:
                 errorMessage(frame=frame, text="INVALID TICKER IN WATCHLIST")
     tickersFrame = tk.Frame(frame, bg="white")
-    tickersFrame.grid(row=0, column=0, rowspan=6, columnspan=1, sticky="news")
+    tickersFrame.grid(row=1, column=0, rowspan=6, columnspan=1, sticky="news")
     tickersFrame.grid_columnconfigure(0, weight=1)
     for i, ticker in enumerate(tickers):
         tickersFrame.grid_rowconfigure(i, weight=1)
-        #print(ticker.info)
         tk.Label(master=tickersFrame, bg="white", text=f"{plaintexttickers[i]}-{ticker.info["shortName"]}").grid(row=i, column=1, sticky="nw")
         stockData = ticker.history("1d")
         try:
@@ -374,16 +389,7 @@ def watchListLeftBuilder(frame : tk.Frame):
             percentLabel.config(fg="red")
         elif(percentchange>0):
             percentLabel.config(fg="green")
-def watchListAdd(frame : tk.Frame):
-    addWindow = tk.Toplevel(frame)
-    addWindow.geometry("200x100")
-    tk.Label(addWindow, text="Input Ticker: ", bg="white").grid(row=0,column=0, sticky="nsew")
-    var = ""
-    entry = tk.Entry(addWindow, textvariable=var, border=5)
-    entry.grid(row=1,column=0,sticky="nsew")
-    submitButton = tk.Button(addWindow, text="Submit", command=lambda:watchListSubmitter(frame=frame, entry=entry, toplevel=addWindow))
-    submitButton.grid(row=2,column=0,sticky="nsew")
-def watchListSubmitter(frame : tk.Frame, entry : tk.Entry, toplevel = tk.Toplevel):
+def watchListAdd(frame : tk.Frame, entry : tk.Entry):
     stock = entry.get().upper().strip()
     try:
         foundTickers[stock]
@@ -392,13 +398,162 @@ def watchListSubmitter(frame : tk.Frame, entry : tk.Entry, toplevel = tk.Topleve
         try:
             something = yf.Ticker(ticker=stock)
             test=something.info["bid"]
-            toplevel.destroy()
             file = open("watchlist.txt", "a")
-            file.write("\n"+stock)
+            file.write(stock+"\n")
             file.close()
+            entry.delete(first=0, last=len(stock))
         except:
             errorMessage(frame=frame, text="INVALID STOCK")
     watchListLeftBuilder(frame=frame)
+def watchListRm(frame : tk.Frame, entry : tk.Entry):
+    stock = entry.get().upper().strip()
+    try:
+        foundTickers.pop(stock) 
+        with open("watchlist.txt", "r") as f:
+            lines = f.readlines()
+        with open("watchlist.txt", "w") as f:
+            for line in lines:
+                if line.strip("\n") != stock:
+                    f.write(line)
+        entry.delete(first=0, last=len(stock))
+    except:
+        errorMessage(frame=frame, text="NOT IN WATCHLIST")
+    watchListLeftBuilder(frame=frame)
+
+def browseStocks():
+    browseFrame = tk.Frame(root, bg="white")
+    homeFrame.grid_forget()
+    browseFrame.grid(row=0, column=0, sticky="nsew")
+    colweights = [1,1,1,1,1,1,1,1,1,1,1]
+    rowweights = [1,1,1,1,1,1,1,1]
+    for i in range(8):
+        browseFrame.grid_rowconfigure(i, weight=rowweights[i])
+    for i in range(11):
+        browseFrame.grid_columnconfigure(i, weight=colweights[i])
+    homeButton = tk.Button(browseFrame, text="Home", command=lambda : backToHome(browseFrame), border=5, relief="raised")
+    homeButton.grid(row=0, column=10, sticky="new")
+    tk.Label(browseFrame, text="Browse Stocks", bg="white", font=("Arial",20)).grid(row=0, column=3, columnspan=4, sticky="n")
+    industries = ['Healthcare', 'Basic Materials', 'Consumer Defensive', 'Financial Services', 'Industrials', 'Technology', 'Consumer Cyclical', 'Real Estate', 'Communication Services', 'Energy', 'Utilities']
+    
+    #this bit of code creates a hashmap with each key being an industry and value being sorted list of stocks in industry by market cap
+    database = {}
+    for i in industries:
+        database[i]=[]
+    with open("stocks.txt", "r") as file:
+        lines = file.readlines()
+        for line in lines:
+            #print(line)
+            line=line.strip()
+            splitup = line.split("|")
+            currentlist = database[splitup[1]]
+            database.update({splitup[0] : currentlist.append(splitup)})
+    for i,industry in enumerate(industries):
+        splitindustry = industry.split(" ")
+        title = ""
+        for txt in splitindustry:
+            title+=txt+"\n"
+        tk.Label(browseFrame, text=title.strip(), bg="white").grid(row=1, column=i)
+        stocksInSector = database[industry]
+        sortedStocks = sorted(stocksInSector, key=sortTupleSecondVal, reverse=True)
+        database.update({industry : sortedStocks})
+        for j in range(5):
+            stock = sortedStocks[j]
+            #print(stock)
+            if(len(stock[2])>20):
+                secondline = stock[2][:15]+"."
+            else:
+                secondline=stock[2]
+            temp = tk.Button(browseFrame, text=f"{stock[0]}\n{secondline}\n${round(int(stock[-1])/1_000_000_000,1)}B", bg="lightblue", relief="solid", border=1, font=("Arial", 12), command=lambda stock=stock: browseStocksHelper(browsedTicker=stock[0]))
+            temp.grid(row=j+2, column=i, sticky="NSEW")
+        tk.Button(browseFrame, text=f"See more\n{industry}\nstocks", bg="lightgrey", relief="groove", border=2, font=("Arial", 11), command = lambda industry=industry : browseStocksSeeMore(frame=browseFrame, sector=industry, database=database, page=1, lastFrame=None)).grid(row=7, column=i)
+
+def browseStocksSeeMore(frame : tk.Frame, sector : str, database : dict, page : int, lastFrame : tk.Frame):
+    listStocks = database[sector]
+    try: 
+        lastFrame.grid_forget()
+    except:
+        del lastFrame
+    frame.grid_forget()
+    expandedFrame = tk.Frame(root, bg="white")
+    expandedFrame.grid(row=0, column=0, sticky="nsew")
+    colweights = [1,1,1,1,1,1,1,1,1,1,1]
+    rowweights = [1,1,1,1,1,1,1,1,1,1,1]
+    for i in range(11):
+        expandedFrame.grid_rowconfigure(i, weight=rowweights[i])
+    for i in range(10):
+        expandedFrame.grid_columnconfigure(i, weight=colweights[i])
+    backButton = tk.Button(expandedFrame, text="Back", command=lambda : switchFrames(goTo=frame, hide=expandedFrame), border=5, relief="raised")
+    backButton.grid(row=0, column=9, sticky="new")
+    tk.Label(expandedFrame, text=f"{sector} - Page {page}", bg="white", font=("Arial",20)).grid(row=0, column=2, columnspan=5, sticky="n")
+    
+    prevPage = tk.Button(expandedFrame, text="Previous Page", command = lambda : browseStocksSeeMore(frame=frame, sector=sector, database=database, page=page-1, lastFrame=expandedFrame))
+    prevPage.grid(row=0,column=0)
+    nextPage = tk.Button(expandedFrame, text="Next Page", command = lambda : browseStocksSeeMore(frame=frame, sector=sector, database=database, page=page+1, lastFrame=expandedFrame))
+    nextPage.grid(row=0,column=2)
+    if(page==1):
+        prevPage.config(state="disabled")
+    if((len(listStocks)+99)//100==page):
+        nextPage.config(state="disabled")
+    i = page*100-100
+    for row in range(1, 11):
+        for col in range(0, 10):
+            tupleinfo = listStocks[i]
+            if(len(tupleinfo[2])>20):
+                secondline = tupleinfo[2][:20]+"."
+            else:
+                secondline=tupleinfo[2]
+            try:
+                tk.Button(expandedFrame, text=f"{tupleinfo[0]} - Mkt.Cap${round(int(tupleinfo[-1])/1_000_000_000, 2)}B\n{secondline}", command=lambda stock=tupleinfo[0] : browseStocksHelper(browsedTicker=stock)).grid(row=row,column=col)
+            except:
+                tk.Button(expandedFrame, text=f"{tupleinfo[0]}\n{secondline}", command=lambda stock=tupleinfo[0] : browseStocksHelper(browsedTicker=stock)).grid(row=row,column=col)
+            i+=1
+
+def browseStocksHelper(browsedTicker : str):
+    stockFrame = tk.Frame(root, bg="white")
+    homeFrame.grid_forget()
+    stockFrame.grid(row=0,column=0, sticky="nsew")
+    rowweights = [1,1,1,1,1,1]
+    colweights=[1,1,3,3,3,3,1,1]
+    for i in range(6):
+        stockFrame.grid_rowconfigure(i, weight=rowweights[i])
+        #tk.Label(stockFrame, text=f"{i}", bg="white", fg="white").grid(row=i, column=0, sticky="nsew")
+    for i in range(8):
+        stockFrame.grid_columnconfigure(i, weight=colweights[i])
+        #tk.Label(stockFrame, text=f"{i}", bg="white", fg="white").grid(row=0, column=i, sticky="nsew")
+    stock = ""
+    enterStock = tk.Entry(stockFrame, textvariable=stock, border=5)
+    enterStock.grid(row=0, column=0, sticky="nw")
+    homeButton = tk.Button(stockFrame, text="Home", command=lambda : backToHome(stockFrame))
+    homeButton.grid(row=0, column=7, sticky="new")
+    submitButton = tk.Button(stockFrame, text="Find Stock Ticker", command=lambda : findStockParse(stock=enterStock, stockFrame=stockFrame))
+    submitButton.grid(row=0, column=1, sticky="nw")
+
+    val = browsedTicker
+
+    for widget in stockFrame.winfo_children():
+        if(type(widget)==tk.Label or type(widget)==tk.Frame):
+
+            for subwidget in widget.winfo_children():
+                subwidget.grid_remove()
+            widget.grid_remove()
+
+    ticker = None
+    try:
+        if(foundTickers[val]!=None):
+            ticker = foundTickers[val]
+    except:
+        ticker = yf.Ticker(val)
+    if (len(ticker.history(period="1m"))==0): 
+        errorMessage(frame=stockFrame, text="STOCK NOT FOUND")
+    else:
+        print(f"{stock} found")
+        findStockBuilder(ticker=val, frame=stockFrame)
+
+def sortTupleSecondVal(s):
+    try:
+        return int(s[-1])
+    except:
+        return 0
 
 def errorMessage(frame : tk.Frame, text : str):
     warning = tk.Toplevel(frame)
@@ -414,6 +569,10 @@ def homeWeightsConfigure(rowNums, columnNums):
         homeFrame.grid_rowconfigure(i, weight=rowNums[i])
     for i in range(8):
         homeFrame.grid_columnconfigure(i, weight=columnNums[i])
+
+def switchFrames(goTo : tk.Frame, hide : tk.Frame):
+    hide.grid_forget()
+    goTo.grid(row=0,column=0, sticky="nsew")
 
 def backToHome(frame : tk.Frame):
     print("CHANGING FRAME TO HOME")

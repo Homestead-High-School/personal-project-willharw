@@ -1,8 +1,9 @@
 to do list
 
--short percent of float
--watchlist
+-add to watchlist button on findstock
 -compare
+-account for daylight savings
+-add update market cap setting
 
 XLK
 XMMO
