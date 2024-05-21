@@ -15,8 +15,8 @@
 |5|Added functionality to view multiple weeks work of data. Added user select button to view different periods of time.|
 |6|Worked on adding more context details to stock info displayed in findStock|
 |7|Finished findStock menu, started to work on watchlist. Learning file i/o in python|
-|8| Added browse stocks |
-
+|8|Added browse stocks button. Learned how to change button color|
+|9|Added top 30 list, learned currency formatting using locale|
 <hr>
 <hr>
 <hr>

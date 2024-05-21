@@ -1,9 +1,9 @@
 to do list
 
--add to watchlist button on findstock
--compare
+-compare stocks
 -account for daylight savings
 -add update market cap setting
+-news on findstock
 
 XLK
 XMMO

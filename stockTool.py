@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use("TkAgg")
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import updateMarketCap
+import locale
+
+locale.setlocale(locale.LC_ALL, '')
 
 root = tk.Tk()
 root.geometry("800x600")
@@ -21,8 +25,10 @@ title.grid(row=1, column=2, columnspan=5, sticky="nsew")
 title.config(font=("Arial", 30), bg="white")
 foundTickers = dict()
 
+
 leftStockInfoFrame = tk.Frame(root, bg="red")
 leftWatchListInfoFrame = tk.Frame(root, bg="blue")
+
 
 #building logic
 lastMarketDay = datetime.date.today()
@@ -51,6 +57,8 @@ def homeIndexBuilder():
     leftHeader = tk.Label(homeFrame, text=f"Market changes {lastMarketDay.split(" ")[0]}")
     leftHeader.grid(row=0, column=0, columnspan=2)
     leftHeader.config(font=("Arial",12), bg="white")
+    tk.Button(homeFrame, text="Settings", command = lambda : homeSettings()).grid(row=5, column=7, sticky="se")
+
     for i in tickers:
         stock = yf.Ticker(i)
         stockData = stock.history(period="1d")
@@ -162,6 +170,10 @@ def homeWatchListBuildHelper(tickers, day):
     losersLabel = tk.Label(homeFrame, text="Biggest losses", font=("Arial", 12), bg="white")
     losersLabel.grid(row=2, column=7, sticky="ne")
     losersFrame.grid(row=2, column=7, sticky="e")
+def homeSettings():
+    toplevel = tk.Toplevel(homeFrame, bg="white")
+    tk.Button(toplevel, text="Update stocks.txt", command = lambda : updateMarketCap.updateStocksTxt(frame=toplevel)).grid(row=1,column=0)
+    tk.Label(toplevel, text="Warning: this is experimental and will FREEZE THE PROGRAM for 10-15 minutes\nIt will update all the market caps and company names used in stocks.txt", bg="white").grid(row=0,column=0)
 
 def findStock():
     stockFrame = tk.Frame(root, bg="white")
@@ -170,10 +182,11 @@ def findStock():
     rowweights = [1,1,1,1,1,1]
     colweights=[1,1,3,3,3,3,1,1]
     default=""
-    searchForCompanyButton = tk.Button(stockFrame, text="Search by company name", command = lambda : findStockCompanySearch(frame=stockFrame, button=searchForCompanyButton, entry=companyEntry))
-    searchForCompanyButton.grid(row=1,column=1,sticky="w")
+    searchForCompanyButton = tk.Button(stockFrame, text="Search by company name",command = lambda : findStockCompanySearch(frame=stockFrame, button=searchForCompanyButton, entry=companyEntry))
+    searchForCompanyButton.grid(row=1,column=1,sticky="nw")
     companyEntry = tk.Entry(stockFrame, textvariable=default, border=5)
-    companyEntry.grid(row=1,column=0, sticky="ew")
+    companyEntry.grid(row=1,column=0, sticky="new")
+    extraStuff = [searchForCompanyButton, companyEntry]
     for i in range(6):
         stockFrame.grid_rowconfigure(i, weight=rowweights[i])
         #tk.Label(stockFrame, text=f"{i}", bg="white", fg="white").grid(row=i, column=0, sticky="nsew")
@@ -185,7 +198,7 @@ def findStock():
     enterStock.grid(row=0, column=0, sticky="nw")
     homeButton = tk.Button(stockFrame, text="Home", command=lambda : backToHome(stockFrame))
     homeButton.grid(row=0, column=7, sticky="new")
-    submitButton = tk.Button(stockFrame, text="Find Stock Ticker", command=lambda : findStockParse(stock=enterStock, stockFrame=stockFrame))
+    submitButton = tk.Button(stockFrame, text="Find Stock Ticker", command=lambda : findStockParse(stock=enterStock, stockFrame=stockFrame, extra=extraStuff))
     submitButton.grid(row=0, column=1, sticky="nw")
 def findStockCompanySearch(frame:tk.Frame, button:tk.Button, entry:tk.Entry):
     strToFind=entry.get().strip().upper()
@@ -212,12 +225,15 @@ def findStockPickCompany(frame : tk.Frame, toplevel : tk.Toplevel, button:tk.But
     browseStocksHelper(ticker)
     #FIX THIS SO IT DOESNT BUILD A WHOLE NEW FRAME
 
-def findStockParse(stock : tk.Entry, stockFrame : tk.Frame):
+def findStockParse(stock : tk.Entry, stockFrame : tk.Frame, extra : list):
     val = stock.get().upper().strip()
-
+    for i in extra:
+        try:
+            i.destroy()
+        except:
+            print("failed to destroy extra object")
     for widget in stockFrame.winfo_children():
         if(type(widget)==tk.Label or type(widget)==tk.Frame):
-
             for subwidget in widget.winfo_children():
                 subwidget.grid_remove()
             widget.grid_remove()
@@ -289,8 +305,8 @@ def findStockLeftInfoBuilder(frame : tk.Frame, info : dict, isStock : bool):
     
     if(isStock):
         tck = yf.Ticker(ticker)
-        #print(tck.major_holders)
-        #print(tck.insider_transactions) #over the past yr maybe calculate how many shares bought and how many sold
+        for key, value in tck.info.items():
+            print(key,value)
         try:
             shares = tck.insider_transactions["Shares"]
             texts = tck.insider_transactions["Text"]
@@ -302,7 +318,7 @@ def findStockLeftInfoBuilder(frame : tk.Frame, info : dict, isStock : bool):
                 text = str(text)
                 dateString = str(dates[i]).split(" ")[0].split("-")
                 dateOfTransaction = datetime.date(year=int(dateString[0]), month=int(dateString[1]), day=int(dateString[2]))
-                print(dateOfTransaction, oneYearAgo)
+                #print(dateOfTransaction, oneYearAgo)
                 if(dateOfTransaction>oneYearAgo):
                     if(text.find("Sale")>-1):
                         sharesSold+=shares[i]
@@ -315,7 +331,7 @@ def findStockLeftInfoBuilder(frame : tk.Frame, info : dict, isStock : bool):
         except:
             print("No insider transactions found")
         
-        infoList = ["recommendationKey", "dividendYield", "forwardPE", "shortPercentOfFloat","averageVolume", "marketCap", "fiftyTwoWeekHigh", "fiftyTwoWeekLow", "targetMedianPrice"]
+        infoList = ["bid", "ask", "recommendationKey", "overallRisk", "beta","dividendYield", "forwardPE", "shortPercentOfFloat","averageVolume", "marketCap", "pegRatio", "fiftyTwoWeekHigh", "fiftyTwoWeekLow", "targetMedianPrice", "targetMeanPrice", "totalCashPerShare"]
 
         for i, value in enumerate(infoList):
             try:
@@ -482,9 +498,13 @@ def browseStocks():
     for i in range(8):
         browseFrame.grid_rowconfigure(i, weight=rowweights[i])
     for i in range(11):
-        browseFrame.grid_columnconfigure(i, weight=colweights[i])
+        browseFrame.grid_columnconfigure(i, weight=colweights[i], uniform="a")
     homeButton = tk.Button(browseFrame, text="Home", command=lambda : backToHome(browseFrame), border=5, relief="raised")
     homeButton.grid(row=0, column=10, sticky="new")
+
+    bubbleButton = tk.Button(browseFrame, text="Top 30", command=lambda : browseStocksTop30(browseFrame), border=5, relief="raised")
+    bubbleButton.grid(row=0, column=9, sticky="new")
+
     tk.Label(browseFrame, text="Browse Stocks", bg="white", font=("Arial",20)).grid(row=0, column=3, columnspan=4, sticky="n")
     industries = ['Healthcare', 'Basic Materials', 'Consumer Defensive', 'Financial Services', 'Industrials', 'Technology', 'Consumer Cyclical', 'Real Estate', 'Communication Services', 'Energy', 'Utilities']
     
@@ -500,6 +520,7 @@ def browseStocks():
             splitup = line.split("|")
             currentlist = database[splitup[1]]
             database.update({splitup[0] : currentlist.append(splitup)})
+    bgs = ["#ffa1a1","#b5b184","#c1d8e3","#46874c","#775b82","#ff8ad4","#d69e6d","#ba8865","#e8dfdf","#fcf762","#03c4ff"]
     for i,industry in enumerate(industries):
         splitindustry = industry.split(" ")
         title = ""
@@ -512,13 +533,37 @@ def browseStocks():
         for j in range(5):
             stock = sortedStocks[j]
             #print(stock)
-            if(len(stock[2])>20):
-                secondline = stock[2][:15]+"."
+            if(len(stock[2])>15):
+                secondline = ""
+                split = stock[2].split(" ")
+                splitcleaned =[]
+                if(len(split)>2):   
+                    for e in split:
+                        if(e.find("Inc.")>-1 or e.find(")")>-1 or  e.find("and")>-1 or e.find("&")>-1):
+                            continue
+                        else:
+                            splitcleaned.append(e)
+                else:
+                    splitcleaned = split
+                if(len(splitcleaned)>3):
+                    splitcleaned=splitcleaned[:3]
+                for word in splitcleaned:
+                    if(len(word)<4):
+                        secondline+=word+" "
+                    else:
+                        secondline+=word+"\n"
+                secondline=secondline.strip()
             else:
                 secondline=stock[2]
-            temp = tk.Button(browseFrame, text=f"{stock[0]}\n{secondline}\n${round(int(stock[-1])/1_000_000_000,1)}B", bg="lightblue", relief="solid", border=1, font=("Arial", 12), command=lambda stock=stock: browseStocksHelper(browsedTicker=stock[0]))
-            temp.grid(row=j+2, column=i, sticky="NSEW")
-        tk.Button(browseFrame, text=f"See more\n{industry}\nstocks", bg="lightgrey", relief="groove", border=2, font=("Arial", 11), command = lambda industry=industry : browseStocksSeeMore(frame=browseFrame, sector=industry, database=database, page=1, lastFrame=None)).grid(row=7, column=i)
+            temp = tk.Button(browseFrame, text=f"{stock[0]}\n{secondline}\n${round(int(stock[-1])/1_000_000_000,1)}B", height=5, width=13, bg=bgs[i], relief="solid", border=1, font=("Arial", 12), command=lambda stock=stock: browseStocksHelper(browsedTicker=stock[0]))
+            temp.grid(row=j+2, column=i)
+        if(len(industry)>15):
+            split = industry.split(" ")
+            industry = ""
+            for j in split:
+                industry+=j+"\n"
+        industry=industry.strip()
+        tk.Button(browseFrame, text=f"See more\n{industry}\nstocks", bg="lightgrey", relief="groove", border=2, font=("Arial", 11), height=4,command = lambda industry=industry : browseStocksSeeMore(frame=browseFrame, sector=industry, database=database, page=1, lastFrame=None)).grid(row=7, column=i, sticky="ew")
 def browseStocksSeeMore(frame : tk.Frame, sector : str, database : dict, page : int, lastFrame : tk.Frame):
     listStocks = database[sector]
     try: 
@@ -599,6 +644,51 @@ def browseStocksHelper(browsedTicker : str):
     else:
         print(f"{stock} found")
         findStockBuilder(ticker=val, frame=stockFrame)
+def browseStocksTop30(frame : tk.Frame):
+    frame.grid_forget()
+    topFrame = tk.Frame(root, bg="white")
+    topFrame.grid(row=0,column=0,sticky="nsew")
+    backButton = tk.Button(topFrame, text="BACK", command=lambda : switchFrames(goTo=frame, hide=topFrame))
+    backButton.grid(row=0,column=5,sticky="ne")
+    
+    colweights = [1,1,1,1,1,1]
+    rowweights = [1,3,3,3,3,3]
+    for i in range(6):
+        topFrame.grid_rowconfigure(i, weight=rowweights[i])
+    for i in range(6):
+        topFrame.grid_columnconfigure(i, weight=colweights[i], uniform="a")
+
+    with open("stocks.txt", "r") as file:
+        lines = file.readlines()
+        linetuples = []
+        for line in lines:
+            try:
+                if(int(line.strip().split("|")[-1])>100_000_000_000):
+                    linetuples.append(line.split("|"))
+            except:
+                continue
+    sortedstocks = sorted(linetuples, key=sortTupleSecondVal, reverse=True)
+    sortedstocks = sortedstocks[:30]
+    for row in range(1,6):
+        for col in range(0,6):
+            stockline = sortedstocks[(row-1)*6+col]
+            stock = yf.Ticker(stockline[0])
+            stockData = stock.history(period="1d")
+            stockDayChange = round(((float(stockData["Close"][lastMarketDay])/float(stockData["Open"][lastMarketDay]))-1)*100, 2)
+            stockbutton = tk.Button(topFrame, font=("Arial", 12),text=f"{stockline[0]}\n{stockline[2]}\n{stockline[1]}\n{locale.currency(int(stock.info["marketCap"]), grouping=True)}\n{stockDayChange}%", command=lambda stock=stockline[0]: browseStocksHelper(browsedTicker=stock))
+            stockbutton.grid(row=row,column=col,sticky="NSEW")
+            if(stockDayChange>0):
+                if(stockDayChange>1):
+                    stockbutton.config(bg="green")
+                else:
+                    stockbutton.config(bg="lightgreen")
+            elif(stockDayChange<0):
+                if(stockDayChange<1):
+                    stockbutton.config(bg="darkred")
+                else:
+                    stockbutton.config(bg="lightred")
+
+                    
 
 def sortTupleSecondVal(s):
     try:
@@ -636,7 +726,6 @@ def backToHome(frame : tk.Frame):
 
 def start():
     homeFrame.grid(row=0,column=0, sticky="nsew")
-
     homeWeightsConfigure([1, 1, 3, 3, 3, 3], [2, 2, 2, 4, 4, 2, 2, 6])
     
     root.mainloop()
