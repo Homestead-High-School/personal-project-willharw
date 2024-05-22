@@ -5,6 +5,7 @@
 |-|-|-|
 |1|Week 1 - making a pop up and getting yfinance data|[Combobox source](https://pythonassets.com/posts/drop-down-list-combobox-in-tk-tkinter/)|
 |2|Week 2 - making graphs and taking user input| Reflection: the biggest issue so far has been learning how to use tkinter. There are a ton of different widgets and learning how they work together has been a steep curve. [Finding times](https://stackoverflow.com/questions/415511/how-do-i-get-the-current-time-in-python) // [Entry source](https://www.geeksforgeeks.org/python-tkinter-entry-widget/)|
+|3|Week 3 | |
 
 |Day|Summary|
 |-|-|
