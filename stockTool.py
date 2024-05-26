@@ -101,7 +101,7 @@ def homeButtonBuilder():
     watchListButton = tk.Button(homeFrame, text="Watchlist", activebackground=selectColor,bd=bd, bg=bg, height=3, width=10, font=(font, 12), command=watchList)
     watchListButton.grid(column=5, row=3, sticky="ew")
 
-    compareButton = tk.Button(homeFrame, text="Compare \nStocks", activebackground=selectColor,bd=bd, bg=bg, height=3, width=10, font=(font, 12), command=None)
+    compareButton = tk.Button(homeFrame, text="Compare \nStocks", activebackground=selectColor,bd=bd, bg=bg, height=3, width=10, font=(font, 12), command=lambda : compareStocks("1 Month"))
     compareButton.grid(column=2, row=5, sticky="ew")
 
     browseTopButton = tk.Button(homeFrame, text="Browse Stocks", activebackground=selectColor,bd=bd, bg=bg, height=3, width=10, font=(font, 12), command=browseStocks)
@@ -195,7 +195,6 @@ def updateFont(frame : tk.Frame):
     entry.grid(row=0,column=0)
     submitButton = tk.Button(toplevel, text="Submit", command=lambda : setFont(frame=toplevel, entry=entry))
     submitButton.grid(row=0, column=1, sticky="nw")
-    
 def setFont(frame : tk.Frame, entry : tk.Entry):
     frame.destroy()
     global font
@@ -204,6 +203,113 @@ def setFont(frame : tk.Frame, entry : tk.Entry):
         font=enterstr
     else:
         return
+
+def compareStocks(time : str):
+    compareFrame = tk.Frame(root, bg="white")
+    tk.Label(compareFrame, text="Stock Comparison", bg="white", font=(font, 25)).grid(row=0,column=2,columnspan=4, sticky="new")
+    homeFrame.grid_forget()
+    compareFrame.grid(row=0,column=0, sticky="nsew")
+    rowweights = [1,1,1,1,1,1]
+    colweights=[1,1,1,1,1,1,1,1]
+    homeButton = tk.Button(compareFrame, text="Home",command = lambda : backToHome(compareFrame))
+    homeButton.grid(row=0,column=7,sticky="ne")
+
+    periodOptions = ["1 Week", "1 Month", "1 Year", "5 Years"]
+    default = ""
+    periodChooser = ttk.Combobox(compareFrame, values=periodOptions, textvariable=default, state="readonly")
+    periodChooser.grid(row=1, column=0, sticky="n")
+    tk.Button(compareFrame, text="Submit", command=lambda : compareGraphWrapper(frame=compareFrame, entry=periodChooser)).grid(row=1,column=0,sticky="s")
+
+    for i in range(6):
+        compareFrame.grid_rowconfigure(i, weight=rowweights[i], uniform="a")
+    for i in range(8):
+        compareFrame.grid_columnconfigure(i, weight=colweights[i], uniform="b")
+    editCompare = tk.Button(compareFrame, text="Edit Comparison",command = lambda : compareEditor(compareFrame))
+    editCompare.grid(row=0,column=0,sticky="nw")
+    compareGraphBuilder(compareFrame, time=time)
+
+def compareGraphWrapper(frame : tk.Frame, entry : ttk.Combobox):
+    time=entry.get()
+    frame.grid_forget()
+    compareStocks(time)
+def compareGraphBuilder(frame : tk.Frame, time : str):
+    listtickers=[]
+
+    match time:
+        case "1 Week":
+            setweeks = 1
+        case "1 Month":
+            setweeks=4
+        case "1 Year":
+            setweeks=52
+        case "5 Years":
+            setweeks=52*5
+        case _:
+            print("error")
+
+    date=lastMarketDate-datetime.timedelta(weeks=setweeks)
+    ticker=yf.Ticker("^DJI").history(start=lastMarketDate-datetime.timedelta(weeks=setweeks), end = lastMarketDate+datetime.timedelta(days=1))
+    while(not (str(date)+" 00:00:00-04:00" in ticker["Open"].keys())):
+        date=date-datetime.timedelta(days=1)
+    beginningDateFormatted =str(date)+" 00:00:00-04:00"
+
+    with open("compare.txt","r") as file:
+        l = file.readlines()
+        for line in l:
+            listtickers.append(line.strip())
+    stockFigure = plt.Figure(figsize=(4,3), dpi=100)
+    stockGraph = FigureCanvasTkAgg(stockFigure, frame)
+    stockGraph.get_tk_widget().grid(row=1, column=1, columnspan=6, rowspan=5, sticky="nsew")
+    mainGraph = stockFigure.add_subplot(111)
+    for ticker in listtickers:
+        try:
+            tickerYF = yf.Ticker(ticker)
+            history = tickerYF.history(start=lastMarketDate-datetime.timedelta(weeks=setweeks), end=lastMarketDate, interval = "1d")
+            prices=history["Close"]
+            dates=prices.keys()
+            beginningPrice = prices[beginningDateFormatted]
+            pricesPercentFromDate = []
+            for price in prices:
+                pricesPercentFromDate.append(price/beginningPrice*100-100)
+            mainGraph.plot(dates, pricesPercentFromDate, label=ticker)
+            mainGraph.set_xlabel("Date")
+            mainGraph.set_ylabel("Price % Change")
+        except:
+            print(ticker, "broke")
+            continue
+    mainGraph.legend()
+    stockFigure.autofmt_xdate()
+def compareEditor(frame : tk.Frame):
+    toplevel = tk.Toplevel(frame, bg="white")
+    listtickers=[]
+    tk.Label(toplevel, bg="white", font=(font, 15), text="Check to remove").grid(row=0, column=0)
+    with open("compare.txt","r") as file:
+        l = file.readlines()
+        for line in l:
+            listtickers.append(line.strip())
+    checkbuttonvals = []
+    for i in range(len(listtickers)):
+        checkbuttonvals.append(tk.IntVar())
+    for i, ticker in enumerate(listtickers):
+        tk.Checkbutton(toplevel, text=ticker, bg="white", font=(font, 10), variable=checkbuttonvals[i], onvalue=1, offvalue=0, height=2, width=10).grid(row=i+1, column=0)
+    tk.Button(toplevel, text="Submit", command=lambda : compareRemove(frame=frame, toplevel=toplevel, tickers=listtickers, checkvals=checkbuttonvals)).grid(row=len(listtickers)+1, column=0)
+def compareRemove(frame : tk.Frame, toplevel : tk.Toplevel, tickers : list, checkvals : list):
+    frame.destroy()
+    
+    toplevel.destroy()
+    toremove = []
+    for index, val in enumerate(checkvals):
+        if(val.get()==1):
+            toremove.append(tickers[index])
+    print(toremove)
+    with open("compare.txt", "r") as f:
+        lines = f.readlines()
+    with open("compare.txt", "w") as f:
+        print("removing")
+        for line in lines:
+            if not (line.strip() in toremove):
+                f.write(line)
+    compareStocks(time="1 Month")
 
 def findStock():
     stockFrame = tk.Frame(root, bg="white")
@@ -246,7 +352,6 @@ def findStockCompanySearch(frame:tk.Frame, button:tk.Button, entry:tk.Entry):
         name = split[2]
         comButton = tk.Button(toplevel, text=f"{ticker}-{name}", command=lambda stock=ticker : findStockPickCompany(frame=frame,toplevel=toplevel, button=button, entry=entry, ticker=stock) )
         comButton.grid(row=i, column=0, sticky="ew")
-
 def findStockPickCompany(frame : tk.Frame, toplevel : tk.Toplevel, button:tk.Button, entry:tk.Entry, ticker:str):
     frame.destroy()
     toplevel.destroy()
@@ -254,7 +359,6 @@ def findStockPickCompany(frame : tk.Frame, toplevel : tk.Toplevel, button:tk.But
     entry.destroy()
     browseStocksHelper(ticker)
     #FIX THIS SO IT DOESNT BUILD A WHOLE NEW FRAME
-
 def findStockParse(stock : tk.Entry, stockFrame : tk.Frame, extra : list):
     val = stock.get().upper().strip()
     for i in extra:
@@ -291,6 +395,22 @@ def findStockBuilder(ticker : str, frame : tk.Frame):
     startingPeriod = 1
     tickerYF = yf.Ticker(ticker)
     
+    news = tickerYF.news
+    news = news[:5]
+
+    #newsframe = tk.Frame(frame, bg="red").grid(row=3,column=7,rowspan=2,sticky="nsew")
+    for index, dict in enumerate(news):
+        tk.Label(frame, bg="white", font=(font, 8), text=f"{dict.get("title")}").grid(row=index+6,column=1,columnspan=6)
+
+    compareButton = tk.Button(frame, text="Add to compare", command = lambda : addToCompare(ticker, button=compareButton))
+    compareButton.grid(row=2,column=7,sticky="new")
+
+    with open("compare.txt", "r") as f:
+        lines = f.readlines()
+    for line in lines:
+        if line.strip()==ticker:
+            compareButton.config(state="disabled")
+
     addToWatchlistButton = tk.Button(frame, text="Add to watchlist", command=lambda stock=ticker : findStockWatchlistAdder(stock=stock, button=addToWatchlistButton), state="active")
     addToWatchlistButton.grid(row=0,column=6, sticky="n")
     with open("watchlist.txt", "r") as file:
@@ -333,10 +453,9 @@ def findStockLeftInfoBuilder(frame : tk.Frame, info : dict, isStock : bool):
     leftStockInfoFrame = tk.Frame(frame, bg="white", highlightcolor="yellow")
     leftStockInfoFrame.grid(row=1, column=0, rowspan=6)
     
+    print(info)
     if(isStock):
         tck = yf.Ticker(ticker)
-        for key, value in tck.info.items():
-            print(key,value)
         try:
             shares = tck.insider_transactions["Shares"]
             texts = tck.insider_transactions["Text"]
@@ -422,7 +541,20 @@ def findStockWatchlistAdder(stock : str, button : tk.Button):
     file.write(stock+"\n")
     file.close()
 
+def addToCompare(ticker : str, button : tk.Button):
+    button.config(state="disabled", text="Added!")
 
+    with open("compare.txt", "a") as f:
+        f.write(ticker+"\n")
+def rmFromCompare(ticker : str):
+    with open("compare.txt", "r") as f:
+        lines = f.readlines()
+    with open("compare.txt", "w") as f:
+        print("removing")
+        for line in lines:
+            if (line.strip() != ticker):
+                f.write(line)
+    
 def watchList():
     watchListFrame = tk.Frame(root, bg="white")
     homeFrame.grid_forget()
@@ -516,7 +648,6 @@ def watchListRm(frame : tk.Frame, entry : tk.Entry):
     except:
         errorMessage(frame=frame, text="NOT IN WATCHLIST")
     watchListLeftBuilder(frame=frame)
-
 
 
 def browseStocks():
@@ -753,8 +884,8 @@ def switchFrames(goTo : tk.Frame, hide : tk.Frame):
 def backToHome(frame : tk.Frame):
     print("CHANGING FRAME TO HOME")
     for widget in frame.winfo_children():
-        for subwidget in widget.winfo_children():
-            subwidget.grid_forget()
+        # for subwidget in widget.winfo_children():
+        #     subwidget.grid_forget()
         widget.grid_forget()
     frame.grid_forget()
     homeFrame.grid(row=0,column=0,sticky="nsew")
@@ -762,6 +893,6 @@ def backToHome(frame : tk.Frame):
 def start():
     homeFrame.grid(row=0,column=0, sticky="nsew")
 
-    homeWeightsConfigure([1, 1, 3, 3, 3, 3], [2,1,2,1,1,2,1,2])
+    homeWeightsConfigure([1, 1, 3, 3, 3, 3], [3,1,2,1,1,2,1,3])
     
     root.mainloop()

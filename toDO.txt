@@ -1,8 +1,7 @@
 to do list
 
--compare stocks
 -account for daylight savings
--add update market cap setting
+-ability to change time frame on comparestocks
 -news on findstock
 
 XLK
