@@ -1,11 +1,11 @@
 # Welcome to Will's Stock Tool wiki
 
 
-|Week|Demonstrated Learning|Practice Exams|
+|Week - overview|Demonstrated Learning|Reflection and Sources|
 |-|-|-|
-|1|Week 1 - making a pop up and getting yfinance data|[Combobox source](https://pythonassets.com/posts/drop-down-list-combobox-in-tk-tkinter/)|
-|2|Week 2 - making graphs and taking user input| Reflection: the biggest issue so far has been learning how to use tkinter. There are a ton of different widgets and learning how they work together has been a steep curve. [Finding times](https://stackoverflow.com/questions/415511/how-do-i-get-the-current-time-in-python) // [Entry source](https://www.geeksforgeeks.org/python-tkinter-entry-widget/)|
-|3|Week 3 | https://www.geeksforgeeks.org/python-tkinter-checkbutton-widget/ // https://stackoverflow.com/questions/4236910/getting-checkbutton-state |
+|1|Week 1 - making a pop up and getting yfinance data in python|Reflection: Getting yfinance data is difficult because they return data using a custom array datatype that I have to learn how to use. [Tkinter tutorial](https://www.geeksforgeeks.org/python-tkinter-tutorial/) // [Combobox source](https://pythonassets.com/posts/drop-down-list-combobox-in-tk-tkinter/)|
+|2|Week 2 - making graphs and taking user input| Reflection: the biggest issue so far has been learning how to use tkinter. There are a ton of different widgets and learning how they work together has been a steep curve. [Finding times](https://stackoverflow.com/questions/415511/how-do-i-get-the-current-time-in-python) // [Entry source](https://www.geeksforgeeks.org/python-tkinter-entry-widget/)//[Matplotlib in Tkinter](https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/)|
+|3|Week 3 - building guis that the user can interact with |Reflection: It is difficult to make good looking UI. Attempting to add background images broke the home screen so I scrapped it. If I had more time, I would probably make custom images for the buttons to make them look a little better. [CheckButton](https://www.geeksforgeeks.org/python-tkinter-checkbutton-widget/) // [Getting CheckButton State](https://stackoverflow.com/questions/4236910/getting-checkbutton-state) |
 
 |Day|Summary|
 |-|-|
@@ -20,6 +20,9 @@
 |9|Added top 30 list, learned currency formatting using locale|
 |10| Worked on making backgrounds and changing fonts |
 |11| Worked on the compare stock features. Learning check buttons and graphing multiple lines|
+|12| Fixed the news tab and the findStock page not updating. Worked on efficiency a bit. |
+|13| Made news clickable [Hyperlinks in tkinter](https://stackoverflow.com/questions/23482748/how-to-create-a-hyperlink-with-a-label-in-tkinter) |
+|14| Worked on slideshow for project presentation. |
 <hr>
 <hr>
 <hr>
